@@ -10,46 +10,57 @@ $button-height-lg: 40px !default;
 $button-height-md: 32px !default;
 $button-height-sm: 24px !default;
 
-// Color Theme Variables
-$primary: #005acd !default;
-$secondary: #4daeff !default;
-$negative: #ef594f !default;
-$ui-01: #f7f9fc !default;
-$ui-02: #ffffff !default;
-$ui-03: #b2bdcb !default;
-$ui-04: #dce1e8 !default;
-$text-01: #212121 !default;
-$text-02: #606974 !default;
-$text-03: #77889a !default;
-$text-04: #ffffff !default;
-$text-05: #abafba !default;
-$link: #606974 !default;
-$icon-01: #77889a !default;
-$icon-02: #005acd !default;
-$inverse-01: #ffffff !default;
-$field-bg: #ffffff !default;
-$field-border: #dce1e8 !default;
-$support-01: #0747a6 !default;
-$support-02: #00875a !default;
-$support-03: #ffab00 !default;
-$support-04: #de350b !default;
-$overlay-01: rgba(#242e3d, 0.5) !default;
-$overlay-02: rgba($ui-02, 0.6) !default;
+// fields
+$field-border-radius: 2px !default;
 
-// Interactive Tokesn
-$focus: $secondary !default;
-$hover-primary: #2678e1 !default;
-$hover-secondary: #7cc4ff !default;
-$hover-negative: #ff7e75 !default;
-$hover-ui-accent: #edf4ff !default;
-$hover-field-border: #b2bdcb !default;
-$hover-row: #f0f3f6 !default;
-$odd-row: #fafafa !default;
-$active-primary: #0050b6 !default;
-$active-secondary: #0088ff !default;
-$active-negative: #e24d43 !default;
-$active-danger: #e24d43 !default;
-$active-ui-accent: #d9e8ff !default;
-$disabled-01: #f0f3f6 !default;
-$disabled-02: rgba(#abafba, 0.5) !default;
+// form
+$min-form-label-width-fixed: 220px;
+$min-form-label-width: 18%;
+$max-form-label-width: 30%;
+$row-form-margin: $spacing-xs;
 
+// loader
+$transition-base: 160ms !default;
+$loader-color: $primary !default;
+$loader-start: $primary !default;
+$loader-25: $secondary !default;
+$loader-50: $primary !default;
+$loader-75: $secondary !default;
+$loader-end: $primary !default;
+$inverse-loader-start: rgba($ui-02, 0.3) !default;
+$inverse-loader-25: rgba($ui-02, 0.8) !default;
+$inverse-loader-50: rgba($ui-02, 0.3) !default;
+$inverse-loader-75: rgba($ui-02, 0.8) !default;
+$inverse-loader-end: rgba($ui-02, 0.3) !default;
+$mono-loader-start: rgba($icon-01, 0.3) !default;
+$mono-loader-25: rgba($icon-01, 0.8) !default;
+$mono-loader-50: rgba($icon-01, 0.3) !default;
+$mono-loader-75: rgba($icon-01, 0.8) !default;
+$mono-loader-end: rgba($icon-01, 0.3) !default;
+
+// Grid columns
+$enable-grid-classes: true !default;
+$spacer: 1rem !default;
+$spacers: (
+        0: 0,
+        1: $spacer * 0.25,
+        2: $spacer * 0.5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+) !default;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 640px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px,
+        2xl: 1400px,
+) !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 0 !default;
+$grid-row-columns: 6 !default;
+$gutters: $spacers !default;
+
+// layout
+$editor-layout-body__side-penal: 300px !default;
