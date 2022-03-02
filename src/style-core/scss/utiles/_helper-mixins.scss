@@ -1,0 +1,109 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin text-overflow($width: false) {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  // width parameter가 있을 경우 허용
+  @if ($width) {
+    width: $width;
+  }
+}
+
+@mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  visibility: visible;
+  white-space: nowrap;
+}
+
+// Image Replacement Phark Method
+@mixin ir-pm {
+  	/* 레이아웃에 영향을 끼치지 않도록 */
+	position: absolute;
+	/* 스크린 리더가 읽을 수 있도록 */
+	width: 1px;
+	height: 1px;
+	/* 눈에 보이는 부분을 제거 */
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	overflow: hidden;
+}
+
+// Img Global
+@mixin img-g {
+  display: block;
+  width: 100%;
+}
+
+// Hide Table Caption
+@mixin caption-out {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
+// Right Position Center
+@mixin position-right-center($right-spacing) {
+  position: absolute;
+  top: 50%;
+  right: $right-spacing;
+  transform: translateY(-50%);
+}
+
+// 상하와 좌우가 동일한 padding
+@mixin stable-padding($padding-up-and-down, $padding-both-sides) {
+  padding: $padding-up-and-down $padding-both-sides;
+}
+
+// svg icon size
+@mixin svg-icon-size($size) {
+  width: $size;
+  height: $size;
+}
+
+// svg icon stroke (bolder, lighter)
+@mixin svg-icon-stroke($stroke-color) {
+  stroke: $stroke-color;
+  stroke-width: 1;
+  stroke-opacity: .4;
+}
+
+// Hide Table Caption
+@mixin caption-out {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
+@mixin right-position {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@mixin not-scroll {
+  overflow: hidden;
+}

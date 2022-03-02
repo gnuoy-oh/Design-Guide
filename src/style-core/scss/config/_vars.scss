@@ -1,0 +1,66 @@
+@import "spacing";
+
+// file path
+$img-path: "../images" !default;
+$font-path: "../fonts" !default;
+
+// button
+$button-border-radius: 2px !default;
+$button-height-lg: 40px !default;
+$button-height-md: 32px !default;
+$button-height-sm: 24px !default;
+
+// fields
+$field-border-radius: 2px !default;
+
+// form
+$min-form-label-width-fixed: 220px;
+$min-form-label-width: 18%;
+$max-form-label-width: 30%;
+$row-form-margin: $spacing-xs;
+
+// loader
+$transition-base: 160ms !default;
+$loader-color: $primary !default;
+$loader-start: $primary !default;
+$loader-25: $secondary !default;
+$loader-50: $primary !default;
+$loader-75: $secondary !default;
+$loader-end: $primary !default;
+$inverse-loader-start: rgba($ui-02, 0.3) !default;
+$inverse-loader-25: rgba($ui-02, 0.8) !default;
+$inverse-loader-50: rgba($ui-02, 0.3) !default;
+$inverse-loader-75: rgba($ui-02, 0.8) !default;
+$inverse-loader-end: rgba($ui-02, 0.3) !default;
+$mono-loader-start: rgba($icon-01, 0.3) !default;
+$mono-loader-25: rgba($icon-01, 0.8) !default;
+$mono-loader-50: rgba($icon-01, 0.3) !default;
+$mono-loader-75: rgba($icon-01, 0.8) !default;
+$mono-loader-end: rgba($icon-01, 0.3) !default;
+
+// Grid columns
+$enable-grid-classes: true !default;
+$spacer: 1rem !default;
+$spacers: (
+        0: 0,
+        1: $spacer * 0.25,
+        2: $spacer * 0.5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+) !default;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 640px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px,
+        2xl: 1400px,
+) !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 0 !default;
+$grid-row-columns: 6 !default;
+$gutters: $spacers !default;
+
+// layout
+$editor-layout-body__side-penal: 300px !default;
