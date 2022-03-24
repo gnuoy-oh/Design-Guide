@@ -4,6 +4,7 @@
 
 @use "sass:math";
 
+// unquote(%string) - 따옴표를 제거하는 문자 함수
 $font-families: (
   "mono": unquote("Consolas, Menlo, 'SFMono-Regular', Courier, monospace"),
   "sans":
@@ -13,6 +14,8 @@ $font-families: (
   "serif": unquote("'Georgia', Times, serif")
 );
 
+// @function - JS와 동일하게 인자를 넣으면 해당 인자가 return 하위로 대입됨
+// map-get - 첫번째 인자: 대상이 될 변수, 두번째 인자: 값을 가져올 key
 @function font-family($name) {
   @return map-get($font-families, $name);
 }
@@ -84,22 +87,19 @@ $base-font-size: 16px !default; // Default
 $font-size-map: (
   "76": 4.75rem,
   "72": 4.5rem,
-  // new
   "54": 3.375rem,
   "48": 3rem,
-  // new
   "36": 2.25rem,
   "32": 2rem,
-  // new
   "28": 1.75rem,
   "24": 1.5rem,
-  // new
   "20": 1.25rem,
   "18": 1.125rem,
   "16": 1rem,
+  "15": 0.938rem,
   "14": 0.875rem,
-  "12": 0.75rem,
   "13": 0.8125rem,
+  "12": 0.75rem,
   "11": 0.6875rem,
   "10": 0.625rem
 );
@@ -115,36 +115,6 @@ $font-size-map: (
 //-------------------------------------------
 //  Typography
 // ------------------------------------------
-//
-//   Type Scale
-//   ==========================================
-//   heading-01
-//   heading-02
-//   heading-03
-//   heading-04
-//   heading-05
-//   heading-06
-//   heading-07
-//   p
-//   desc
-//   label
-//   ==========================================
-//
-//   New Type Scale
-//   ==========================================
-//   heading-04
-//   heading-05
-//   heading-06
-//   text-lg
-//   text-md
-//   text-sm
-//   btn-xlg
-//   btn-lg
-//   btn-md
-//   btn-sm
-//   link-lg
-//   link-md
-// ==========================================
 
 @mixin heading-01 {
   @include font-size("72");

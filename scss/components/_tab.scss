@@ -1,0 +1,7 @@
+.tab {
+  display: flex;
+  align-items: center;
+}
+.tab__button {
+  @include button-base;
+}

@@ -1,5 +1,3 @@
-@import "../utiles/helper-mixins";
-
 .svg-icon {
   @include svg-icon-size(18px);
   display: inline-block;
@@ -7,13 +5,4 @@
   flex-shrink: 0;
   fill: $icon-01;
   color: $icon-01;
-}
-
-.img-icon {
-  display: flex;
-  flex-shrink: 0;
-  width: rem(32px);
-  height: rem(32px);
-  // background: url("#{$img-path}/common/icon_map-type.png") no-repeat;
-  content: "";
 }
