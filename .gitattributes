@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text   eol=crlf
+* text   eol=lf
+*.html   text diff=html
+*.css    text
+*.png    binary
+*.gif    binary
+*.ico    binary
+*.ttf    -text diff
+*.eot    -text diff
+*.woff   -text diff
+*.woff2  -text diff

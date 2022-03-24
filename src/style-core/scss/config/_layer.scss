@@ -1,3 +1,7 @@
+//-------------------------------------------
+//  Box Shadow
+// ------------------------------------------
+
 //   Layer                 ||  Elevation
 //   ==========================================
 //   0 - Base              ||  0
@@ -8,8 +12,6 @@
 //   5 - Pop-out           ||  24
 //   ==========================================
 
-// Box shadow 색상
-// Usage: `box-shadow: 0px 3px 3px 0 $box-shadow;`
 $box-shadow: rgba(0, 0, 0, 0.2);
 $box-shadow-raised: 0 2px 4px 0 $box-shadow;
 $box-shadow-overlay: 0 4px 8px 0 $box-shadow;
@@ -17,12 +19,13 @@ $box-shadow-nav: 0 2px 4px 0 $box-shadow;
 $box-shadow-pop-out: 0 12px 24px 0 $box-shadow;
 
 // Layer box-shadow map
-$layer-shadows: (base: none,
+$layer-shadows: (
+  base: none,
   flat: none,
   raised: $box-shadow-raised,
   overlay: $box-shadow-overlay,
   pop-out: $box-shadow-pop-out,
-  nav: $box-shadow-nav,
+  nav: $box-shadow-nav
 );
 
 // `box-shadow` 설정 mixin
@@ -32,6 +35,10 @@ $layer-shadows: (base: none,
     box-shadow: #{map-get($layer-shadows, $layer)};
   }
 }
+
+//-------------------------------------------
+//  z-index
+// ------------------------------------------
 
 $z-indexes: (
   tooltip: 9000,
@@ -46,12 +53,11 @@ $z-indexes: (
   float: 1,
   hidden: - 1,
   overflowHidden: - 1,
-  floating: 10000,
+  floating: 10000
 );
 
-// Useage: .modal {
+// Useage:
 //     z-index: z('modal');
-//   }
 @function z($layer) {
   @if not map-has-key($z-indexes, $layer) {
     @warn '$z-indexes 맵에서 `#{$layer}` 에 해당하는 layer를 찾지 못했습니다.';
