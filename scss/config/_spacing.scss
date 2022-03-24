@@ -2,8 +2,6 @@
 //  Spacing
 // ------------------------------------------
 //
-//   Size in px based on 16px base
-//
 //   Spacing Scale
 //   ==========================================
 //   3xs  ||  2px
@@ -16,19 +14,8 @@
 //   2xl  ||  40px
 //   3xl  ||  48px
 //   ==========================================
-//
-//   Layout Scale
-//   ==========================================
-//   2xs  ||  16px
-//   xs   ||  24px
-//   sm   ||  32px
-//   md   ||  48px
-//   lg   ||  64px
-//   xl   ||  96px
-//   2xl  ||  160px
-//   ==========================================
 
-$spacing-baseline: 1rem !default;
+$spacing-baseline: 1rem !default; // 16px;
 
 $spacing-3xs: $spacing-baseline * 0.125 !default;
 $spacing-2xs: $spacing-baseline * 0.25 !default;
@@ -39,12 +26,3 @@ $spacing-lg: $spacing-baseline * 1.5 !default;
 $spacing-xl: $spacing-baseline * 2 !default;
 $spacing-2xl: $spacing-baseline * 2.5 !default;
 $spacing-3xl: $spacing-baseline * 3 !default;
-
-$layout-3xs: $spacing-baseline * 0.75 !default;
-$layout-2xs: $spacing-baseline !default;
-$layout-xs: $spacing-baseline * 1.5 !default;
-$layout-sm: $spacing-baseline * 2 !default;
-$layout-md: $spacing-baseline * 3 !default;
-$layout-lg: $spacing-baseline * 4 !default;
-$layout-xl: $spacing-baseline * 6 !default;
-$layout-2xl: $spacing-baseline * 10 !default;
