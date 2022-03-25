@@ -1,3 +1,12 @@
+.svg-icon {
+  @include svg-icon-size(18px);
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+  fill: $icon-01;
+  color: $icon-01;
+}
+
 .hidden {
   @include hidden;
 }
