@@ -1,0 +1,24 @@
+// file path
+$img-path: "../images" !default;
+$font-path: "../fonts" !default;
+
+$default-border-radius: 2px !default;
+
+// loader
+$transition-base: 160ms !default;
+$loader-color: $primary !default;
+$loader-start: $primary !default;
+$loader-25: $secondary !default;
+$loader-50: $primary !default;
+$loader-75: $secondary !default;
+$loader-end: $primary !default;
+$inverse-loader-start: rgba($ui-02, 0.3) !default;
+$inverse-loader-25: rgba($ui-02, 0.8) !default;
+$inverse-loader-50: rgba($ui-02, 0.3) !default;
+$inverse-loader-75: rgba($ui-02, 0.8) !default;
+$inverse-loader-end: rgba($ui-02, 0.3) !default;
+$mono-loader-start: rgba($icon-01, 0.3) !default;
+$mono-loader-25: rgba($icon-01, 0.8) !default;
+$mono-loader-50: rgba($icon-01, 0.3) !default;
+$mono-loader-75: rgba($icon-01, 0.8) !default;
+$mono-loader-end: rgba($icon-01, 0.3) !default;
