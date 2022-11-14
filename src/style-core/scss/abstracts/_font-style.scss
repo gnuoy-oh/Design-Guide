@@ -1,9 +1,10 @@
 //-------------------------------------------
-//  Font Families
+//  Font Style
 // ------------------------------------------
+
+//  Font Families
 @use "sass:math";
 
-// unquote(%string) - 따옴표를 제거하는 문자 함수
 $font-families: (
   "mono": unquote("Consolas, Menlo, 'SFMono-Regular', Courier, monospace"),
   "sans":
@@ -13,8 +14,6 @@ $font-families: (
   "serif": unquote("'Georgia', Times, serif")
 );
 
-// @function - JS와 동일하게 인자를 넣으면 해당 인자가 return 하위로 대입됨
-// map-get - 첫번째 인자: 대상이 될 변수, 두번째 인자: 값을 가져올 key
 @function font-family($name) {
   @return map-get($font-families, $name);
 }
@@ -23,10 +22,8 @@ $font-families: (
   font-family: font-family($name);
 }
 
-//-------------------------------------------
+// ----
 //  Font Weight
-// ------------------------------------------
-
 $font-weights: (
   "light": 300,
   "regular": 400,
@@ -42,18 +39,17 @@ $font-weights: (
   font-weight: font-weight($weight);
 }
 
-//-------------------------------------------
-//  Letter Spacing
-// ------------------------------------------
+// Usage: `@include font-weight('medium');`
 
+// ----
+//  Letter Spacing
 @mixin letter-spacing {
   letter-spacing: 0;
 }
+// Usage: `@include letter-spacing;`
 
-//-------------------------------------------
+// ----
 //  Line Height
-// ------------------------------------------
-
 @mixin line-height($el) {
   @if $el == "heading" {
     line-height: 1.75;
@@ -66,10 +62,10 @@ $font-weights: (
   }
 }
 
-//-------------------------------------------
-//  Font Size
-// ------------------------------------------
+// Usage: `@include line-height('heading');`
 
+// ----
+//  Font Size
 $font-size-map: (
   "76": 4.75rem,
   "72": 4.5rem,
@@ -97,20 +93,17 @@ $font-size-map: (
     @warn 'IRIS의 폰트 사이즈가 아닙니다! 10, 11, 12, 13, 14, 16, 18, 20, 24, 28, 32, 36, 48, 54, 72, 76 중에서 사용해 주세요.';
   }
 }
+// Usage: `@include font-size('14');`
 
-//-------------------------------------------
+// ----
 //  Font smoothing
-// ------------------------------------------
-
 @mixin font-smoothing {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-//-------------------------------------------
+// ----
 //  Typography
-// ------------------------------------------
-
 @mixin heading-01 {
   @include font-size("72");
   @include font-weight("bold");

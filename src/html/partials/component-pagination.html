@@ -1,0 +1,178 @@
+<!-- context menu -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Pagination</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">페이지네이션은 긴 목록을 여러 페이지로 분할하는 데 사용하며,<br /> 다음 페이지 또는 이전 페이지로 이용하는데 사용합니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>페이지네이션은 <em class="text-emphasis">3개</em> 유형이 있습니다.</li>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Default</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="pagination">
+                <button class="pagination__button button button--link" type="button" title="첫 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-double-left-medium"></use>
+                  </svg>
+                </button>
+                <button class="pagination__button button button--link" type="button" title="이전 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-left-medium"></use>
+                  </svg>
+                </button>
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 1 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 2 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 3 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 4 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 5 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 6 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 7 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 8 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 9 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 10 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <span class="pagination__ellipsis"> ... </span>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 20 </a>
+                  </li>
+                </ul>
+                <button class="pagination__button button button--link" type="button" title="다음 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-right-medium"></use>
+                  </svg>
+                </button>
+                <button class="pagination__button button button--link" type="button" title="마지막 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-double-right-medium"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Short Pagination</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="pagination">
+                <button class="pagination__button button button--link" type="button" title="첫 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-double-left-medium"></use>
+                  </svg>
+                </button>
+                <button class="pagination__button button button--link" type="button" title="이전 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-left-medium"></use>
+                  </svg>
+                </button>
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 1 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <span class="pagination__ellipsis"> ... </span>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#none" class="pagination__link"> 20 </a>
+                  </li>
+                </ul>
+                <button class="pagination__button button button--link" type="button" title="다음 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-right-medium"></use>
+                  </svg>
+                </button>
+                <button class="pagination__button button button--link" type="button" title="마지막 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-double-right-medium"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Input Pagination</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="pagination">
+                <button class="pagination__button button button--link" type="button" disabled="disabled" title="첫 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-double-left-medium"></use>
+                  </svg>
+                </button>
+                <button class="pagination__button button button--link" type="button" title="이전 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-left-medium"></use>
+                  </svg>
+                </button>
+                <ul class="pagination__list">
+                  <span class="pagination__input text-input" role="textbox" contenteditable>1</span>
+                  <span class="pagination__dash">-</span>
+                  <span class="pagination__last-page">20</span>
+                </ul>
+                <button class="pagination__button button button--link" type="button" title="다음 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-right-medium"></use>
+                  </svg>
+                </button>
+                <button class="pagination__button button button--link" type="button" disabled="disabled" title="마지막 페이지로 이동하기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#chevron-double-right-medium"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

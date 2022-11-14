@@ -1,0 +1,575 @@
+<!-- context menu -->
+<!-- Table 마크업과 스타일링 UI 추가 시작 -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Table</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">테이블은 데이터를 효율적으로 구성하고 표시하는데 사용됩니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>테이블은 <em class="text-emphasis">2개</em> 스타일로 구분합니다.</li>
+      <li>thead를 고정하고 tbody만 스크롤 되도록 구조를 분리할 수 있습니다.</li>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Default</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <!-- table-primary -->
+              <table class="table table--primary">
+                <caption class="hidden">Table</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">오브젝트 ID</th>
+                    <th scope="col">변수 명</th>
+                    <th scope="col">변수 값</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
+                  <tr class="tr--selected">
+                    <td>Selected Status</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <!-- table-primary -->
+              <table class="table table--primary table--sm">
+                <caption class="hidden">Table</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">오브젝트 ID</th>
+                    <th scope="col">변수 명</th>
+                    <th scope="col">변수 값</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
+                  <tr class="tr--selected">
+                    <td>Selected Status</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <!-- Drawer 마크업과 스타일링 UI 추가 시작  -->
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Secondary</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <table class="table table--secondary td--gap-sm">
+                <caption class="hidden">Table</caption>
+                <colgroup>
+                  <col width="90" />
+                  <col width="90" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">변수명</th>
+                    <th scope="col">변수값</th>
+                    <th scope="col">추가/삭제</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="text" class="text-input" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <input type="text" class="text-input" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--support" type="button" title="추가">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#plus"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--danger" type="button" title="삭제">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#minus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" class="text-input" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <input type="text" class="text-input" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--support" type="button" title="추가">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#plus"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--danger" type="button" title="삭제">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#minus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table--secondary table--action-buttons-hidable">
+                <caption>* action-buttons가 show/hide 하는 유형</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">대상 오브젝트 ID</th>
+                    <th scope="col">이벤트</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2">
+                      <div class="notification-message notification-message--info">
+                        <svg class="notification-message__icon svg-icon" aria-hidden="true">
+                          <use xlink:href="#info-fill"></use>
+                        </svg>
+                        <span class="notification-message__text">데이터가 없습니다.</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table__icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#write"></use>
+                        </svg>
+                      </span>
+                      <span class="table__subtext">Button-5</span>
+                    </td>
+                    <td>
+                      원래 있던 텍스트
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--link" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#popout"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--link" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#unlink"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table__icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#write"></use>
+                        </svg>
+                      </span>
+                      <span class="table__subtext">Button 5</span>
+                    </td>
+                    <td>
+                      Data
+                      <br />
+                      Received
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--link" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#popout"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--link" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#unlink"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table--secondary">
+                <caption class="hidden">Table</caption>
+                <colgroup>
+                  <col width="160" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">이름</th>
+                    <th scope="col">구분</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="table__subtext">히트맵</span>
+                    </td>
+                    <td>고급 시각화</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table__subtext">미인증사용자_중복시간과멤버예시_미인증사용자_중복시간과멤버예시</span>
+                    </td>
+                    <td>검색</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table__subtext">철도청_예측_pi_pm_5m</span>
+                    </td>
+                    <td>피벗</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table__subtext">test_timediff</span>
+                    </td>
+                    <td>고급 시각화</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table--secondary table--horizontal table--description">
+                <caption>* 제목 / 내용 수평일 경우 (table--horizontal) </caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">행 번호</th>
+                    <td>
+                      <span class="table__icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#write"></use>
+                        </svg>
+                      </span>
+                      미표시
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">미리설정</th>
+                    <td>
+                      <div class="d-flex items-center">
+                        <span class="shadow-style"></span><span>그림자 없음</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">상세보기 버튼</th>
+                    <td>미표시미표시미표시</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <table class="table table--secondary table--sm td--gap-sm">
+                <caption class="hidden">Table</caption>
+                <colgroup>
+                  <col width="90" />
+                  <col width="90" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">변수명</th>
+                    <th scope="col">변수값</th>
+                    <th scope="col">추가/삭제</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="inp-03" class="hidden">Label</label>
+                      <input type="text" id="inp-03" class="text-input text-input--sm" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <label for="inp-04" class="hidden">Label</label>
+                      <input type="text" id="inp-04" class="text-input text-input--sm" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--support button--sm" type="button" title="추가">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#plus"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--danger button--sm" type="button" title="삭제">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#minus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="inp-01" class="hidden">Label</label>
+                      <input type="text" id="inp-01" class="text-input text-input--sm" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <label for="inp-02" class="hidden">Label</label>
+                      <input type="text" id="inp-02" class="text-input text-input--sm" placeholder="placeholder text" />
+                    </td>
+                    <td>
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--support button--sm" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#plus"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--danger button--sm" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#minus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table--secondary table--sm table--action-buttons-hidable">
+                <caption>* action-buttons가 show/hide 하는 유형</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">대상 오브젝트 ID</th>
+                    <th scope="col">이벤트</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2">
+                      <div class="notification-message notification-message--info">
+                        <svg class="notification-message__icon svg-icon" aria-hidden="true">
+                          <use xlink:href="#info-fill"></use>
+                        </svg>
+                        <span class="notification-message__text">데이터가 없습니다.</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table__icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#write"></use>
+                        </svg>
+                      </span>
+                      <span class="table__subtext">Button-5</span>
+                    </td>
+                    <td>
+                      원래 텍스트
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--link button--sm" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#popout"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--link button--sm" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#unlink"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table__icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#write"></use>
+                        </svg>
+                      </span>
+                      <span class="table__subtext">Button 5</span>
+                    </td>
+                    <td>
+                      Data
+                      <br />
+                      Received
+                      <div class="table__action-buttons">
+                        <button class="button button--icon button--link" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#popout"></use>
+                          </svg>
+                        </button>
+                        <button class="button button--icon button--link" type="button" title="icon-button">
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#unlink"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table--secondary table--sm">
+                <caption class="hidden">Table</caption>
+                <colgroup>
+                  <col width="160" />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">이름</th>
+                    <th scope="col">구분</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>히트맵</td>
+                    <td>고급 시각화</td>
+                  </tr>
+                  <tr>
+                    <td>미인증사용자_중복시간과멤버예시</td>
+                    <td>검색</td>
+                  </tr>
+                  <tr>
+                    <td>철도청_예측_pi_pm_5m</td>
+                    <td>피벗</td>
+                  </tr>
+                  <tr>
+                    <td>test_timediff</td>
+                    <td>고급 시각화</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table--secondary table--horizontal table--description table--sm">
+                <caption>* 제목 / 내용 수평일 경우 (table--horizontal) </caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">행 번호</th>
+                    <td>
+                      <span class="table__icon">
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#write"></use>
+                        </svg>
+                      </span>
+                      미표시
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">미리설정</th>
+                    <td>
+                      <div class="checkbox">
+                        <input id="tableCheck01" type="checkbox" class="checkbox__input" value="label">
+                        <label for="tableCheck01" class="checkbox__label">그림자 없음</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">상세보기 버튼</th>
+                    <td>미표시미표시미표시</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Table Scroll</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="table-scroll">
+            <table class="table table--primary">
+              <caption class="hidden">Table</caption>
+              <thead>
+                <tr>
+                  <th scope="col">오브젝트 ID</th>
+                  <th scope="col">변수 명</th>
+                  <th scope="col">변수 값</th>
+                </tr>
+              </thead>
+            </table>
+            <div class="overflow-y" style="max-height: 120px;">
+              <!-- table-primary -->
+              <table class="table table--primary">
+                <caption class="hidden">Table</caption>
+                <tbody>
+                  <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
+                  <tr class="tr--selected">
+                    <td>Selected Status</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <!-- Drawer 마크업과 스타일링 UI 추가 시작  -->
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                  <tr>
+                    <td>GLOBAL</td>
+                    <td>USER_ID</td>
+                    <td>Root</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

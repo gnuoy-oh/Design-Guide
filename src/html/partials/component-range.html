@@ -1,0 +1,56 @@
+<!-- radio -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Range</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">특정 범위를 슬라이더 형태로 지정할 때 사용됩니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>range-input은 <em class="text-emphasis">1개</em> 크기로 구분합니다.</li>
+      <li>range-input은 text-input과 함께 사용할 수도 있습니다.</li>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Default Range-input</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <!-- default -->
+            <p class="component-example__size-label">Size: md</p>
+            <label for="inp-range-01" class="hidden">Label</label>
+            <input type="range" name="shadow.shadow_opacity" min="0" max="100" step="1" class="range-input" id="inp-range-01">
+            <label for="inp-range-02" class="hidden">Label</label>
+            <input type="range" name="shadow.shadow_opacity" min="0" max="100" step="1" class="range-input" id="inp-range-02" disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Range-input + Text-input</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <label for="inp-range-06" class="hidden">Label</label>
+            <!-- default + text-input -->
+            <div class="range-input-group" id=" inp-range-01">
+              <label for="inp-range-03" class="hidden">Label</label>
+              <input type="range" name="shadow.shadow_opacity" min="0" max="100" step="1" class="range-input" id="inp-range-03">
+              <div class="text-input-wrap">
+                <label for="inp-01" class="hidden">Label</label>
+                <input id="inp-01" class="text-input" type="number" 32 min="0" max="100" step="1">
+                <span class="text-input-wrap__suffix">%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,231 @@
+<!-- checkbox -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Check Box</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">체크 박스는 목록 중 선택할 항목이 여러개 있을때 사용합니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>체크박스는 <em class="text-emphasis">2개</em> 크기로 구분합니다.</li>
+      <li>
+        체크박스는 default, hover, checked, indeterminate, disabled <em class="text-emphasis">총 5개</em> 상태를
+        갖습니다.
+      </li>
+      <li>체크박스를 하나만 사용하는 경우 <code class="code-inline">toggle-switch</code>를 사용해 두 상태를 전환하는 것과 같습니다.<br />두개의 차이는 Switch는 상태 변경이 직접 반영되며, Checkbox는 상태 변경 후 Submit 동작을 수행해야 반영됩니다. </li>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Default Checkbox</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group">
+              <!-- 세로 유형인 경우, checkboxs checkboxs--vertical 추가 -->
+              <div class="checkboxs">
+                <!-- default -->
+                <div class="checkbox checkbox--lg">
+                  <input id="check-05" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-05" class="checkbox__label">label</label>
+                </div>
+                <!-- checked -->
+                <div class="checkbox checkbox--lg">
+                  <input id="check-06" type="checkbox" class="checkbox__input" value="label" checked />
+                  <label for="check-06" class="checkbox__label">label</label>
+                </div>
+                <!-- indeterminate -->
+                <div class="checkbox checkbox--lg checkbox--indeterminate">
+                  <input id="check-07" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-07" class="checkbox__label">label</label>
+                </div>
+                <!-- disabled -->
+                <div class="checkbox checkbox--lg checkbox--disabled">
+                  <input id="check-04" type="checkbox" class="checkbox__input" value="label" disabled />
+                  <label for="check-04" class="checkbox__label">label</label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="checkbox checkbox--lg checkbox--disabled">
+                  <input id="check-04" type="checkbox" class="checkbox__input" value="label" checked disabled />
+                  <label for="check-04" class="checkbox__label">label</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <!-- 세로 유형인 경우, checkboxs checkboxs--vertical 추가 -->
+              <div class="checkboxs">
+                <!-- default -->
+                <div class="checkbox">
+                  <input id="check-01" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-01" class="checkbox__label">label</label>
+                </div>
+                <!-- checked -->
+                <div class="checkbox">
+                  <input id="check-02" type="checkbox" class="checkbox__input" value="label" checked />
+                  <label for="check-02" class="checkbox__label">label</label>
+                </div>
+                <!-- indeterminate -->
+                <div class="checkbox checkbox--indeterminate">
+                  <input id="check-03" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-03" class="checkbox__label">label</label>
+                </div>
+                <!-- disabled -->
+                <div class="checkbox checkbox--disabled">
+                  <input id="check-04" type="checkbox" class="checkbox__input" value="label" disabled />
+                  <label for="check-04" class="checkbox__label">label</label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="checkbox checkbox--disabled">
+                  <input id="check-04" type="checkbox" class="checkbox__input" value="label" checked disabled />
+                  <label for="check-04" class="checkbox__label">label</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group">
+              <!-- 세로 유형인 경우, checkboxs checkboxs--vertical 추가 -->
+              <div class="checkboxs">
+                <!-- default -->
+                <div class="checkbox checkbox--sm">
+                  <input id="check-sm-01" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-sm-01" class="checkbox__label">label</label>
+                </div>
+                <!-- checked -->
+                <div class="checkbox checkbox--sm">
+                  <input id="check-sm-02" type="checkbox" class="checkbox__input" value="label" checked />
+                  <label for="check-sm-02" class="checkbox__label">label</label>
+                </div>
+                <!-- indeterminate -->
+                <div class="checkbox checkbox--sm checkbox--indeterminate">
+                  <input id="check-sm-03" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-sm-03" class="checkbox__label">label</label>
+                </div>
+                <!-- disabled -->
+                <div class="checkbox checkbox--sm checkbox--disabled">
+                  <input id="check-sm-04" type="checkbox" class="checkbox__input" value="label" disabled />
+                  <label for="check-sm-04" class="checkbox__label">label</label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="checkbox checkbox--sm checkbox--disabled">
+                  <input id="check-sm-04" type="checkbox" class="checkbox__input" value="label" checked disabled />
+                  <label for="check-sm-04" class="checkbox__label">label</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO [디자인]: 검토 필요 -->
+  <div class="component-variation">
+    <span class="component-variation__name">Checkbox toggle</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group">
+              <div class="checkbox-toggle">
+                <!-- default -->
+                <div class="checkbox checkbox--lg">
+                  <input id="check-toggle-05" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-toggle-05" class="checkbox__label">label</label>
+                </div>
+                <div class="checkbox checkbox--lg">
+                  <input id="check-toggle-07" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-toggle-07" class="checkbox__label">label</label>
+                </div>
+                <!-- checked -->
+                <div class="checkbox checkbox--lg">
+                  <input id="check-toggle-06" type="checkbox" class="checkbox__input" value="label" checked />
+                  <label for="check-toggle-06" class="checkbox__label">label</label>
+                </div>
+                <!-- disabled -->
+                <div class="checkbox checkbox--lg checkbox--disabled">
+                  <input id="check-toggle-04" type="checkbox" class="checkbox__input" value="label" disabled />
+                  <label for="check-toggle-04" class="checkbox__label">label</label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="checkbox checkbox--lg checkbox--disabled">
+                  <input id="check-toggle-04" type="checkbox" class="checkbox__input" value="label" checked disabled />
+                  <label for="check-toggle-04" class="checkbox__label">label</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="checkbox-toggle">
+                <!-- default -->
+                <div class="checkbox">
+                  <input id="check-toggle-01" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-toggle-01" class="checkbox__label">label</label>
+                </div>
+                <!-- checked -->
+                <div class="checkbox">
+                  <input id="check-toggle-02" type="checkbox" class="checkbox__input" value="label" checked />
+                  <label for="check-toggle-02" class="checkbox__label">label</label>
+                </div>
+                <div class="checkbox">
+                  <input id="check-toggle-03" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-toggle-03" class="checkbox__label">label</label>
+                </div>
+                <!-- disabled -->
+                <div class="checkbox checkbox--disabled">
+                  <input id="check-toggle-04" type="checkbox" class="checkbox__input" value="label" disabled />
+                  <label for="check-toggle-04" class="checkbox__label">label</label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="checkbox checkbox--disabled">
+                  <input id="check-toggle-04" type="checkbox" class="checkbox__input" value="label" checked disabled />
+                  <label for="check-toggle-04" class="checkbox__label">label</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group">
+              <div class="checkbox-toggle">
+                <!-- default -->
+                <div class="checkbox checkbox--sm">
+                  <input id="check-toggle-sm-03" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-toggle-sm-03" class="checkbox__label">label</label>
+                </div>
+                <div class="checkbox checkbox--sm">
+                  <input id="check-toggle-sm-01" type="checkbox" class="checkbox__input" value="label" />
+                  <label for="check-toggle-sm-01" class="checkbox__label">label</label>
+                </div>
+                <!-- checked -->
+                <div class="checkbox checkbox--sm">
+                  <input id="check-toggle-sm-02" type="checkbox" class="checkbox__input" value="label" checked />
+                  <label for="check-toggle-sm-02" class="checkbox__label">label</label>
+                </div>
+                <!-- disabled -->
+                <div class="checkbox checkbox--sm checkbox--disabled">
+                  <input id="check-toggle-sm-04" type="checkbox" class="checkbox__input" value="label" disabled />
+                  <label for="check-toggle-sm-04" class="checkbox__label">label</label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="checkbox checkbox--sm checkbox--disabled">
+                  <input id="check-toggle-sm-04" type="checkbox" class="checkbox__input" value="label" checked disabled />
+                  <label for="check-toggle-sm-04" class="checkbox__label">label</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

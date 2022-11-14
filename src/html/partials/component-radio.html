@@ -1,0 +1,336 @@
+<!-- radio -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Radio</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">라디오 버튼은 여러 항목 그룹이 있고 그 그룹에서 하나만 선택할 수 있을때 사용합니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>라디오는 <em class="text-emphasis">2개</em> 크기로 구분합니다.</li>
+      <li>라디오는 default, hover, checked, disabled <em class="text-emphasis">총 4개</em> 상태를 갖습니다.</li>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Default Radio</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group">
+              <div class="radios">
+                <!-- default -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radioId-lg-01" name="radio-group-lg" class="radio__input" value="label" />
+                  <label for="radioId-lg-01" class="radio__label">label </label>
+                </div>
+                <!-- checked -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radioId-lg-02" name="radio-group-lg" class="radio__input" value="label" checked />
+                  <label for="radioId-lg-02" class="radio__label">label </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radioId-lg-03" name="radio-group-lg-disabled" class="radio__input" value="label" disabled />
+                  <label for="radioId-lg-03" class="radio__label">label </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radioId-lg-03" name="radio-group-lg-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radioId-lg-03" class="radio__label">label </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="radios">
+                <!-- default -->
+                <div class="radio">
+                  <input type="radio" id="radioId-01" name="radio-group" class="radio__input" value="label" />
+                  <label for="radioId-01" class="radio__label">label </label>
+                </div>
+                <!-- checked -->
+                <div class="radio">
+                  <input type="radio" id="radioId-02" name="radio-group" class="radio__input" value="label" checked />
+                  <label for="radioId-02" class="radio__label">label </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio">
+                  <input type="radio" id="radioId-03" name="radio-group-disabled" class="radio__input" value="label" disabled />
+                  <label for="radioId-03" class="radio__label">label </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio">
+                  <input type="radio" id="radioId-03" name="radio-group-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radioId-03" class="radio__label">label </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group">
+              <div class="radios">
+                <!-- default -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radioId-sm-01" name="radio-group" class="radio__input" value="label" />
+                  <label for="radioId-sm-01" class="radio__label">label </label>
+                </div>
+                <!-- checked -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radioId-sm-02" name="radio-group" class="radio__input" value="label" checked />
+                  <label for="radioId-sm-02" class="radio__label">label </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radioId-sm-03" name="radio-group-disabled" class="radio__input" value="label" disabled />
+                  <label for="radioId-sm-03" class="radio__label">label </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radioId-sm-03" name="radio-group-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radioId-sm-03" class="radio__label">label </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO [디자인]: 검토 필요 -->
+  <div class="component-variation">
+    <span class="component-variation__name">Radio Switch</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group">
+              <div class="radio-switch">
+                <!-- default -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-lg-01" name="radio-switch-group-lg" class="radio__input" value="label" />
+                  <label for="radio-switch-lg-01" class="radio__label">label </label>
+                </div>
+                <!-- checked -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-lg-02" name="radio-switch-group-lg" class="radio__input" value="label" checked />
+                  <label for="radio-switch-lg-02" class="radio__label">label </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-lg-03" name="radio-switch-group-lg-disabled" class="radio__input" value="label" disabled />
+                  <label for="radio-switch-lg-03" class="radio__label">label </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-lg-03" name="radio-switch-group-lg-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radio-switch-lg-03" class="radio__label">label </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="radio-switch">
+                <!-- default -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-01" name="radio-switch-group" class="radio__input" value="label" />
+                  <label for="radio-switch-01" class="radio__label">label </label>
+                </div>
+                <!-- checked -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-02" name="radio-switch-group" class="radio__input" value="label" checked />
+                  <label for="radio-switch-02" class="radio__label">label </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-03" name="radio-switch-group-disabled" class="radio__input" value="label" disabled />
+                  <label for="radio-switch-03" class="radio__label">label </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-03" name="radio-switch-group-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radio-switch-03" class="radio__label">label </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group">
+              <div class="radio-switch">
+                <!-- default -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-sm-01" name="adio-switch-group-sm" class="radio__input" value="label" />
+                  <label for="radio-switch-sm-01" class="radio__label">label </label>
+                </div>
+                <!-- checked -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-sm-02" name="adio-switch-group-sm" class="radio__input" value="label" checked />
+                  <label for="radio-switch-sm-02" class="radio__label">label </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-sm-03" name="adio-switch-group-sm-disabled" class="radio__input" value="label" disabled />
+                  <label for="radio-switch-sm-03" class="radio__label">label </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-sm-03" name="adio-switch-group-sm-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radio-switch-sm-03" class="radio__label">label </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TODO [디자인]: 검토 필요 -->
+  <div class="component-variation">
+    <span class="component-variation__name">Radio Switch Icon</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group">
+              <div class="radio-switch radio-switch--icon">
+                <!-- default -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-icon-lg-01" name="radio-switch-icon-group-lg" class="radio__input" value="label" />
+                  <label for="radio-switch-icon-lg-01" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- checked -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-icon-lg-02" name="radio-switch-icon-group-lg" class="radio__input" value="label" checked />
+                  <label for="radio-switch-icon-lg-02" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-icon-lg-03" name="radio-switch-icon-group-lg-disabled" class="radio__input" value="label" disabled />
+                  <label for="radio-switch-icon-lg-03" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio radio--lg">
+                  <input type="radio" id="radio-switch-icon-lg-03" name="radio-switch-icon-group-lg-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radio-switch-icon-lg-03" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="radio-switch radio-switch--icon">
+                <!-- default -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-icon-01" name="radio-switch-icon-group" class="radio__input" value="label" />
+                  <label for="radio-switch-icon-01" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- checked -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-icon-02" name="radio-switch-icon-group" class="radio__input" value="label" checked />
+                  <label for="radio-switch-icon-02" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-icon-03" name="radio-switch-icon-group-disabled" class="radio__input" value="label" disabled />
+                  <label for="radio-switch-icon-03" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio">
+                  <input type="radio" id="radio-switch-icon-03" name="radio-switch-icon-group-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radio-switch-icon-03" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group">
+              <div class="radio-switch radio-switch--icon">
+                <!-- default -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-icon-sm-01" name="radio-switch-icon-group-sm" class="radio__input" value="label" />
+                  <label for="radio-switch-icon-sm-01" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- checked -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-icon-sm-02" name="radio-switch-icon-group-sm" class="radio__input" value="label" checked />
+                  <label for="radio-switch-icon-sm-02" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- disabled -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-icon-sm-03" name="radio-switch-icon-group-sm-disabled" class="radio__input" value="label" disabled />
+                  <label for="radio-switch-icon-sm-03" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+                <!-- checked + disabled -->
+                <div class="radio radio--sm">
+                  <input type="radio" id="radio-switch-icon-sm-03" name="radio-switch-icon-group-sm-disabled" class="radio__input" value="label" checked disabled />
+                  <label for="radio-switch-icon-sm-03" class="radio__label">
+                    <svg class="svg-icon radio__icon" aria-hidden="true">
+                      <use xlink:href="#save"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

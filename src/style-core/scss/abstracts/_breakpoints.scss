@@ -1,3 +1,6 @@
+//-------------------------------------------
+//  Breakpoionts
+// ------------------------------------------
 $breakpoints: (
   "breakpoint-xl": (
     max-width: 1440px
@@ -17,16 +20,11 @@ $breakpoints: (
 ) !default;
 
 @mixin respond-to($breakpoint) {
-  // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {
-    // Prints a media query based on the value
     @media only screen and #{inspect(map-get($breakpoints, $breakpoint))} {
       @content;
     }
-  }
-
-  // If the key doesn't exist in the map
-  @else {
+  } @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
@@ -40,4 +38,3 @@ $breakpoints: (
 //     color: blue;
 //   }
 // }
-// https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/

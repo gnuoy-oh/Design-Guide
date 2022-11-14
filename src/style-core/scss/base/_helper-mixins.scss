@@ -20,6 +20,18 @@
   }
 }
 
+// @include multi-text-overflow(line-height 값 px, 줄 수)
+@mixin multi-ellipsis($line-height, $lines) {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: $line-height * $lines;
+  line-height: rem($line-height);
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
 // 숨김 텍스트 - 접근성을 위한 숨김 텍스트
 @mixin hidden {
   position: absolute;
@@ -51,18 +63,19 @@
   height: 100%;
 }
 
+// Hide Table Caption
+@mixin caption-out {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
 // Img Global
 @mixin img-g {
   display: block;
   width: 100%;
-}
-
-// Right Position Center
-@mixin position-right-center($right-spacing) {
-  position: absolute;
-  top: 50%;
-  right: $right-spacing;
-  transform: translateY(-50%);
 }
 
 // 상하와 좌우가 동일한 padding
@@ -81,26 +94,6 @@
   stroke: $stroke-color;
   stroke-width: 1;
   stroke-opacity: 0.4;
-}
-
-// Hide Table Caption
-@mixin caption-out {
-  width: 0;
-  height: 0;
-  padding: 0;
-  margin: 0;
-  visibility: hidden;
-}
-
-@mixin right-position {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-
-@mixin not-scroll {
-  overflow: hidden;
 }
 
 @mixin flex-center {
@@ -130,11 +123,13 @@
   user-select: none;
   cursor: pointer;
 
-  &:focus {
-    outline: none;
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:focus {
+    opacity: 0.25;
+    cursor: not-allowed;
   }
 
-  // Reset intrisic padding in Firefox
   &::-moz-focus-inner {
     padding: 0;
     border: 0;

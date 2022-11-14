@@ -1,4 +1,4 @@
-.side-nav {
+.snb {
   display: flex;
   flex-direction: column; // justify-content: space-between;
   flex: 0 1 12.5rem;
@@ -9,17 +9,17 @@
   border-right: 2px solid $ui-04;
 }
 
-.side-nav__top-container {
+.snb__top-container {
   padding-top: $spacing-xl;
   display: flex;
   justify-content: center;
 }
 
-.side-nav__bottom-container {
+.snb__bottom-container {
   overflow-y: auto;
 }
 
-.side-nav__main-nav {
+.snb__main-nav {
   width: 100%;
   text-transform: capitalize;
 }
@@ -46,7 +46,7 @@
   color: $text-03;
 }
 
-.side-nav__logo {
+.snb__logo {
   @include font-size("20");
   margin: $spacing-md 0;
   color: $text-01;
@@ -54,7 +54,7 @@
   text-decoration: none;
 }
 
-.side-nav__logo em {
+.snb__logo em {
   font-weight: 700;
 }
 

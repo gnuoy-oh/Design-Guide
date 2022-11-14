@@ -10,17 +10,57 @@
 </head>
 
 <body>
-  <div class="layout-root">
-    <nav class="side-nav">@@include('../partials/side-nav.html')</nav>
+  <div class="layout">
+    <nav class="snb">@@include('../partials/snb.html')</nav>
     <div class="container">
       <main class="content">
+        <div class="page" id="page--color">
+          @@include('../partials/style-color.html')
+        </div>
         <div class="page" id="page--button">
           @@include('../partials/component-button.html')
+        </div>
+        <div class="page" id="page--checkbox">
+          @@include('../partials/component-checkbox.html')
+        </div>
+        <div class="page" id="page--notification">
+          @@include('../partials/component-notification.html')
+        </div>
+        <div class="page" id="page--pagination">
+          @@include('../partials/component-pagination.html')
+        </div>
+        <div class="page" id="page--radio">
+          @@include('../partials/component-radio.html')
+        </div>
+        <div class="page" id="page--range">
+          @@include('../partials/component-range.html')
+        </div>
+        <div class="page" id="page--select">
+          @@include('../partials/component-select.html')
+        </div>
+        <div class="page" id="page--steps">
+          @@include('../partials/component-steps.html')
+        </div>
+        <div class="page" id="page--tab">
+          @@include('../partials/component-tab.html')
+        </div>
+        <div class="page" id="page--table">
+          @@include('../partials/component-table.html')
+        </div>
+        <div class="page" id="page--tag">
+          @@include('../partials/component-tag.html')
+        </div>
+        <div class="page" id="page--text-input">
+          @@include('../partials/component-text-input.html')
+        </div>
+        <div class="page" id="page--textarea">
+          @@include('../partials/component-textarea.html')
         </div>
       </main>
       <footer class="footer">@@include('../partials/footer.html')</footer>
     </div>
   </div>
+  <script src="../dist/js/main.bundle.js"></script>
 </body>
 
 </html>
