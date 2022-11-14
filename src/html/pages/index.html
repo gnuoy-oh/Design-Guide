@@ -10,18 +10,17 @@
 </head>
 
 <body>
-  <header>
-    @@include('../partials/header.html')
-  </header>
-  <main>
-    @@include('../partials/component-tab.html')
-    @@include('../partials/component-navigation.html')
-    @@include('../partials/component-notification.html')
-  </main>
-
-  <footer>
-    @@include('../partials/footer.html')
-  </footer>
+  <div class="layout-root">
+    <nav class="side-nav">@@include('../partials/side-nav.html')</nav>
+    <div class="container">
+      <main class="content">
+        <div class="page" id="page--button">
+          @@include('../partials/component-button.html')
+        </div>
+      </main>
+      <footer class="footer">@@include('../partials/footer.html')</footer>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,149 @@
+// -------------------
+// color
+// -------------------
+#page_color .component-variation {
+  margin-top: $spacing-lg;
+}
+
+.color-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: $spacing-lg;
+  max-width: rem(800px);
+}
+
+@mixin color-vars($color) {
+  background-color: $color;
+  border-color: darken($color, 12%);
+}
+
+.color-card {
+  margin-bottom: $spacing-lg;
+  margin-right: $spacing-md;
+
+  p {
+    padding: 0;
+  }
+
+  .primary {
+    // background-color: $primary;
+    // border-color: darken($primary, 12%);
+    @include color-vars($primary);
+  }
+
+  .secondary {
+    @include color-vars($secondary);
+  }
+
+  .negative {
+    @include color-vars($negative);
+  }
+
+  .ui-01 {
+    @include color-vars($ui-01);
+  }
+
+  .ui-02 {
+    @include color-vars($ui-02);
+  }
+
+  .ui-03 {
+    @include color-vars($ui-03);
+  }
+
+  .ui-04 {
+    @include color-vars($ui-04);
+  }
+
+  .text-01 {
+    @include color-vars($text-01);
+  }
+
+  .text-02 {
+    @include color-vars($text-02);
+  }
+
+  .text-03 {
+    @include color-vars($text-03);
+  }
+
+  .text-04 {
+    @include color-vars($text-04);
+  }
+
+  .text-05 {
+    @include color-vars($text-05);
+  }
+
+  .link {
+    @include color-vars($link);
+  }
+
+  .icon-01 {
+    @include color-vars($icon-01);
+  }
+
+  .icon-02 {
+    @include color-vars($icon-02);
+  }
+
+  .inverse-01 {
+    @include color-vars($inverse-01);
+  }
+
+  .field-bg {
+    @include color-vars($field-bg);
+  }
+
+  .field-border {
+    @include color-vars($field-border);
+  }
+
+  .support-01 {
+    @include color-vars($support-01);
+  }
+
+  .support-02 {
+    @include color-vars($support-02);
+  }
+
+  .support-03 {
+    @include color-vars($support-03);
+  }
+
+  .support-04 {
+    @include color-vars($support-04);
+  }
+
+  .overlay-01 {
+    @include color-vars($overlay-01);
+  }
+
+  .overlay-02 {
+    @include color-vars($overlay-02);
+  }
+}
+
+.color-card__example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(120px);
+  height: rem(80px);
+  margin-bottom: $spacing-sm;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.color-card__key {
+  @include font-size("14");
+  // @include line-height("body");
+  color: $text-02;
+}
+
+.color-card__value {
+  @include font-size("12");
+  // @include line-height("body");
+}

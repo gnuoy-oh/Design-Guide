@@ -4,7 +4,6 @@ $font-path: "/src/style-core/fonts/";
 @import "/src/style-core/scss/core-index.scss";
 
 // Project Style
-@import "./config/vars";
-@import "./layout/header";
-@import "./layout/gnb";
-@import "./layout/views";
+@import "./layout/color-card";
+@import "./layout/design-guide";
+@import "./layout/side-nav";

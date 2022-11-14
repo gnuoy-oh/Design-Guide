@@ -1,0 +1,713 @@
+<!-- button -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Button</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">버튼은 사용자가 클릭하거나 터치 할 때 발생할 동작을 나타냅니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>
+        버튼은 <em class="text-emphasis">3개</em> 크기로 구분합니다.<br />이
+        이외의 버튼 스타일은 사용하지 않습니다. 각 버튼의 설명을 숙지하고 목적에 맞게 사용하도록합니다.
+      </li>
+      <li>버튼에 아이콘을 조합하여 사용할 경우 버튼 텍스트를 <code class="code-inline">span</code>태그로 감싸 <code class="code-inline">button__text</code> 라는 클래스를 추가해 사용합니다.</li>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Primary Button</span>
+    <p class="component-variation__desc">화면에서 가장 주요한 액션에 사용하는 버튼입니다. 한 화면에 한번만 사용하는걸 기본으로 합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--primary button--lg" type="button">
+                <span class="button__text">Primary Button</span>
+              </button>
+              <button class="button button--primary button--lg" type="button" disabled="disabled">
+                <span class="button__text">Primary Button</span>
+              </button>
+              <button class="button button--primary button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg><span class="button__text">Primary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--primary button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--primary" type="button">
+                <span class="button__text">Primary Button</span>
+              </button>
+              <button class="button button--primary" type="button" disabled="disabled">
+                <span class="button__text">Primary Button</span>
+              </button>
+              <button class="button button--primary" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg><span class="button__text">Primary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--primary" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--primary button--sm" type="button">
+                <span class="button__text">Primary Button</span>
+              </button>
+              <button class="button button--primary button--sm" type="button" disabled="disabled">
+                <span class="button__text">Primary Button</span>
+              </button>
+              <button class="button button--primary button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg><span class="button__text">Primary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--primary button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Secondary Button</span>
+    <p class="component-variation__desc">primary와 default 버튼의 중간 정도 위계를 갖는 액션에 사용합니다. </p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--secondary button--lg" type="button">Secondary Button</button>
+              <button class="button button--secondary button--lg" type="button" disabled="disabled">
+                Secondary Button
+              </button>
+              <button class="button button--secondary button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Secondary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--secondary button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--secondary" type="button">Secondary Button</button>
+              <button class="button button--secondary" type="button" disabled="disabled">Secondary Button</button>
+              <button class="button button--secondary" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Secondary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--secondary" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--secondary button--sm" type="button">Secondary Button</button>
+              <button class="button button--secondary button--sm" type="button" disabled="disabled">
+                Secondary Button
+              </button>
+              <button class="button button--secondary button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Secondary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--secondary button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Tertiary Button</span>
+    <p class="component-variation__desc">가장 기본이 되는 버튼입니다. 일반적인 상황에 사용합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--tertiary button--lg" type="button">Tertiary Button</button>
+              <button class="button button--tertiary button--lg" type="button" disabled="disabled">
+                Tertiary Button
+              </button>
+              <button class="button button--tertiary button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Tertiary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--tertiary button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--tertiary" type="button">Tertiary Button</button>
+              <button class="button button--tertiary" type="button" disabled="disabled">Tertiary Button</button>
+              <button class="button button--tertiary" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Tertiary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--tertiary" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--tertiary button--sm" type="button">Tertiary Button</button>
+              <button class="button button--tertiary button--sm" type="button" disabled="disabled">
+                Tertiary Button
+              </button>
+              <button class="button button--tertiary button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Tertiary Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--tertiary button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Link Button</span>
+    <p class="component-variation__desc">링크와 같이 명확한 페이지 이동 등의 액션에 사용합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--link button--lg" type="button">Link Button</button>
+              <button class="button button--link button--lg" type="button" disabled="disabled">
+                Link Button
+              </button>
+              <button class="button button--link button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Link Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--link button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--link" type="button">Link Button</button>
+              <button class="button button--link" type="button" disabled="disabled">Link Button</button>
+              <button class="button button--link" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Link Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--link" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--link button--sm" type="button">Link Button</button>
+              <button class="button button--link button--sm" type="button" disabled="disabled">
+                Link Button
+              </button>
+              <button class="button button--link button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Link Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--link button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Support Button</span>
+    <p class="component-variation__desc">입력이나 행위 중 긍정적인 액션에 사용합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--support button--lg" type="button">Support Button</button>
+              <button class="button button--support button--lg" type="button" disabled="disabled">
+                Support Button
+              </button>
+              <button class="button button--support button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Support Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--support button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--support" type="button">Support Button</button>
+              <button class="button button--support" type="button" disabled="disabled">Support Button</button>
+              <button class="button button--support" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Support Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--support" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--support button--sm" type="button">Support Button</button>
+              <button class="button button--support button--sm" type="button" disabled="disabled">
+                Support Button
+              </button>
+              <button class="button button--support button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Support Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--support button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Danger Button</span>
+    <p class="component-variation__desc">삭제 또는 탈퇴 등 주의를 요하는 행위에 사용하는 버튼입니다. </p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--danger button--lg" type="button">Danger Button</button>
+              <button class="button button--danger button--lg" type="button" disabled="disabled">
+                Danger Button
+              </button>
+              <button class="button button--danger button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#trash"></use>
+                </svg>
+                <span class="button__text">Danger Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--danger button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#trash"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--danger" type="button">Danger Button</button>
+              <button class="button button--danger" type="button" disabled="disabled">Danger Button</button>
+              <button class="button button--danger" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#trash"></use>
+                </svg>
+                <span class="button__text">Danger Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--danger" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#trash"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--danger button--sm" type="button">Danger Button</button>
+              <button class="button button--danger button--sm" type="button" disabled="disabled">
+                Danger Button
+              </button>
+              <button class="button button--danger button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#trash"></use>
+                </svg>
+                <span class="button__text">Danger Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--danger button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#trash"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Negative Button</span>
+    <p class="component-variation__desc">삭제 또는 탈퇴 등 주의를 요하는 행위에 사용하는 버튼입니다. <br /> Danger 버튼 보다 더 강한 환기가 필요할 때 사용합니다. <br /> 한 화면에 한번만 사용하는걸 기본으로 합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--negative button--lg" type="button">Negative Button</button>
+              <button class="button button--negative button--lg" type="button" disabled="disabled">
+                Negative Button
+              </button>
+              <button class="button button--negative button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Negative Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--negative button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--negative" type="button">Negative Button</button>
+              <button class="button button--negative" type="button" disabled="disabled">Negative Button</button>
+              <button class="button button--negative" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Negative Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--negative" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--negative button--sm" type="button">Negative Button</button>
+              <button class="button button--negative button--sm" type="button" disabled="disabled">
+                Negative Button
+              </button>
+              <button class="button button--negative button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Negative Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--negative button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Underline Button</span>
+    <p class="component-variation__desc">페이지 이동 등 링크와 같은 행위에 사용하는 버튼입니다. 일반적인 버튼보다 조금 더 가벼운 행위에 사용합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline button--lg" type="button">Underline Button</button>
+              <button class="button button--underline button--lg" type="button" disabled="disabled">
+                Underline Button
+              </button>
+              <button class="button button--underline button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline" type="button">Underline Button</button>
+              <button class="button button--underline" type="button" disabled="disabled">Underline Button</button>
+              <button class="button button--underline" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline button--sm" type="button">Underline Button</button>
+              <button class="button button--underline button--sm" type="button" disabled="disabled">
+                Underline Button
+              </button>
+              <button class="button button--underline button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Underline Support Button</span>
+    <p class="component-variation__desc">페이지 이동 등 링크와 같은 행위에 사용하는 버튼입니다. 일반적인 버튼보다 조금 더 가벼운 행위에 사용합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline-support button--lg" type="button">Underline Button</button>
+              <button class="button button--underline-support button--lg" type="button" disabled="disabled">
+                Underline Support Button
+              </button>
+              <button class="button button--underline-support button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Support Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline-support button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline-support" type="button">Underline Support Button</button>
+              <button class="button button--underline-support" type="button" disabled="disabled">Underline Support Button</button>
+              <button class="button button--underline-support" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Support Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline-support" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline-support button--sm" type="button">Underline Support Button</button>
+              <button class="button button--underline-support button--sm" type="button" disabled="disabled">
+                Underline Support Button
+              </button>
+              <button class="button button--underline-support button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Support Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline-support button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Underline Negative Button</span>
+    <p class="component-variation__desc">페이지 이동 등 링크와 같은 행위에 사용하는 버튼입니다. 일반적인 버튼보다 조금 더 가벼운 행위에 사용합니다.</p>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline-negative button--lg" type="button">Underline Button</button>
+              <button class="button button--underline-negative button--lg" type="button" disabled="disabled">
+                Underline Negative Button
+              </button>
+              <button class="button button--underline-negative button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Negative Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline-negative button--lg" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline-negative" type="button">Underline Negative Button</button>
+              <button class="button button--underline-negative" type="button" disabled="disabled">Underline Negative Button</button>
+              <button class="button button--underline-negative" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Negative Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline-negative" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group component-examle__item-group--column">
+              <button class="button button--underline-negative button--sm" type="button">Underline Negative Button</button>
+              <button class="button button--underline-negative button--sm" type="button" disabled="disabled">
+                Underline Negative Button
+              </button>
+              <button class="button button--underline-negative button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+                <span class="button__text">Underline Negative Button</span>
+              </button>
+              <button title="icon-button" class="button button--icon button--underline-negative button--sm" type="button">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use xlink:href="#save"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
