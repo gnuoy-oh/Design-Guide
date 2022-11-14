@@ -1,0 +1,353 @@
+// -------------------------
+// Table
+// -------------------------
+.table {
+  width: 100%;
+  border: 1px solid $ui-04;
+}
+
+.table caption {
+  @include font-weight("light");
+  @include font-size("12");
+  margin-bottom: $spacing-xs;
+  color: $text-03;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  @include font-weight("regular");
+  @include font-size("14");
+  position: relative;
+  height: $default-height-lg;
+  padding: $spacing-2xs $spacing-xs;
+  color: $text-02;
+  vertical-align: middle;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  line-height: 1.3;
+}
+
+.table th {
+  position: relative;
+}
+
+th .button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -$spacing-2xs;
+}
+
+.table td {
+  background-color: $ui-02;
+}
+
+.table__action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__action-buttons .button + .button {
+  margin-left: $spacing-2xs;
+}
+
+.table--action-buttons-hidable .table--action-buttons {
+  display: none;
+}
+
+.table--action-buttons-hidable tr:hover .table__action-buttons {
+  display: flex;
+}
+
+.table--action-buttons-hidable td {
+  position: relative;
+}
+
+.table--action-buttons-hidable .table__action-buttons {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: $ui-01;
+  transform: translate(-50%, -50%);
+}
+
+.table__icon {
+  display: inline-block;
+  height: rem(20px);
+  vertical-align: middle;
+}
+
+.table__icon .svg-icon {
+  @include svg-icon-size(20px);
+}
+
+.table__subtext {
+  display: inline;
+  margin-right: -$spacing-2xs;
+  vertical-align: middle;
+  color: $text-03;
+}
+
+.table .notification-message {
+  justify-content: center;
+}
+
+// -------------------------
+// Status
+// -------------------------
+.table tr:hover > td {
+  background-color: $hover-row;
+}
+
+.table .tr--selected td,
+.table .tr--selected:hover td {
+  background-color: $ui-01 !important;
+  color: $active-primary !important;
+}
+
+// -------------------------
+// Theme - table--primary
+// -------------------------
+.table--primary tr:nth-child(2n + 1) td {
+  background-color: $odd-row;
+}
+
+.table--primary tr:nth-child(2n + 1):hover td {
+  background-color: $hover-row;
+}
+
+.table--primary th {
+  background-color: $ui-02;
+  border-bottom: 1px solid $ui-04;
+}
+
+// -------------------------
+// Theme - table--secondary
+// -------------------------
+.table--secondary tr:nth-child(2n) td {
+  background-color: $odd-row;
+}
+
+.table--secondary tr td.table__notification {
+  background-color: $ui-02;
+  text-align: left;
+}
+
+.table--secondary .table__notification .notification-message {
+  justify-content: left;
+  padding-left: $spacing-2xs;
+}
+
+.table--secondary tr:hover > td {
+  background: $ui-01;
+}
+
+.table--secondary th {
+  background-color: $hover-row;
+}
+
+.table--secondary th + th {
+  &:after {
+    content: "";
+    width: rem(1px);
+    height: rem(14px);
+    background-color: $ui-04;
+    position: absolute;
+    top: 50%;
+    margin-top: rem(-7px);
+    left: rem(-1px);
+  }
+}
+
+// -------------------------
+// Theme - table--horizontal
+// ------------------------
+.table--horizontal tr:nth-child(2n) td {
+  background-color: $ui-02;
+}
+
+.table--horizontal th {
+  text-align: left;
+}
+
+// -------------------------
+// Theme - table--description
+// -------------------------
+.table--description tr:hover > td {
+  background-color: $ui-02;
+}
+
+// -------------------------
+// Table overwrite
+// -------------------------
+.table__color-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__color-picker-button {
+  @include button-base;
+  position: relative;
+  width: rem(26px);
+  height: rem(26px);
+  background-color: $ui-02;
+  border-radius: 50%;
+  border: 1px solid $ui-04;
+  vertical-align: middle;
+}
+
+.table__color-picker-inner {
+  position: absolute;
+  width: rem(19px);
+  height: rem(19px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.text-input.table__color-picker-input {
+  width: rem(80px);
+  margin-left: $spacing-2xs;
+}
+
+// -------------------------
+// size
+// -------------------------
+.table--sm th,
+.table--sm td {
+  @include font-size("13");
+  height: $default-height-md;
+}
+
+.td--gap-sm td {
+  padding: $spacing-3xs $spacing-2xs;
+}
+
+// -------------------------
+// table complexe type
+// -------------------------
+.table-wrap {
+  display: block;
+  // flex-direction: column;
+}
+
+.table__toolbar {
+  display: flex;
+  margin-bottom: $spacing-2xs;
+}
+
+.table__toolbar-right-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.table__toolbar-filter {
+  display: flex;
+  align-items: center;
+}
+
+.table__toolbar-title {
+  @include ellipsis();
+  @include font-weight("regular");
+  @include font-size("13");
+  @include line-height("heading");
+  color: $text-02;
+}
+
+.table__result-count-text {
+  color: $text-02;
+}
+
+.table__result-count-filtered-text {
+  margin-left: $spacing-xs;
+  color: $text-02;
+}
+
+.table__footbar {
+  display: flex;
+  margin-top: $spacing-xs;
+}
+
+// -------------------------
+// table scroll
+// -------------------------
+.table-scroll {
+  // height: 100%;
+  border: 1px solid $ui-04;
+}
+
+.table-scroll .table {
+  border: 0;
+}
+
+.table-scroll thead {
+  border-bottom: 1px solid $ui-04;
+}
+
+.table-scroll td {
+  word-break: break-all;
+}
+
+// -------------------------
+// table ellipsis
+// -------------------------
+.table--ellipsis {
+  table-layout: fixed;
+}
+
+.table--ellipsis td {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// -------------------------
+// table cursor pointer
+// -------------------------
+.table--cursor-pointer tbody tr {
+  cursor: pointer;
+}
+
+.table--cursor-pointer .notification-message {
+  cursor: default;
+}
+
+// -------------------------
+// table summary, details
+// -------------------------
+.table__summary {
+  .table__summary-target {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .table__summary-icon {
+      display: inline-flex;
+    }
+  }
+
+  .table__summary-target-text:hover {
+    text-decoration: underline;
+  }
+}
+
+.table__summary-target-text {
+  @include ellipsis;
+}
+
+.table__summary-icon {
+  display: none;
+  margin-left: auto;
+}
+
+.table__summary--selected .table__summary-icon {
+  display: inline-flex;
+  transform: rotate(-180deg);
+}

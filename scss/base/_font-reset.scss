@@ -1,5 +1,7 @@
 @use "sass:math";
 
+// ----
+// default font size
 $base-default-size: 16px !default;
 
 @function rem($px) {
@@ -26,13 +28,12 @@ code {
 }
 
 strong {
-  font-weight: 700;
+  @include font-weight("medium");
 }
 
 a {
   color: $link;
-}
-
-a:hover {
-  color: $primary;
+  &:hover {
+    color: $primary;
+  }
 }
