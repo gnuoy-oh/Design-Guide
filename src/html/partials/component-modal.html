@@ -1,0 +1,65 @@
+<!-- modal -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Modal</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">모달은 페이지의 제일 상단의 창으로 사용자의 주의를 하나의 작업이나 정보에 집중시킵니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>
+        모달 바디 영역은 내부 여백 사이즈를 기준으로 <em class="text-emphasis">4개</em> Modifier를 갖습니다.
+        <ul>
+          <li><code class="code-inline">defalut</code>: 0</li>
+          <li><code class="code-inline">modal__body--sm</code>: 16px</li>
+          <li><code class="code-inline">modal__body--md</code>: 32px</li>
+          <li><code class="code-inline">modal__body--lg</code>: 48px</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Default Modal</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="modal" style="position: static;" role="dialog" aria-modal="true">
+            <div class="modal__head">
+              <div class="modal__head-title">
+                <span class="modal__head-title-text">Title</span>
+                <span class="modal__head-subtitle">subtitle</span>
+              </div>
+              <div class="modal__head-close-button">
+                <button class="button button--icon button--link button--sm" title="닫기">
+                  <svg class="svg-icon" aria-hidden="true">
+                    <use xlink:href="#close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="modal__body modal__body--sm">
+              <p>modal contents modal contents modal contents modal contents</p>
+            </div>
+            <div class="modal__foot">
+              <button class="button button--tertiary button--lg" type="button">
+                <span>초기화</span>
+              </button>
+              <button class="button button--danger button--lg" type="button">
+                <span>삭제</span>
+              </button>
+              <div class="modal__foot-main-buttons">
+                <button class="button button--link button--lg" type="button">
+                  <span>취소</span>
+                </button>
+                <button class="button button--primary button--lg" type="button">
+                  <span>저장</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

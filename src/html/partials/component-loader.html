@@ -1,0 +1,170 @@
+<!-- loader -->
+<div class="page-header">
+  <h2 class="page-header__lable">component</h2>
+  <h3 class="page-header__title">Loader</h3>
+</div>
+<div class="page-content">
+  <p class="page__desc">로더는 데이터를 검색하거나 화면이 느리게 뜨는 경우 사용합니다.<br /> 사용자에게 프로세스가 진행중임을 알리는데에 도움이 됩니다.</p>
+  <div class="page__usage md">
+    <ul>
+      <li>로더는 스피너 형태와 바 형태 2개로 구분합니다.</li>
+      <ul>
+        <li>스피너형 로더
+          <ul>
+            <li>
+              로더는 3개 사이즈로 구분합니다.
+              <ul>
+                <li><code class="code-inline">loader--sm</code>: 버튼 등 Form 요소나 텍스트 수준 영역 로딩</li>
+                <li><code class="code-inline">loader--md</code>: 카드 수준의 블록 영역 로딩</li>
+                <li><code class="code-inline">loader--sm</code>: 페이지 영역 로딩</li>
+              </ul>
+            </li>
+            <li><code class="code-inline">overlay</code>는 loader 아래에 있는 컨텐츠를 조작할 수 없는 경우 사용합니다.</li>
+            <li>
+              로더는 오버레이는 3개 스타일로 구분합니다.
+              <ul>
+                <li><code class="code-inline">overlay--dark</code></li>
+                <li><code class="code-inline">overlay--mono</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>바형 로더
+          <ul>
+            <li>바형 로더는 2개 스타일로 구분합니다</li>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Loader</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group">
+              <div class="loader loader--lg" role="alert" aria-live="assertive">
+                <div class="loader__spinner"></div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: md</p>
+            <div class="component-examle__item-group">
+              <div class="loader loader--md" role="alert" aria-live="assertive">
+                <div class="loader__spinner"></div>
+              </div>
+            </div>
+          </div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: sm</p>
+            <div class="component-examle__item-group">
+              <div class="loader loader--sm" role="alert" aria-live="assertive">
+                <div class="loader__spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Loader Overlay - Default</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="overlay">
+            <div class="loader loader--md" role="alert" aria-live="assertive">
+              <div class="loader__spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Loader Overlay - Dark</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="overlay overlay--dark">
+            <div class="loader loader--md" role="alert" aria-live="assertive">
+              <div class="loader__spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Loader Overlay - Mono</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="overlay overlay--mono">
+            <div class="loader loader--md" role="alert" aria-live="assertive">
+              <div class="loader__spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Loader - button</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div>
+          <div class="component-example__row">
+            <p class="component-example__size-label">Size: lg</p>
+            <div class="component-examle__item-group">
+              <button class="button button--lg button--primary" type="button">
+                <div class="loader loader--sm" role="alert" aria-live="assertive">
+                  <div class="loader__spinner"></div>
+                </div>
+                <span class="button__text">Button</span>
+              </button>
+              <button class="button button--lg button--primary" type="button" disabled="disabled">
+                <div class="loader loader--sm" role="alert" aria-live="assertive">
+                  <div class="loader__spinner"></div>
+                </div>
+                <span class="button__text">Button</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Loader Bar Type - Default</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div style="width: 400px;">
+          <div class="loading-bar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component-variation">
+    <span class="component-variation__name">Loader Bar Type - Mono</span>
+    <div class="component-example">
+      <div class="component-example__live">
+        <div style="width: 400px;">
+          <div class="loading-bar loading-bar--mono">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
