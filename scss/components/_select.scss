@@ -1,0 +1,121 @@
+// -------------------------
+// Select
+// -------------------------
+
+.select {
+  position: relative;
+
+  &--open {
+    .select-selector {
+      &__button {
+        border-color: $secondary;
+        border-bottom: none;
+        border-radius: rem(4px) rem(4px) 0 0;
+      }
+
+      &__title {
+        color: $text-02;
+      }
+
+      &__icon {
+        &--arrow {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    .select-container {
+      display: block;
+      border-color: $secondary;
+      border-top: none;
+      border-radius: 0 0 rem(4px) rem(4px);
+    }
+  }
+
+  &--close {
+    .select-container {
+      display: none;
+    }
+  }
+}
+
+.select-selector {
+  position: relative;
+  height: rem(53px);
+
+  &__button {
+    @include button-base;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    padding: rem(4px) rem(45px) rem(4px) rem(50px);
+    background-color: $ui-01;
+    border: 1px solid $ui-02;
+    border-radius: rem(4px);
+  }
+
+  &__title {
+    @include ellipsis();
+    @include font-size("15");
+    color: $text-04;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    margin-top: rem(-10px);
+    pointer-events: none;
+    transform: none;
+
+    &--calender {
+      left: rem(17px);
+      // background-image: url("#{$img-path}/icon/icon-calender.png");
+      background-size: rem(14.5px) rem(12.5px);
+    }
+
+    &--clock {
+      left: rem(17px);
+      // background-image: url("#{$img-path}/icon/icon-clock.png");
+      background-size: rem(13.5px) rem(13.5px);
+    }
+
+    &--arrow {
+      right: rem(21px);
+      width: rem(17px);
+      height: rem(9.5px);
+      margin-top: rem(-3px);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='34.4px' height='19.4px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(0, 0, 0)' stroke-width='1.6px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M31.800,1.800 L16.800,16.800 L31.800,1.800 Z'/%3E%3Cpath fill-rule='evenodd' stroke='rgb(0, 0, 0)' stroke-width='1.6px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M16.800,16.800 L1.800,1.800 L16.800,16.800 Z'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.select-container {
+  z-index: z("float");
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: $ui-01;
+  border: 1px solid $ui-02;
+  overflow: auto;
+  border-radius: rem(4px);
+  color: $text-05;
+
+  &__list {
+    background-color: $ui-01;
+  }
+
+  &__button {
+    @include button-base;
+    width: 100%;
+    height: rem(50px);
+    justify-content: flex-start;
+    padding: rem(4px) rem(45px) rem(4px) rem(50px);
+    background-color: $ui-01;
+    &:focus-visible:not(:disabled) {
+      background-color: $ui-01;
+    }
+  }
+}
