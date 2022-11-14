@@ -123,27 +123,17 @@ table {
   border-spacing: 0;
 }
 
-// reset a tag 논의 필요
-// a {
-//   text-decoration: none;
-//   color: $text-01;
-// }
-
-// a:active,
-// a:hover {
-//   text-decoration: none;
-// }
-
-// a:active {
-//   background-color: transparent;
-// }
-
 a:focus,
 button:focus,
 input:focus {
-  outline: 0;
+  outline: none;
 }
-// reset a tag 논의 필요 끝
+
+a:focus:focus-visible,
+button:focus:focus-visible,
+input:focus:focus-visible {
+  outline: rem(1px) dashed $support;
+}
 
 * {
   box-sizing: border-box;
