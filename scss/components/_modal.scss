@@ -1,0 +1,69 @@
+// -------------------------
+// Modal
+// -------------------------
+.modal-group {
+  display: none;
+  &--open {
+    display: block;
+  }
+}
+
+.overlay {
+  z-index: z("overlay");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-color: $text-05;
+  opacity: 0.6;
+}
+
+.modal {
+  z-index: z("modal");
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: rem(358px);
+  background-color: $ui-01;
+  border-radius: rem(10px);
+  transform: translate(-50%, -50%);
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(41.5px) rem(15px) 0 rem(15px);
+
+    img {
+      width: rem(62px);
+      height: rem(62px);
+    }
+  }
+
+  &__text {
+    @include font-size("15");
+    margin-top: rem(31.5px);
+    color: $text-05;
+    text-align: center;
+  }
+
+  &__footer {
+    display: flex;
+    padding: rem(15px);
+    align-items: center;
+
+    &-button {
+      @include button-base;
+      flex: 1;
+      height: rem(49px);
+      color: $ui-01;
+      border-radius: rem(6px);
+
+      &--submit {
+        margin-left: rem(9px);
+        background-color: $secondary;
+      }
+    }
+  }
+}

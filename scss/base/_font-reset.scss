@@ -1,3 +1,11 @@
+@use "sass:math";
+
+$base-default-size: 16px !default;
+
+@function rem($px) {
+  @return math.div($px, $base-default-size) * 1rem;
+}
+
 html {
   font-size: $base-default-size; // 16px = 1rem
 }
