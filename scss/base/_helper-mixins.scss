@@ -36,15 +36,15 @@
 
 // Image Replacement Phark Method
 @mixin ir-pm {
-  	/* 레이아웃에 영향을 끼치지 않도록 */
-	position: absolute;
-	/* 스크린 리더가 읽을 수 있도록 */
-	width: 1px;
-	height: 1px;
-	/* 눈에 보이는 부분을 제거 */
-	clip: rect(0 0 0 0);
-	margin: -1px;
-	overflow: hidden;
+  /* 레이아웃에 영향을 끼치지 않도록 */
+  position: absolute;
+  /* 스크린 리더가 읽을 수 있도록 */
+  width: 1px;
+  height: 1px;
+  /* 눈에 보이는 부분을 제거 */
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  overflow: hidden;
 }
 
 // Img Global
@@ -85,7 +85,7 @@
 @mixin svg-icon-stroke($stroke-color) {
   stroke: $stroke-color;
   stroke-width: 1;
-  stroke-opacity: .4;
+  stroke-opacity: 0.4;
 }
 
 // Hide Table Caption
