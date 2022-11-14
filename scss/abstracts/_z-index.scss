@@ -1,5 +1,5 @@
 //-------------------------------------------
-//  z-index
+//  Z-index
 // ------------------------------------------
 
 $z-indexes: (
@@ -14,12 +14,9 @@ $z-indexes: (
   layer: 510,
   float: 1,
   hidden: - 1,
-  overflowHidden: - 1,
   floating: 10000
 );
 
-// Useage:
-//     z-index: z('modal');
 @function z($layer) {
   @if not map-has-key($z-indexes, $layer) {
     @warn '$z-indexes 맵에서 `#{$layer}` 에 해당하는 layer를 찾지 못했습니다.';
@@ -27,3 +24,6 @@ $z-indexes: (
 
   @return map-get($z-indexes, $layer);
 }
+
+// Usage:
+//     z-index: z('modal');

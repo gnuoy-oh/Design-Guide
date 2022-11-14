@@ -21,16 +21,21 @@
 // components
 @import "./components/button";
 @import "./components/checkbox";
-@import "./components/navigation";
 @import "./components/modal";
+@import "./components/navigation";
 @import "./components/notification";
+@import "./components/pagination";
+@import "./components/progressbar";
+@import "./components/radio";
+@import "./components/range";
 @import "./components/select";
+@import "./components/steps";
 @import "./components/tab";
+@import "./components/table";
+@import "./components/tag";
 @import "./components/text-input";
+@import "./components/textarea";
 
 // layout
 @import "./layout/header";
 @import "./layout/main";
-
-// pages
-@import "./pages/pages";
