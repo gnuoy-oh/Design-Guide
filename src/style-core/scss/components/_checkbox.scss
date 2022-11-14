@@ -1,0 +1,51 @@
+// -------------------------
+// Checkbox
+// -------------------------
+.checkbox {
+  position: relative;
+
+  &__input {
+    @include hidden;
+
+    &:checked + .checkbox__label::before {
+      // background-image: url("#{$img-path}/icon/icon-check--active.png");
+    }
+
+    &:focus:focus-visible + .checkbox__label::before {
+      outline: rem(1px) dashed $primary;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-left: rem(46px);
+    height: rem(33px);
+    user-select: none;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      display: block;
+      width: rem(33px);
+      height: rem(33px);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      // background-image: url("#{$img-path}/icon/icon-check.png");
+      background-size: rem(33px) rem(33px);
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+    @include font-weight("bold");
+    @include font-size("15");
+    color: $text-05;
+
+    em {
+      color: $secondary;
+    }
+  }
+}

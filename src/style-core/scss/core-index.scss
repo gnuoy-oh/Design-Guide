@@ -1,3 +1,36 @@
-@import "./utils/utils.scss";
-@import "./config/config.scss";
-@import "./components/components.scss";
+// theme
+@import "./themes/theme";
+
+// abstracts
+@import "./abstracts/box-shadow";
+@import "./abstracts/breakpoints";
+@import "./abstracts/font-style";
+@import "./abstracts/motion";
+@import "./abstracts/retina";
+@import "./abstracts/spacing";
+@import "./abstracts/variables";
+@import "./abstracts/z-index";
+
+// base
+@import "./base/font-face";
+@import "./base/font-reset";
+@import "./base/css-reset";
+@import "./base/helper-mixins";
+@import "./base/helper-classes";
+
+// components
+@import "./components/button";
+@import "./components/checkbox";
+@import "./components/navigation";
+@import "./components/modal";
+@import "./components/notification";
+@import "./components/select";
+@import "./components/tab";
+@import "./components/text-input";
+
+// layout
+@import "./layout/header";
+@import "./layout/main";
+
+// pages
+@import "./pages/pages";

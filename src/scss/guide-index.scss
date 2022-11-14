@@ -1,4 +1,10 @@
 $font-path: "/src/style-core/fonts/";
+
+// Subtree Style Core
 @import "/src/style-core/scss/core-index.scss";
-@import "./config/config.scss";
-@import "./layout/layout.scss";
+
+// Project Style
+@import "./config/vars";
+@import "./layout/header";
+@import "./layout/gnb";
+@import "./layout/views";
