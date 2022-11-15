@@ -1,7 +1,7 @@
 {
   "name": "Design-Guide",
   "version": "1.0.0",
-  "description": "Shopping Mall Design Guide",
+  "description": "Design-Core를 Git Subtree로 가져와서 작업하는 공간",
   "main": "index.js",
   "scripts": {
     "dev": "node ./clean-dist.js && webpack --config webpack.dev.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mobigen/IRIS-Design-Guide.git"
+    "url": "git+https://github.com/gnuoy-oh/Design-Guide.git"
   },
   "keywords": [],
   "author": "",
