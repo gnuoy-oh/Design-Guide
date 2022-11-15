@@ -1,105 +1,166 @@
 // -------------------------
 // Radio
 // -------------------------
+.radios {
+  display: flex;
+
+  &:not(:last-of-type) {
+    margin-right: $spacing-xs;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+}
+
 .radio {
   display: block;
   position: relative;
-}
 
-.radios {
-  display: flex;
-}
+  &__input {
+    @include hidden;
 
-.radios .radio:not(:last-of-type) {
-  margin-right: $spacing-xs;
-}
+    &:focus-visible:not(:disabled) {
+      + .radio__label {
+        outline: 1px dashed $text-01;
+      }
+    }
 
-.radios--vertical {
-  flex-direction: column;
-}
+    &:checked {
+      & + .radio__label {
+        .radio__icon {
+          fill: $ui-02;
+        }
 
-.radio__input {
-  @include hidden;
-}
+        &::before {
+          background-color: $primary;
+          border-color: $primary;
+        }
 
-.radio__label {
-  @include line-height("heading");
-  @include font-weight("regular");
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  padding-left: $spacing-lg;
-  min-height: $spacing-md;
-  color: $text-02;
-  white-space: nowrap;
-  user-select: none;
-  cursor: pointer;
-}
-
-.radio__label::before,
-.radio__label::after {
-  box-sizing: border-box;
-  transition: all $duration-fast-01 motion(entrance, productive);
-}
-
-.radio__label::before {
-  content: "";
-  width: rem(17px);
-  height: rem(17px);
-  margin: $spacing-3xs;
-  position: absolute;
-  left: 0;
-  top: rem(1px);
-  background-color: transparent;
-  border: 1px solid $text-03;
-  border-radius: 50%;
-}
-
-.radio__label::after {
-  content: "";
-  position: absolute;
-  left: rem(7px);
-  top: rem(8px);
-  width: rem(7px);
-  height: rem(7px);
-  border-radius: 50%;
-  background-color: $text-04;
-}
-
-.radio__icon {
-  width: rem(20px);
-  height: rem(20px);
-}
-// -------------------------
-// 상태별 스타일
-// -------------------------
-// hover 상태
-.radio__input:focus-visible:not(:disabled) {
-  + .radio__label:before {
-    outline: 2px solid $default-focus;
-  }
-}
-
-.radio__label:hover::before {
-  border-color: $primary;
-}
-
-// checked 상태
-.radio__input:checked {
-  + .radio__label {
-    .radio__icon {
-      fill: $ui-02;
+        &:hover::after {
+          background-color: $text-04;
+        }
+      }
+      // checked + disabled 상태
+      &:disabled + .radio__label:hover::before {
+        border-color: $primary;
+      }
     }
   }
-}
 
-.radio__input:checked + .radio__label::before {
-  background-color: $primary;
-  border-color: $primary;
-}
+  &__label {
+    @include line-height("heading");
+    @include font-weight("regular");
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-left: $spacing-lg;
+    min-height: $spacing-md;
+    color: $text-02;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      transition: all $duration-fast-01 motion(entrance, productive);
+    }
 
-.radio__input:checked + .radio__label:hover::after {
-  background-color: $text-04;
+    &::before {
+      content: "";
+      width: rem(17px);
+      height: rem(17px);
+      margin: $spacing-3xs;
+      position: absolute;
+      left: 0;
+      top: rem(1px);
+      background-color: transparent;
+      border: 1px solid $text-03;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: rem(7px);
+      top: rem(8px);
+      width: rem(7px);
+      height: rem(7px);
+      border-radius: 50%;
+      background-color: $text-04;
+    }
+
+    &:hover::before {
+      border-color: $primary;
+    }
+  }
+
+  &__icon {
+    width: rem(20px);
+    height: rem(20px);
+  }
+
+  &--lg {
+    .radio {
+      &__label {
+        @include font-size("15");
+        padding-left: $spacing-lg + $spacing-2xs; //width of radio 20px + 8px of padding
+        min-height: rem(28px);
+
+        &::before {
+          content: "";
+          width: rem(20px);
+          height: rem(20px);
+          margin: $spacing-3xs;
+          top: rem(2px);
+          border-width: 2px;
+        }
+
+        &::after {
+          left: rem(8px);
+          top: rem(10px);
+          width: rem(8px);
+          height: rem(8px);
+        }
+      }
+
+      &__icon {
+        width: rem(24px);
+        height: rem(24px);
+      }
+    }
+  }
+
+  &--sm {
+    .radio {
+      &__label {
+        @include font-size("12");
+        padding-left: $spacing-md;
+        min-height: rem(18px);
+
+        &::before {
+          content: "";
+          width: rem(12px);
+          height: rem(12px);
+          margin: rem(1px);
+          top: rem(3px);
+          border-width: 1px;
+        }
+
+        &::after {
+          left: rem(5px);
+          top: rem(8px);
+          width: rem(4px);
+          height: rem(4px);
+        }
+      }
+
+      &__icon {
+        width: rem(16px);
+        height: rem(16px);
+      }
+    }
+  }
 }
 
 // disabled 상태
@@ -118,70 +179,6 @@
   }
 }
 
-// checked + disabled 상태
-.radio__input:checked:disabled + .radio__label:hover::before {
-  border-color: $primary;
-}
-// -------------------------
-// 크기별 스타일
-// -------------------------
-.radio--lg {
-  .radio__label {
-    @include font-size("15");
-    padding-left: $spacing-lg + $spacing-2xs; //width of radio 20px + 8px of padding
-    min-height: rem(28px);
-  }
-
-  .radio__label::before {
-    content: "";
-    width: rem(20px);
-    height: rem(20px);
-    margin: $spacing-3xs;
-    top: rem(2px);
-    border-width: 2px;
-  }
-
-  .radio__label::after {
-    left: rem(8px);
-    top: rem(10px);
-    width: rem(8px);
-    height: rem(8px);
-  }
-
-  .radio__icon {
-    width: rem(24px);
-    height: rem(24px);
-  }
-}
-
-.radio--sm {
-  .radio__label {
-    @include font-size("12");
-    padding-left: $spacing-md;
-    min-height: rem(18px);
-  }
-
-  .radio__label::before {
-    content: "";
-    width: rem(12px);
-    height: rem(12px);
-    margin: rem(1px);
-    top: rem(3px);
-    border-width: 1px;
-  }
-
-  .radio__label::after {
-    left: rem(5px);
-    top: rem(8px);
-    width: rem(4px);
-    height: rem(4px);
-  }
-
-  .radio__icon {
-    width: rem(16px);
-    height: rem(16px);
-  }
-}
 // -------------------------
 // radio-switch
 // -------------------------
@@ -204,74 +201,53 @@
         border-bottom-right-radius: $default-border-radius;
       }
     }
-  }
+    &__label {
+      height: rem(32px);
+      padding: 0 $spacing-sm;
+      line-height: 1;
+      border: 1px solid $ui-04;
 
-  .radio__label {
-    height: rem(32px);
-    padding: 0 $spacing-sm;
-    line-height: 1;
-    border: 1px solid $ui-04;
+      &:after,
+      &:before {
+        content: none;
+      }
+    }
 
-    &:after,
-    &:before {
-      content: none;
-    }
-  }
+    &__input {
+      &:focus-visible:not(:disabled) {
+        + .radio__label {
+          border-color: $primary;
+        }
+      }
 
-  .radio__input:focus-visible:not(:disabled) {
-    + .radio__label {
-      border-color: $primary;
-    }
-  }
+      &:checked {
+        + .radio__label {
+          z-index: z("float");
+          background-color: $primary;
+          border-color: $primary;
+          color: $text-04;
+        }
 
-  .radio__input:checked {
-    + .radio__label {
-      z-index: z("float");
-      background-color: $primary;
-      border-color: $primary;
-      color: $text-04;
+        &:focus-visible:not(:disabled) {
+          + .radio__label {
+            outline: 1px dashed $text-01;
+          }
+        }
+      }
     }
-  }
 
-  .radio__input:checked:focus-visible:not(:disabled) {
-    + .radio__label {
-      outline: 2px solid $default-focus;
+    &--lg {
+      .radio__label {
+        padding: 0 $spacing-md;
+        height: rem(40px);
+      }
     }
-  }
 
-  .radio--lg {
-    .radio__label {
-      padding: 0 $spacing-md;
-      height: rem(40px);
-    }
-  }
-
-  .radio--sm {
-    .radio__label {
-      padding: 0 $spacing-xs;
-      height: rem(24px);
-    }
-  }
-}
-
-.radio-switch--icon {
-  .radio {
-    .radio__label {
-      width: rem(32px);
-      padding: 0 rem(5px);
-      justify-content: center;
-    }
-  }
-  .radio--lg {
-    .radio__label {
-      width: rem(40px);
-      padding: 0 rem(7px);
-    }
-  }
-  .radio--sm {
-    .radio__label {
-      width: rem(24px);
-      padding: 0 rem(3px);
+    &--sm {
+      .radio__label {
+        padding: 0 $spacing-xs;
+        height: rem(24px);
+      }
     }
   }
 }

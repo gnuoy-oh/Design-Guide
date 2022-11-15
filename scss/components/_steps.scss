@@ -4,55 +4,55 @@
 .steps {
   display: flex;
   align-items: center;
-}
 
-.steps__item,
-.steps__button {
-  display: flex;
-  align-items: center;
-}
+  &__item,
+  &__button {
+    display: flex;
+    align-items: center;
+  }
 
-.steps__button {
-  @include button-base;
-  height: auto;
-  padding: 0;
-  line-height: 1;
-  background-color: $ui-02;
-  border-radius: none;
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
-}
+  &__button {
+    @include button-base;
+    height: auto;
+    padding: 0;
+    line-height: 1;
+    background-color: $ui-02;
+    border-radius: none;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
 
-.steps__item + .steps__item {
-  margin-left: $spacing-lg;
-}
+  &__item {
+    & + & {
+      margin-left: $spacing-lg;
+    }
+    &--current .steps__icon {
+      background-color: $secondary;
+    }
+  }
 
-.steps__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: rem(32px);
-  height: rem(32px);
-  background-color: $ui-04;
-  border-radius: 50%;
-}
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32px);
+    height: rem(32px);
+    background-color: $ui-04;
+    border-radius: 50%;
 
-.steps__icon-text {
-  @include font-weight("bold");
-  @include font-size("15");
-  color: $text-04;
-}
+    &-text {
+      @include font-weight("bold");
+      @include font-size("15");
+      color: $text-04;
+    }
+  }
 
-.steps__title {
-  margin-left: rem(10px);
-}
-
-.steps__title-text {
-  @include font-weight("medium");
-  @include font-size("15");
-  color: $text-02;
-}
-
-.steps__item--current .steps__icon {
-  background-color: $secondary;
+  &__title {
+    margin-left: rem(10px);
+    &-text {
+      @include font-weight("medium");
+      @include font-size("15");
+      color: $text-02;
+    }
+  }
 }
