@@ -8,7 +8,7 @@
   flex-direction: column;
   position: absolute;
   min-height: rem(320px);
-  border: 1px solid $ui-04;
+  border: 1px solid $ui-03;
   border-radius: $default-border-radius;
   background-color: $ui-02;
 
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     min-height: rem(40px);
-    border-bottom: 1px solid $ui-04;
+    border-bottom: 1px solid $ui-03;
 
     &-close-button {
       margin-left: auto;
