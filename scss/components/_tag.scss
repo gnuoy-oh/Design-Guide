@@ -127,7 +127,7 @@
 }
 
 .tag--red-deep {
-  @include tag-theme(#ff676e, $text-04);
+  @include tag-theme(#ff676e, $ui-02);
 }
 
 .tag--cyan {
@@ -135,7 +135,7 @@
 }
 
 .tag--cyan-deep {
-  @include tag-theme(#4abdff, $text-04);
+  @include tag-theme(#4abdff, $ui-02);
 }
 
 .tag--green {
@@ -143,7 +143,7 @@
 }
 
 .tag--green-deep {
-  @include tag-theme(#59d079, $text-04);
+  @include tag-theme(#59d079, $ui-02);
 }
 
 .tag--teal {
@@ -151,7 +151,7 @@
 }
 
 .tag--teal-deep {
-  @include tag-theme(#3de1e1, $text-04);
+  @include tag-theme(#3de1e1, $ui-02);
 }
 
 .tag--purple {
@@ -159,5 +159,5 @@
 }
 
 .tag--purple-deep {
-  @include tag-theme(#a26aff, $text-04);
+  @include tag-theme(#a26aff, $ui-02);
 }

@@ -62,20 +62,11 @@
 }
 
 @mixin button--primary {
-  @include button-theme($primary, $text-04, $hover-primary, $active-primary);
-}
-
-@mixin button--secondary {
-  @include button-theme(
-    $secondary,
-    $text-04,
-    $hover-secondary,
-    $active-secondary
-  );
+  @include button-theme($primary, $ui-02, $hover-primary, $active-primary);
 }
 
 @mixin button--link {
-  @include button-theme(transparent, $text-02, $ui-01, $ui-01, transparent);
+  @include button-theme(transparent, $text-03, $ui-01, $ui-01);
 
   &:active:not(:disabled) {
     color: $primary;
@@ -86,29 +77,8 @@
   }
 }
 
-@mixin button--danger {
-  @include button-theme(
-    $ui-02,
-    $negative,
-    $hover-negative,
-    $active-negative,
-    $ui-04
-  );
-
-  &:hover:not(:disabled) {
-    color: $ui-02;
-    border-color: $hover-negative;
-    .svg-icon {
-      fill: $ui-02;
-    }
-  }
-
-  &:active:not(:disabled) {
-    border-color: $active-negative;
-    .svg-icon {
-      fill: $ui-02;
-    }
-  }
+@mixin button--negative {
+  @include button-theme($negative, $ui-02, $hover-negative, $active-negative);
 }
 
 // -------------------------
@@ -166,34 +136,18 @@
 
   &--icon {
     @include button--icon(6px, 20px);
-
-    &.button--link {
-      @include button--icon(4px, 24px);
-    }
-
-    &.button--link.button--lg {
-      @include button--icon(6px, 28px);
-    }
-
-    &.button--link.button--sm {
-      @include button--icon(2px, 20px);
-    }
   }
 
   &--primary {
     @include button--primary;
   }
 
-  &--secondary {
-    @include button--secondary;
-  }
-
   &--link {
     @include button--link;
   }
 
-  &--danger {
-    @include button--danger;
+  &--negative {
+    @include button--negative;
   }
 
   &--lg {

@@ -4,12 +4,8 @@
 .radios {
   display: flex;
 
-  &:not(:last-of-type) {
+  .radio:not(:last-child) {
     margin-right: $spacing-xs;
-  }
-
-  &--vertical {
-    flex-direction: column;
   }
 }
 
@@ -38,7 +34,7 @@
         }
 
         &:hover::after {
-          background-color: $text-04;
+          background-color: $ui-02;
         }
       }
       // checked + disabled 상태
@@ -87,7 +83,7 @@
       width: rem(7px);
       height: rem(7px);
       border-radius: 50%;
-      background-color: $text-04;
+      background-color: $ui-02;
     }
 
     &:hover::before {
@@ -205,7 +201,7 @@
       height: rem(32px);
       padding: 0 $spacing-sm;
       line-height: 1;
-      border: 1px solid $ui-04;
+      border: 1px solid $ui-03;
 
       &:after,
       &:before {
@@ -225,7 +221,7 @@
           z-index: z("float");
           background-color: $primary;
           border-color: $primary;
-          color: $text-04;
+          color: $ui-02;
         }
 
         &:focus-visible:not(:disabled) {
