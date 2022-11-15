@@ -1,4 +1,4 @@
-.snb {
+.side-nav {
   display: flex;
   flex-direction: column; // justify-content: space-between;
   flex: 0 1 12.5rem;
@@ -7,68 +7,72 @@
   width: 12.5rem;
   position: fixed;
   border-right: 2px solid $ui-04;
-}
 
-.snb__top-container {
-  padding-top: $spacing-xl;
-  display: flex;
-  justify-content: center;
-}
+  &__top-bar {
+    padding-top: $spacing-xl;
+    display: flex;
+    justify-content: center;
+  }
 
-.snb__bottom-container {
-  overflow-y: auto;
-}
+  &__logo {
+    @include font-weight("medium");
+    margin: $spacing-md 0;
+  }
 
-.snb__main-nav {
-  width: 100%;
-  text-transform: capitalize;
-}
+  &__link {
+    @include font-size("20");
+    color: $text-01;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
 
-.main-nav-item {
-  margin-top: $spacing-md;
-
-  &:last-child {
-    margin-bottom: $spacing-lg;
+  &__logo em {
+    font-weight: 700;
   }
 }
 
-.main-nav-item__heading {
-  @include font-size("12");
-  position: sticky;
-  top: 0;
-  padding: $spacing-sm $spacing-md;
-  background-image: linear-gradient(
-    0deg,
-    rgba($ui-02, 0) 0,
-    rgba($ui-02, 0.7) 30%,
-    $ui-02
-  );
-  color: $text-03;
-}
+.snb {
+  overflow-y: auto;
 
-.snb__logo {
-  @include font-size("20");
-  margin: $spacing-md 0;
-  color: $text-01;
-  text-transform: capitalize;
-  text-decoration: none;
-}
+  &__list {
+    width: 100%;
+    text-transform: capitalize;
+  }
 
-.snb__logo em {
-  font-weight: 700;
-}
+  &__item {
+    margin-top: $spacing-md;
 
-.sub-nav__item {
-  text-transform: capitalize;
-  padding: $spacing-2xs $spacing-xs $spacing-xs $spacing-md;
-}
+    &:last-child {
+      margin-bottom: $spacing-lg;
+    }
+  }
 
-.sub-nav__item-link {
-  color: $text-01;
-  text-decoration: none;
+  &__link {
+    color: $text-01;
+    text-decoration: none;
 
-  &:hover {
-    color: $primary;
-    text-decoration: underline;
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+
+  &__sub-item {
+    text-transform: capitalize;
+    padding: $spacing-2xs $spacing-xs $spacing-xs $spacing-md;
+  }
+
+  &__title {
+    @include font-size("12");
+    position: sticky;
+    top: 0;
+    padding: $spacing-sm $spacing-md;
+    background-image: linear-gradient(
+      0deg,
+      rgba($ui-02, 0) 0,
+      rgba($ui-02, 0.7) 30%,
+      $ui-02
+    );
+    color: $text-03;
   }
 }

@@ -1,89 +1,99 @@
 //----------------------------------------------
 // Text input
 // ---------------------------------------------
-.text-input {
-  @include font-size("15");
+// mixins
+@mixin text-input {
+  @include font-family("sans");
+  @include font-size("14");
+  @include font-weight("regular");
   position: relative;
+  background-color: $ui-02;
   width: 100%;
-  height: rem(50px);
-  padding: 0 rem(45px) 0 rem(23px);
-  color: $text-05;
-  background-color: $ui-01;
-  border: 1px solid $ui-02;
-  border-radius: rem(4px);
+  height: rem(32px);
+  padding: 0 $spacing-sm;
+  color: $text-01;
+  border: 1px solid $ui-04;
+  border-radius: $default-border-radius;
+  transition: all $duration-fast-01 motion(standard, productive);
+  outline: none;
 
+  //IE에서 input focus 시 생기는 clear button 제거
   &::-ms-clear {
-    display: none !important;
+    display: none;
   }
 
-  &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px $ui-01 inset;
+  &:hover {
+    border-color: darken($ui-04, 15%);
   }
 
+  &:active,
   &:focus {
-    & + .text-input__clear-button {
-      display: block;
-    }
+    border-color: $secondary;
+    box-shadow: 0 0 rem(4px) rgba($secondary, 0.65);
   }
 
-  &:focus:focus-visible {
-    outline: 1px dashed $ui-01;
+  &:focus-visible {
+    border-color: $ui-04;
+    box-shadow: none;
+  }
+
+  // chrome에서 자동저장된 input의 배경컬러를 제어
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px $ui-02 inset;
+  }
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus {
+    cursor: not-allowed;
+    background-color: $ui-02;
+    border-color: $ui-04;
+    opacity: 0.5;
+    box-shadow: none;
+
+    ~ .text-input-group__button {
+      display: none;
+    }
   }
 
   &[readonly],
   &[readonly]:hover,
-  &[readonly]:focus-visible {
-    color: $text-04;
+  &[readonly]:focus {
     cursor: default;
-
-    & + .text-input__clear-button {
-      display: none !important;
-    }
+    border-color: transparent;
+    background-color: $ui-02;
+    box-shadow: none;
   }
 
   &::placeholder {
-    @include font-size("15");
-    color: $text-04;
-  }
-
-  &--error {
-    border-color: $negative;
-  }
-
-  &__label {
-    @include ellipsis();
-    @include font-size("15");
-    color: $text-02;
-  }
-
-  &__clear-button {
-    @include button-base;
-    display: none;
-    z-index: z("float");
-    position: absolute;
-    top: 50%;
-    right: rem(16px);
-    margin-top: rem(-11px);
-    padding: 0;
-  }
-
-  &__clear-icon {
-    width: rem(17px);
-    height: rem(17px);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='35.8px' height='35.8px'%3E%3Cpath fill-rule='evenodd' fill='rgb(192, 192, 192)' d='M17.406,0.608 C26.787,0.608 34.392,8.213 34.392,17.594 C34.392,26.975 26.787,34.580 17.406,34.580 C8.025,34.580 0.419,26.975 0.419,17.594 C0.419,8.213 8.025,0.608 17.406,0.608 Z'/%3E%3Cpath fill-rule='evenodd' stroke='rgb(255, 255, 255)' stroke-width='1.6px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M9.1000,11.000 L25.000,26.000 L9.1000,11.000 Z'/%3E%3Cpath fill-rule='evenodd' stroke='rgb(255, 255, 255)' stroke-width='1.6px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M25.000,11.000 L9.1000,26.000 L25.000,11.000 Z'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
+    @include font-weight("light");
+    color: $text-05;
   }
 }
 
-.text-input-group {
-  &__inner {
-    position: relative;
-  }
+@mixin text-input--lg {
+  @include font-size("16");
+  padding: 0 $spacing-md;
+  height: rem(40px);
+}
 
-  .text-input {
-    &__label {
-      margin-bottom: rem(5px);
-    }
-  }
+@mixin text-input--sm {
+  @include font-size("12");
+  padding: 0 $spacing-xs;
+  height: rem(24px);
+}
+
+// -------------------------
+// classes
+// -------------------------
+.text-input {
+  @include text-input;
+}
+
+.text-input--lg {
+  @include text-input--lg;
+}
+
+.text-input--sm {
+  @include text-input--sm;
 }

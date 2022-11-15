@@ -27,6 +27,12 @@
     box-shadow: 0 0 rem(4px) rgba($secondary, 0.65);
   }
 
+  &:focus-visible {
+    border-color: $ui-04;
+    box-shadow: none;
+    outline: 1px dashed $text-01;
+  }
+
   // chrom에서 자동저장된 input의 배경컬러를 제어
   &:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px $ui-02 inset;
@@ -59,22 +65,8 @@
     @include font-weight("light");
     color: $text-05;
   }
-}
 
-.text-area--fixed {
-  resize: none;
-}
-
-.text-area-wrap {
-  width: 100%;
-}
-
-.text-area-wrap__foot-buttons {
-  display: flex;
-}
-
-.text-area-wrap__foot-text {
-  @include font-size("12");
-  @include line-height("title");
-  color: $text-03;
+  &--fixed {
+    resize: none;
+  }
 }

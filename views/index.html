@@ -11,64 +11,58 @@
 
 <body>
   <div class="layout">
-    <nav class="snb">
-      <!-- snb -->
-      <div class="snb__top-container">
-        <a class="snb__logo" href="/views/index.html"><em>IRIS</em> Design Guide</a>
+    <nav class="side-nav">
+      <div class="side-nav__top-bar">
+        <h1 class="side-nav__logo">
+          <a class="side-nav__link" href="/views/index.html">Design Guide</a>
+        </h1>
       </div>
-      <div class="snb__bottom-container">
-        <ul class="snb__main-nav">
-          <li class="main-nav-item">
-            <p class="main-nav-item__heading">Style</p>
+      <div class="snb">
+        <ul class="snb__list">
+          <li class="snb__item">
+            <p class="snb__title">Style</p>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--button">Button</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--color">Color</a>
           </li>
-
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--checkbox">Checkbox</a>
+          <li class="snb__item">
+            <p class="snb__title">Component</p>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--loader">Loader</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--button">Button</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--modal">Modal</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--checkbox">Checkbox</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--notification">Notification</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--loader">Loader</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--pagination">Pagination</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--modal">Modal</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--progressbar">Progressbar</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--notification">Notification</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--radio">Radio</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--pagination">Pagination</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--range">Range</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--progressbar">Progressbar</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--select">Select</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--radio">Radio</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--steps">Steps</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--steps">Steps</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--tab">Tab</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--tag">Tag</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--table">Table</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--text-input">Text Input</a>
           </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--tag">Tag</a>
-          </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--text-input">Text Input</a>
-          </li>
-          <li class="sub-nav__item">
-            <a class="sub-nav__item-link" href="#page--textarea">Textarea</a>
+          <li class="snb__sub-item">
+            <a class="snb__link" href="#page--textarea">Textarea</a>
           </li>
         </ul>
       </div>
@@ -76,15 +70,14 @@
     <div class="container">
       <main class="content">
         <div class="page" id="page--color">
-
           <!-- style-color -->
           <div class="page-header">
-            <h2 class="page-header__lable">style</h2>
+            <strong class="page-header__lable">style</strong>
             <h3 class="page-header__title">Color</h3>
           </div>
           <div class="page-content">
-            <div class="component-variation">
-              <span class="component-variation__name">Core Colors</span>
+            <div class="component">
+              <span class="component__name">Core Colors</span>
               <div class="component-example">
                 <div class="color-card-wrap">
                   <div class="color-card">
@@ -216,15 +209,13 @@
         <div class="page" id="page--button">
           <!-- button -->
           <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
+            <strong class="page-header__lable">component</strong>
             <h3 class="page-header__title">Button</h3>
           </div>
           <div class="page-content">
-            <p class="page__desc">버튼은 사용자가 클릭하거나 터치 할 때 발생할 동작을 나타냅니다.</p>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Primary Button</span>
-              <p class="component-variation__desc">화면에서 가장 주요한 액션에 사용하는 버튼입니다. 한 화면에 한번만 사용하는걸 기본으로 합니다.</p>
+            <div class="component">
+              <span class="component__name">Primary Button</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -296,9 +287,8 @@
               </div>
             </div>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Secondary Button</span>
-              <p class="component-variation__desc">primary와 default 버튼의 중간 정도 위계를 갖는 액션에 사용합니다. </p>
+            <div class="component">
+              <span class="component__name">Secondary Button</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -365,9 +355,8 @@
               </div>
             </div>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Link Button</span>
-              <p class="component-variation__desc">링크와 같이 명확한 페이지 이동 등의 액션에 사용합니다.</p>
+            <div class="component">
+              <span class="component__name">Link Button</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -434,9 +423,8 @@
               </div>
             </div>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Danger Button</span>
-              <p class="component-variation__desc">삭제 또는 탈퇴 등 주의를 요하는 행위에 사용하는 버튼입니다. </p>
+            <div class="component">
+              <span class="component__name">Danger Button</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -509,21 +497,18 @@
         <div class="page" id="page--checkbox">
           <!-- checkbox -->
           <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
+            <strong class="page-header__lable">component</strong>
             <h3 class="page-header__title">Checkbox</h3>
           </div>
           <div class="page-content">
-            <p class="page__desc">체크 박스는 목록 중 선택할 항목이 여러개 있을때 사용합니다.</p>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Default Checkbox</span>
+            <div class="component">
+              <span class="component__name">Default</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
                     <div class="component-example__row">
                       <p class="component-example__size-label">Size: lg</p>
                       <div class="component-examle__item-group">
-                        <!-- 세로 유형인 경우, checkboxs checkboxs--vertical 추가 -->
                         <div class="checkboxs">
                           <!-- default -->
                           <div class="checkbox checkbox--lg">
@@ -556,7 +541,6 @@
                     <div class="component-example__row">
                       <p class="component-example__size-label">Size: md</p>
                       <div class="component-examle__item-group">
-                        <!-- 세로 유형인 경우, checkboxs checkboxs--vertical 추가 -->
                         <div class="checkboxs">
                           <!-- default -->
                           <div class="checkbox">
@@ -589,7 +573,6 @@
                     <div class="component-example__row">
                       <p class="component-example__size-label">Size: sm</p>
                       <div class="component-examle__item-group">
-                        <!-- 세로 유형인 경우, checkboxs checkboxs--vertical 추가 -->
                         <div class="checkboxs">
                           <!-- default -->
                           <div class="checkbox checkbox--sm">
@@ -624,9 +607,8 @@
               </div>
             </div>
 
-            <!-- TODO [디자인]: 검토 필요 -->
-            <div class="component-variation">
-              <span class="component-variation__name">Checkbox toggle</span>
+            <div class="component">
+              <span class="component__name">Checkbox toggle</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -730,31 +712,126 @@
           </div>
 
         </div>
+        <div class="page" id="page--loader">
+          <!-- loader -->
+          <div class="page-header">
+            <strong class="page-header__lable">component</strong>
+            <h3 class="page-header__title">Loader</h3>
+          </div>
+          <div class="page-content">
+
+            <div class="component">
+              <span class="component__name">Default</span>
+              <div class="component-example">
+                <div class="component-example__live">
+                  <div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: lg</p>
+                      <div class="component-examle__item-group">
+                        <div class="loader loader--lg" role="alert" aria-live="assertive">
+                          <div class="loader__spinner"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: md</p>
+                      <div class="component-examle__item-group">
+                        <div class="loader loader--md" role="alert" aria-live="assertive">
+                          <div class="loader__spinner"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: sm</p>
+                      <div class="component-examle__item-group">
+                        <div class="loader loader--sm" role="alert" aria-live="assertive">
+                          <div class="loader__spinner"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component">
+              <span class="component__name">Loader Bar Type</span>
+              <div class="component-example">
+                <div class="component-example__live">
+                  <div style="width: 400px;">
+                    <div class="loading-bar">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="page" id="page--modal">
+          <!-- modal -->
+          <div class="page-header">
+            <strong class="page-header__lable">component</strong>
+            <h3 class="page-header__title">Modal</h3>
+          </div>
+          <div class="page-content">
+
+            <div class="component">
+              <span class="component__name">Default</span>
+              <div class="component-example">
+                <div class="component-example__live">
+                  <div>
+                    <div class="modal" style="position: static;" role="dialog" aria-modal="true">
+                      <div class="modal__head">
+                        <div class="modal__head-title">
+                          <span class="modal__head-title-text">Title</span>
+                          <span class="modal__head-subtitle">subtitle</span>
+                        </div>
+                        <div class="modal__head-close-button">
+                          <button class="button button--icon button--link button--sm" title="닫기">
+                            <svg class="svg-icon" aria-hidden="true">
+                              <use xlink:href="#close"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="modal__body modal__body--sm">
+                        <p>modal contents modal contents modal contents modal contents</p>
+                      </div>
+                      <div class="modal__foot">
+                        <button class="button button--secondary button--lg" type="button">
+                          <span>초기화</span>
+                        </button>
+                        <button class="button button--danger button--lg" type="button">
+                          <span>삭제</span>
+                        </button>
+                        <div class="modal__foot-main-buttons">
+                          <button class="button button--link button--lg" type="button">
+                            <span>취소</span>
+                          </button>
+                          <button class="button button--primary button--lg" type="button">
+                            <span>저장</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
         <div class="page" id="page--notification">
           <!-- notification -->
           <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
+            <strong class="page-header__lable">component</strong>
             <h3 class="page-header__title">Notification</h3>
           </div>
           <div class="page-content">
-            <p class="page__desc">노티피케이션은 사용자에게 정보를 전달하는 알림 메시지입니다.</p>
-            <div class="page__usage md">
-              <ul>
-                <li>노티피케이션은 화면 일부를 가리며 나타나는 일반적인 유형과 메시지만 표시해주는 두가지 유형으로 구분합니다</li>
-                <li>Message 유형은 Validation에 사용합니다. (구, <code class="code-inline">mui-message</code>)</li>
-                <li>Message 유형은 <code class="code-inline">notification-message--inline</code> 클래스를 추가하여 inline-flex로 사용할 수 있습니다</li>
-                <li>노티피케이션은 총 4가지 상태가 있고 의미는 다음과 같습니다. </li>
-                <ul>
-                  <li>info : 일반적인 정보전달이나 메세지 역할을 하는 알림에서 사용됩니다.</li>
-                  <li>success: 사용자의 동작이 성공적으로 이루어졌을 때 사용됩니다. (ex 등록완료) </li>
-                  <li>warning: 사용자가 단계를 수행하기 앞서, 제약이 따를만한 상황을 경고할 때 사용됩니다. 이를 감안하고 사용자는 동작을 강행할 수 있습니다.</li>
-                  <li>error: 치명적인 오류가 발생할 때 사용됩니다. 이 상태에서 사용자는 다음 단계를 수행할 수 없습니다.</li>
-                </ul>
-              </ul>
-            </div>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Default</span>
+            <div class="component">
+              <span class="component__name">Default</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div style="width: 600px">
@@ -829,99 +906,8 @@
               </div>
             </div>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Closable</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div style="width: 600px">
-                    <!-- info -->
-                    <div class="notification notification--info" role="alert">
-                      <svg class="notification__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#info-fill"></use>
-                      </svg>
-                      <div class="notification__contents">
-                        <p class="notification__title">Notification Title</p>
-                        <p class="notification__text">Notification Text Here.</p>
-                      </div>
-                      <button class="notification__close-button" title="닫기">
-                        <svg class="svg-icon" aria-hidden="true">
-                          <use xlink:href="#close"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- success -->
-                    <div class="notification notification--success" role="alert">
-                      <svg class="notification__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#checkmark-fill"></use>
-                      </svg>
-                      <div class="notification__contents">
-                        <p class="notification__title">Notification Title</p>
-                        <p class="notification__text">Notification Text Here.</p>
-                      </div>
-                      <button class="notification__close-button" title="닫기">
-                        <svg class="svg-icon" aria-hidden="true">
-                          <use xlink:href="#close"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- warning -->
-                    <div class="notification notification--warning" role="alert">
-                      <svg class="notification__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#warning-fill"></use>
-                      </svg>
-                      <div class="notification__contents">
-                        <p class="notification__title">Notification Title</p>
-                        <p class="notification__text">Notification Text Here.</p>
-                      </div>
-                      <button class="notification__close-button" title="닫기">
-                        <svg class="svg-icon" aria-hidden="true">
-                          <use xlink:href="#close"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- error -->
-                    <div class="notification notification--error" role="alert">
-                      <svg class="notification__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#issue-fill"></use>
-                      </svg>
-                      <div class="notification__contents">
-                        <p class="notification__title">Notification Title</p>
-                        <p class="notification__text">
-                          Notification Text Here Notification Text Here Notification Text Here Notification Text Here Notification
-                          Text Here Notification Text Here Notification Text Here Notification Text Here.
-                        </p>
-                      </div>
-                      <button class="notification__close-button" title="닫기">
-                        <svg class="svg-icon" aria-hidden="true">
-                          <use xlink:href="#close"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- normal -->
-                    <div class="notification notification--normal" role="alert">
-                      <svg class="notification__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#subtract"></use>
-                      </svg>
-                      <div class="notification__contents">
-                        <p class="notification__title">Notification Title</p>
-                        <p class="notification__text">
-                          Notification Text Here Notification Text Here Notification Text Here Notification Text Here Notification
-                          Text Here Notification Text Here Notification Text Here Notification Text Here.
-                        </p>
-                      </div>
-                      <button class="notification__close-button" title="닫기">
-                        <svg class="svg-icon" aria-hidden="true">
-                          <use xlink:href="#close"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Message - block</span>
+            <div class="component">
+              <span class="component__name">Message Notification</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -964,215 +950,18 @@
                 </div>
               </div>
             </div>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Message - inline</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div>
-                    <!-- info -->
-                    <div class="notification-message notification-message--inline notification-message--info">
-                      <svg class="notification-message__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#info-fill"></use>
-                      </svg>
-                      <span class="notification-message__text">Notification Message</span>
-                    </div>
-                    <!-- success -->
-                    <div class="notification-message notification-message--inline notification-message--success">
-                      <svg class="notification-message__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#checkmark-fill"></use>
-                      </svg>
-                      <span class="notification-message__text">Notification Message</span>
-                    </div>
-                    <!-- warning -->
-                    <div class="notification-message notification-message--inline notification-message--warning">
-                      <svg class="notification-message__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#warning-fill"></use>
-                      </svg>
-                      <span class="notification-message__text">Notification Message</span>
-                    </div>
-                    <!-- error -->
-                    <div class="notification-message notification-message--inline notification-message--error">
-                      <svg class="notification-message__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#issue-fill"></use>
-                      </svg>
-                      <span class="notification-message__text">Notification Message</span>
-                    </div>
-                    <!-- loading -->
-                    <div class="notification-message notification-message--inline notification-message--loading">
-                      <div class="loader loader--xs">
-                        <div class="loader__spinner"></div>
-                      </div>
-                      <span class="notification-message__text">Notification Message</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Full - lg</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div>
-                    <!-- info -->
-                    <div class="notification-full notification-full--info" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#info-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">정보 메세지를 입력해주세요.</p>
-                      <div class="notification-full__detail">
-                        <span class="notification-full__subtext">서버 재시작 중 IRIS 사용이 중단되며, 저장하지 않은 데이터는 삭제됩니다. 문제 발생 시, 담당자에게 연락바랍니다.</span>
-                      </div>
-                    </div>
-                    <!-- success -->
-                    <div class="notification-full notification-full--success" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#checkmark-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">시스템 설정 적용 및
-                        서버 재시작이 완료되었습니다.</p>
-                      <div class="notification-full__detail">
-                        <button class="button button--primary button--lg" type="button" style="width: 150px;">
-                          <span class="button__text">확인</span>
-                        </button>
-                      </div>
-                    </div>
-                    <!-- warning -->
-                    <div class="notification-full notification-full--warning" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#warning-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">경고 메세지를 입력해주세요.</p>
-                      <div class="notification-full__detail">
-                        <span class="notification-full__subtext">서버 재시작 중 IRIS 사용이 중단되며, 저장하지 않은 데이터는 삭제됩니다. 문제 발생 시, 담당자에게 연락바랍니다.</span> <button class="button button--negative button--lg" type="button" style="width: 150px;">
-                          <span class="button__text">확인</span>
-                        </button>
-                      </div>
-                    </div>
-                    <!-- error -->
-                    <div class="notification-full notification-full--error" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#issue-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">에러 메세지를 입력해주세요.</p>
-                      <div class="notification-full__detail">
-                        <div class="notification notification--normal" style="width: 450px;" role="alert">
-                          <svg class="notification__icon svg-icon" aria-hidden="true">
-                            <use xlink:href="#subtract"></use>
-                          </svg>
-                          <div class="notification__contents">
-                            <p class="notification__title">담당자에게 연락 바랍니다.</p>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- loading -->
-                    <div class="notification-full notification-full--loading">
-                      <div class="loader loader--md">
-                        <div class="loader__spinner"></div>
-                      </div>
-                      <p class="notification-full__text">로딩 중 메세지를 입력해주세요.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Full - sm</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div>
-                    <!-- info -->
-                    <div class="notification-full notification--normal notification-full--sm" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#info-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">정보 메세지를 입력해주세요.</p>
-                      <div class="notification-full__detail">
-                        <span class="notification-full__subtext">서버 재시작 중 IRIS 사용이 중단되며, 저장하지 않은 데이터는 삭제됩니다. 문제 발생 시, 담당자에게 연락바랍니다.</span>
-                      </div>
-                    </div>
-                    <!-- info -->
-                    <div class="notification-full notification-full--sm notification-full--info" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#info-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">정보 메세지를 입력해주세요.</p>
-                      <div class="notification-full__detail">
-                        <span class="notification-full__subtext">서버 재시작 중 IRIS 사용이 중단되며, 저장하지 않은 데이터는 삭제됩니다. 문제 발생 시, 담당자에게 연락바랍니다.</span>
-                      </div>
-                    </div>
-                    <!-- success -->
-                    <div class="notification-full notification-full--sm notification-full--success" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#checkmark-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">시스템 설정 적용 및
-                        서버 재시작이 완료되었습니다.</p>
-                      <div class="notification-full__detail">
-                        <button class="button button--primary button--lg" type="button" style="width: 150px;">
-                          <span class="button__text">확인</span>
-                        </button>
-                      </div>
-                    </div>
-                    <!-- warning -->
-                    <div class="notification-full notification-full--sm notification-full--warning" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#warning-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">경고 메세지를 입력해주세요.</p>
-                      <div class="notification-full__detail">
-                        <span class="notification-full__subtext">서버 재시작 중 IRIS 사용이 중단되며, 저장하지 않은 데이터는 삭제됩니다. 문제 발생 시, 담당자에게 연락바랍니다.</span> <button class="button button--negative button--lg" type="button" style="width: 150px;">
-                          <span class="button__text">확인</span>
-                        </button>
-                      </div>
-                    </div>
-                    <!-- error -->
-                    <div class="notification-full notification-full--sm notification-full--error" style="margin-bottom: 60px;">
-                      <svg class="notification-full__icon svg-icon" aria-hidden="true">
-                        <use xlink:href="#issue-fill"></use>
-                      </svg>
-                      <p class="notification-full__text">에러 메세지를 입력해주세요.</p>
-                      <div class="notification-full__detail">
-                        <div class="notification notification--normal" style="width: 450px;" role="alert">
-                          <svg class="notification__icon svg-icon" aria-hidden="true">
-                            <use xlink:href="#subtract"></use>
-                          </svg>
-                          <div class="notification__contents">
-                            <p class="notification__title">담당자에게 연락 바랍니다.</p>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- loading -->
-                    <div class="notification-full notification-full--sm notification-full--loading">
-                      <div class="loader loader--md">
-                        <div class="loader__spinner"></div>
-                      </div>
-                      <p class="notification-full__text">로딩 중 메세지를 입력해주세요.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
         </div>
         <div class="page" id="page--pagination">
           <!-- context menu -->
           <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
+            <strong class="page-header__lable">component</strong>
             <h3 class="page-header__title">Pagination</h3>
           </div>
           <div class="page-content">
-            <p class="page__desc">페이지네이션은 긴 목록을 여러 페이지로 분할하는 데 사용하며,<br /> 다음 페이지 또는 이전 페이지로 이용하는데 사용합니다.</p>
-            <div class="component-variation">
-              <span class="component-variation__name">Default</span>
+            <div class="component">
+              <span class="component__name">Default</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -1248,18 +1037,177 @@
           </div>
 
         </div>
+        <div class="page" id="page--progressbar">
+          <!-- context menu -->
+          <div class="page-header">
+            <strong class="page-header__lable">component</strong>
+            <h3 class="page-header__title">Progressbar</h3>
+          </div>
+          <div class="page-content">
+
+            <div class="component">
+              <span class="component__name">Default</span>
+              <div class="component-example">
+                <div class="component-example__live">
+                  <div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: sm</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+                        <div class="progressbar progressbar--sm" role="progressbar" aria-labelledby="bar-gage" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-01">Loading:</label>
+                        <progress id="bar-gage-01 " class="progressbar progressbar--sm" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: md</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+                        <div class="progressbar">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                            <span class="progressbar__text">70.00%</span>
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-02">Loading:</label>
+                        <progress id="bar-gage-02" class="progressbar" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component">
+              <span class="component__name">Normal</span>
+              <div class="component-example">
+                <div class="component-example__live">
+                  <div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: sm</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+                        <div class="progressbar progressbar--normal progressbar--sm" role="progressbar" aria-labelledby="bar-gage" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-03">Loading:</label>
+                        <progress id="bar-gage-03" class="progressbar progressbar--normal progressbar--sm" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: md</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+                        <div class="progressbar progressbar--normal" role="progressbar" aria-labelledby="bar-gage" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                            <span class="progressbar__text">70.00%</span>
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-04">Loading:</label>
+                        <progress id="bar-gage-04" class="progressbar progressbar--normal" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component">
+              <span class="component__name">Critical</span>
+              <div class="component-example">
+                <div class="component-example__live">
+                  <div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: sm</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+                        <div class="progressbar progressbar--critical progressbar--sm" role="progressbar" aria-labelledby="bar-gage" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-05">Loading:</label>
+                        <progress id="bar-gage-05" class="progressbar progressbar--critical progressbar--sm" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: md</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+                        <div class="progressbar progressbar--critical" role="progressbar" aria-labelledby="bar-gage" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                            <span class="progressbar__text">70.00%</span>
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-06">Loading:</label>
+                        <progress id="bar-gage-06" class="progressbar progressbar--critical" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component">
+              <span class="component__name">Major</span>
+              <div class="component-example">
+                <div class="component-example__live">
+                  <div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: sm</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+
+                        <div class="progressbar progressbar--major progressbar--sm" role="progressbar" aria-labelledby="bar-gage" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-sm-01">Loading:</label>
+                        <progress id="bar-gage-sm-01" class="progressbar progressbar--major progressbar--sm" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                    <div class="component-example__row">
+                      <p class="component-example__size-label">Size: md</p>
+                      <div class="component-examle__item-group component-examle__item-group--row">
+
+                        <div class="progressbar progressbar--major" role="progressbar" aria-labelledby="bar-gage" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                            <span class="progressbar__text">70.00%</span>
+                          </div>
+                        </div>
+                        <label class="hidden" for="bar-gage-sm-02">Loading:</label>
+                        <progress id="bar-gage-sm-02" class="progressbar progressbar--major" value="20" max="100">
+                          <strong>20%</strong>
+                        </progress>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
         <div class="page" id="page--radio">
           <!-- radio -->
           <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
+            <strong class="page-header__lable">component</strong>
             <h3 class="page-header__title">Radio</h3>
           </div>
           <div class="page-content">
-            <p class="page__desc">라디오 버튼은 여러 항목 그룹이 있고 그 그룹에서 하나만 선택할 수 있을때 사용합니다.</p>
 
-
-            <div class="component-variation">
-              <span class="component-variation__name">Default Radio</span>
+            <div class="component">
+              <span class="component__name">Default</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -1311,8 +1259,8 @@
                           </div>
                           <!-- checked + disabled -->
                           <div class="radio">
-                            <input type="radio" id="radioId-03" name="radio-group-disabled" class="radio__input" value="label" checked disabled />
-                            <label for="radioId-03" class="radio__label">label </label>
+                            <input type="radio" id="radioId-04" name="radio-group-disabled" class="radio__input" value="label" checked disabled />
+                            <label for="radioId-04" class="radio__label">label </label>
                           </div>
                         </div>
                       </div>
@@ -1323,22 +1271,22 @@
                         <div class="radios">
                           <!-- default -->
                           <div class="radio radio--sm">
-                            <input type="radio" id="radioId-sm-01" name="radio-group" class="radio__input" value="label" />
+                            <input type="radio" id="radioId-sm-01" name="radio-group-sm" class="radio__input" value="label" />
                             <label for="radioId-sm-01" class="radio__label">label </label>
                           </div>
                           <!-- checked -->
                           <div class="radio radio--sm">
-                            <input type="radio" id="radioId-sm-02" name="radio-group" class="radio__input" value="label" checked />
+                            <input type="radio" id="radioId-sm-02" name="radio-group-sm" class="radio__input" value="label" checked />
                             <label for="radioId-sm-02" class="radio__label">label </label>
                           </div>
                           <!-- disabled -->
                           <div class="radio radio--sm">
-                            <input type="radio" id="radioId-sm-03" name="radio-group-disabled" class="radio__input" value="label" disabled />
+                            <input type="radio" id="radioId-sm-03" name="radio-group-disabled-sm" class="radio__input" value="label" disabled />
                             <label for="radioId-sm-03" class="radio__label">label </label>
                           </div>
                           <!-- checked + disabled -->
                           <div class="radio radio--sm">
-                            <input type="radio" id="radioId-sm-03" name="radio-group-disabled" class="radio__input" value="label" checked disabled />
+                            <input type="radio" id="radioId-sm-03" name="radio-group-disabled-sm" class="radio__input" value="label" checked disabled />
                             <label for="radioId-sm-03" class="radio__label">label </label>
                           </div>
                         </div>
@@ -1349,9 +1297,8 @@
               </div>
             </div>
 
-            <!-- TODO [디자인]: 검토 필요 -->
-            <div class="component-variation">
-              <span class="component-variation__name">Radio Switch</span>
+            <div class="component">
+              <span class="component__name">Radio Switch</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -1443,368 +1390,16 @@
           </div>
 
         </div>
-        <div class="page" id="page--range">
-          <!-- radio -->
-          <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
-            <h3 class="page-header__title">Range</h3>
-          </div>
-          <div class="page-content">
-            <p class="page__desc">특정 범위를 슬라이더 형태로 지정할 때 사용됩니다.</p>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Default Range-input</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div>
-                    <div class="component-example__row">
-                      <!-- default -->
-                      <p class="component-example__size-label">Size: md</p>
-                      <label for="inp-range-01" class="hidden">Label</label>
-                      <input type="range" name="shadow.shadow_opacity" min="0" max="100" step="1" class="range-input" id="inp-range-01">
-                      <label for="inp-range-02" class="hidden">Label</label>
-                      <input type="range" name="shadow.shadow_opacity" min="0" max="100" step="1" class="range-input" id="inp-range-02" disabled>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="page" id="page--select">
-          <!-- select -->
-          <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
-            <h3 class="page-header__title">Select</h3>
-          </div>
-          <div class="page-content">
-            <p class="page__desc">특정 버튼을 클릭했을 경우 뜨는 리스트 형태의 메뉴입니다.</p>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Default Select</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div>
-                    <div class="component-example__row">
-                      <p class="component-example__size-label">Size: lg</p>
-                      <div class="component-examle__item-group component-examle__item-group--column">
-                        <!--
-                select--open 클래스 추가시 open
-                select--up 클래스 추가시 컨테이너가 위로 열림
-                select--right 클래스 추가시 컨테이너가 우측 기준으s로 열림
-               -->
-                        <div class="select select--lg" style="min-width: 160px; max-width: 230px;" role="select">
-                          <div class="select-selector" aria-expanded="false" aria-controls="select-01">
-                            <button class="select-selector__button" type="button">
-                              <span class="select-selector__title">SelectContentUpSelectContentUpSelectContentUp</span>
-                              <svg class="svg-icon select-selector__icon" aria-hidden="true">
-                                <use xlink:href="#chevron-down-medium"></use>
-                              </svg>
-                            </button>
-                          </div>
-                          <div class="select-container select-container--lg" id="select-02" aria-haspopup="true">
-                            <ul class="select-container__list">
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">URL 관리</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">권한 설정</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">사본으로 저장</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">정보 변경</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">목록으로 나가기</span>
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="select select--lg select--disabled" style="min-width: 160px; max-width: 230px;" role="select">
-                          <div class="select-selector" aria-expanded="false" aria-controls="select-02">
-                            <button class="select-selector__button" type="button">
-                              <span class="select-selector__title">SelectContentUpSelectContentUpSelectContentUp</span>
-                              <svg class="svg-icon select-selector__icon" aria-hidden="true">
-                                <use xlink:href="#chevron-down-medium"></use>
-                              </svg>
-                            </button>
-                          </div>
-                          <div class="select-container select-container--lg" id="select-02" aria-haspopup="true">
-                            <ul class="select-container__list">
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">URL 관리</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">권한 설정</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">사본으로 저장</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">정보 변경</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">목록으로 나가기</span>
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="component-example__row">
-                      <p class="component-example__size-label">Size: md</p>
-                      <div class="component-examle__item-group component-examle__item-group--column">
-                        <!-- select--open 클래스 추가시 open -->
-                        <div class="select" style="min-width: 160px; max-width: 230px;" role="select">
-                          <div class="select-selector" aria-expanded="false" aria-controls="select-01">
-                            <button class="select-selector__button" type="button">
-                              <span class="select-selector__title">텍스트 유형</span>
-                              <svg class="svg-icon select-selector__icon" aria-hidden="true">
-                                <use xlink:href="#chevron-down-medium"></use>
-                              </svg>
-                            </button>
-                          </div>
-                          <div class="select-container" id="select-01" aria-haspopup="true">
-                            <ul class="select-container__list">
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">URL 관리</span>
-                                </button>
-                              </li>
-                              <!-- 선택 된 객체에 select-container__item--selected 클래스 추가 -->
-                              <li class="select-container__item select-container__item--selected">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">권한 설정</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">다른 이름으로 저장</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">정보 변경</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">목록으로 나가기</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <div class="select-container__notification" id="select-01" aria-haspopup="true">
-                                  <div class="notification-message notification-message--info">
-                                    <svg class="notification-message__icon svg-icon" aria-hidden="true" aria-hidden="true">
-                                      <use xlink:href="#info-fill"></use>
-                                    </svg>
-                                    <span class="notification-message__text">데이터가 없습니다</span>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="select-container__item">
-                                <div class="select-container__notification" id="select-01" aria-haspopup="true">
-                                  <div class="notification-message notification-message--inline notification-message--loading">
-                                    <div class="loader loader--xs">
-                                      <div class="loader__spinner"></div>
-                                    </div>
-                                    <span class="notification-message__text">데이터를 불러오는 중...</span>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <!-- 비활성 상태 -->
-                        <!-- select--open 클래스 추가시 open -->
-                        <div class="select select--disabled" style="min-width: 160px; max-width: 230px;" role="select">
-                          <div class="select-selector" aria-expanded="false" aria-controls="select-01">
-                            <button class="select-selector__button" type="button">
-                              <span class="select-selector__title">텍스트 유형</span>
-                              <svg class="svg-icon select-selector__icon" aria-hidden="true">
-                                <use xlink:href="#chevron-down-medium"></use>
-                              </svg>
-                            </button>
-                          </div>
-                          <div class="select-container" id="select-01" aria-haspopup="true">
-                            <ul class="select-container__list">
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">URL 관리</span>
-                                </button>
-                              </li>
-                              <!-- 선택 된 객체에 select-container__item--selected 클래스 추가 -->
-                              <li class="select-container__item select-container__item--selected">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">권한 설정</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">다른 이름으로 저장</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">정보 변경</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">목록으로 나가기</span>
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="component-example__row">
-                      <p class="component-example__size-label">Size: sm</p>
-                      <div class="component-examle__item-group component-examle__item-group--column">
-                        <!-- select--open 클래스 추가시 open -->
-                        <div class="select select--sm select--open" style="min-width: 160px; max-width: 230px;" role="select">
-                          <div class=" select-selector" aria-expanded="true" aria-controls="select-01">
-                            <button class=" select-selector__button" type="button">
-                              <svg class="svg-icon" aria-hidden="true">
-                                <use xlink:href="#key"></use>
-                              </svg>
-                              <span class="select-selector__title">권한 설정</span>
-                              <svg class="svg-icon select-selector__icon" aria-hidden="true">
-                                <use xlink:href="#chevron-down-medium"></use>
-                              </svg>
-                            </button>
-                          </div>
-                          <div class="select-container" id="select-01" aria-haspopup="true">
-                            <ul class="select-container__list">
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <svg class="svg-icon select-container__icon" aria-hidden="true">
-                                    <use xlink:href="#link"></use>
-                                  </svg>
-                                  <span class="select-container__text">URL 관리</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item select-container__item--selected">
-                                <button class="select-container__button" type="button" role="option">
-                                  <svg class="svg-icon select-container__icon" aria-hidden="true">
-                                    <use xlink:href="#key"></use>
-                                  </svg>
-                                  <span class="select-container__text">권한 설정</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <svg class="svg-icon select-container__icon" aria-hidden="true">
-                                    <use xlink:href="#copy"></use>
-                                  </svg>
-                                  <span class="select-container__text">사본으로 저장</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <svg class="svg-icon select-container__icon" aria-hidden="true">
-                                    <use xlink:href="#write"></use>
-                                  </svg>
-                                  <span class="select-container__text">정보 변경</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <svg class="svg-icon select-container__icon" aria-hidden="true">
-                                    <use xlink:href="#popout"></use>
-                                  </svg>
-                                  <span class="select-container__text">목록으로 나가기</span>
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="select select--sm select--disabled" style="min-width: 160px; max-width: 230px;" role="select">
-                          <div class="select-selector" aria-expanded="false" aria-controls="select-01">
-                            <button class="select-selector__button" type="button">
-                              <span class="select-selector__title">SelectContent</span>
-                              <svg class="svg-icon select-selector__icon" aria-hidden="true">
-                                <use xlink:href="#chevron-down-medium"></use>
-                              </svg>
-                            </button>
-                          </div>
-                          <div class="select-container" id="select-01" aria-haspopup="true">
-                            <ul class="select-container__list">
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">URL 관리</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">권한 설정</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">사본으로 저장</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">정보 변경</span>
-                                </button>
-                              </li>
-                              <li class="select-container__item">
-                                <button class="select-container__button" type="button" role="option">
-                                  <span class="select-container__text">목록으로 나가기</span>
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
         <div class="page" id="page--steps">
           <!-- tag -->
           <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
+            <strong class="page-header__lable">component</strong>
             <h3 class="page-header__title">Steps</h3>
           </div>
           <div class="page-content">
-            <p class="page__desc">
-              사용자에게 태스크의 단계를 안내하는 역할을 합니다.
-            </p>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Default</span>
+            <div class="component">
+              <span class="component__name">Default</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -1842,208 +1437,16 @@
           </div>
 
         </div>
-        <div class="page" id="page--tab">
-          <div class="component-content" id="tab">
-            <strong class="component-content__title">
-              Tab
-            </strong>
-            <div class="component">
-              <p class="component__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, consequuntur? Nesciunt nulla totam velit? Eum nesciunt molestiae dolorum autem impedit.
-              </p>
-              <ul class="tab">
-                <li class="tab__item">
-                  <button class="tab__button" type="button" title="tab1">
-                    <span class="tab__text">
-                      Tab1
-                    </span>
-                  </button>
-                </li>
-                <li class="tab__item">
-                  <button class="tab__button" type="button" title="tab2">
-                    <span class="tab__text">
-                      Tab2
-                    </span>
-                  </button>
-                </li>
-                <li class="tab__item">
-                  <button class="tab__button" type="button" title="tab3">
-                    <span class="tab__text">
-                      Tab3
-                    </span>
-                  </button>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="page" id="page--table">
-          <!-- context menu -->
-          <!-- Table 마크업과 스타일링 UI 추가 시작 -->
-          <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
-            <h3 class="page-header__title">Table</h3>
-          </div>
-          <div class="page-content">
-            <p class="page__desc">테이블은 데이터를 효율적으로 구성하고 표시하는데 사용됩니다.</p>
-
-            <div class="component-variation">
-              <span class="component-variation__name">Default</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div>
-                    <div class="component-example__row">
-                      <p class="component-example__size-label">Size: md</p>
-                      <div class="component-examle__item-group component-examle__item-group--column">
-                        <!-- table-primary -->
-                        <table class="table table--primary">
-                          <caption class="hidden">Table</caption>
-                          <thead>
-                            <tr>
-                              <th scope="col">오브젝트 ID</th>
-                              <th scope="col">변수 명</th>
-                              <th scope="col">변수 값</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
-                            <tr class="tr--selected">
-                              <td>Selected Status</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="component-example__row">
-                      <p class="component-example__size-label">Size: sm</p>
-                      <div class="component-examle__item-group component-examle__item-group--column">
-                        <!-- table-primary -->
-                        <table class="table table--primary table--sm">
-                          <caption class="hidden">Table</caption>
-                          <thead>
-                            <tr>
-                              <th scope="col">오브젝트 ID</th>
-                              <th scope="col">변수 명</th>
-                              <th scope="col">변수 값</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
-                            <tr class="tr--selected">
-                              <td>Selected Status</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <!-- Drawer 마크업과 스타일링 UI 추가 시작  -->
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="component-variation">
-              <span class="component-variation__name">Table Scroll</span>
-              <div class="component-example">
-                <div class="component-example__live">
-                  <div>
-                    <div class="table-scroll">
-                      <table class="table table--primary">
-                        <caption class="hidden">Table</caption>
-                        <thead>
-                          <tr>
-                            <th scope="col">오브젝트 ID</th>
-                            <th scope="col">변수 명</th>
-                            <th scope="col">변수 값</th>
-                          </tr>
-                        </thead>
-                      </table>
-                      <div class="overflow-y" style="max-height: 120px;">
-                        <!-- table-primary -->
-                        <table class="table table--primary">
-                          <caption class="hidden">Table</caption>
-                          <tbody>
-                            <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
-                            <tr class="tr--selected">
-                              <td>Selected Status</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <!-- Drawer 마크업과 스타일링 UI 추가 시작  -->
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                            <tr>
-                              <td>GLOBAL</td>
-                              <td>USER_ID</td>
-                              <td>Root</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
         <div class="page" id="page--tag">
           <!-- tag -->
           <div class="page-header">
-            <h2 class="page-header__lable">component</h2>
+            <strong class="page-header__lable">component</strong>
             <h3 class="page-header__title">Tag</h3>
           </div>
           <div class="page-content">
-            <p class="page__desc">
-              태그는 각 항목을 설명하는 키워드로 사용하여<br />항목에 레이블 지정, 분류(categorizing) 또는 정리할 수 있습니다.
-            </p>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Button Tag </span>
+            <div class="component">
+              <span class="component__name">Default</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -2109,9 +1512,8 @@
               </div>
             </div>
 
-            <div class="component-variation">
-              <span class="component-variation__name">Link tag(a Link + Delete Button)</span>
-              <p class="component-variation__desc">Removable Tag과 동일한 UI로 보이지만, 접근성을 고려해서 페이지 이동이 되는 a 요소와 태그를 삭제할 수 있는 Button 요소를 사용한 구성입니다.</p>
+            <div class="component">
+              <span class="component__name">Link tag(Link + Delete Button)</span>
               <div class="component-example">
                 <div class="component-example__live">
                   <div>
@@ -2229,14 +1631,13 @@
           <div class="page" id="page--text-input">
             <!-- text-input -->
             <div class="page-header">
-              <h2 class="page-header__lable">component</h2>
+              <strong class="page-header__lable">component</strong>
               <h3 class="page-header__title">Text Input</h3>
             </div>
             <div class="page-content">
-              <p class="page__desc">텍스트 입력 필드</p>
 
-              <div class="component-variation">
-                <span class="component-variation__name">Default Input</span>
+              <div class="component">
+                <span class="component__name">Default</span>
                 <div class="component-example">
                   <div class="component-example__live">
                     <div>
@@ -2314,14 +1715,12 @@
           <div class="page" id="page--textarea">
             <!-- textarea -->
             <div class="page-header">
-              <h2 class="page-header__lable">component</h2>
+              <strong class="page-header__lable">component</strong>
               <h3 class="page-header__title">Textarea</h3>
             </div>
             <div class="page-content">
-              <p class="page__desc">텍스트 입력 영역 필드</p>
-
-              <div class="component-variation">
-                <span class="component-variation__name">Default</span>
+              <div class="component">
+                <span class="component__name">Default</span>
                 <div class="component-example">
                   <div class="component-example__live">
                     <div>

@@ -159,7 +159,7 @@
 }
 
 // -------------------------
-// classes
+// class
 // -------------------------
 .button {
   @include button;
@@ -167,7 +167,6 @@
   &--icon {
     @include button--icon(6px, 20px);
 
-    // link 테마 버튼이 icon만 사용되는 경우 예외 사항
     &.button--link {
       @include button--icon(4px, 24px);
     }
