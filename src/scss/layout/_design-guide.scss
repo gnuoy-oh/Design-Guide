@@ -142,12 +142,12 @@
     }
   }
 
-  &__row {
+  &__contents {
     display: flex;
     align-items: center;
 
-    &:not(:first-child) {
-      margin-top: $spacing-md;
+    &:not(:last-child) {
+      margin-bottom: $spacing-md;
     }
   }
 
@@ -163,15 +163,15 @@
     display: flex;
     align-items: center;
 
-    > *:not(:first-child) {
-      margin-left: $spacing-sm;
+    > *:not(:last-child) {
+      margin-right: $spacing-sm;
     }
 
     &--column {
       flex-direction: column;
-      > *:not(:first-child) {
-        margin-left: 0;
-        margin-top: $spacing-xs;
+      > *:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: $spacing-xs;
       }
     }
   }
@@ -179,4 +179,62 @@
 
 .progressbar {
   width: rem(550px);
+}
+
+@include respond-to("breakpoint-lg") {
+  .color-card-wrap {
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  .color-card {
+    flex: 1;
+  }
+  .component {
+    &__contents {
+      flex-direction: column;
+      &:not(:last-child) {
+        margin-bottom: $spacing-xl;
+      }
+    }
+
+    &__label {
+      margin-right: 0;
+      margin-bottom: $spacing-md;
+      text-align: center;
+    }
+
+    &__group {
+      flex-direction: column;
+      > *:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: $spacing-xs;
+      }
+    }
+  }
+}
+
+@include respond-to("breakpoint-md") {
+  .component {
+    &__group {
+      width: 100%;
+    }
+
+    .progressbar {
+      width: 100%;
+    }
+  }
+
+  .checkboxs,
+  .radios,
+  .checkbox-toggle {
+    flex-direction: column;
+    .checkbox,
+    .radio {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: $spacing-xs;
+      }
+    }
+  }
 }
