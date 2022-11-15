@@ -24,23 +24,22 @@
 }
 
 .footer {
-  // position: absolute;
   width: 100%;
   padding: rem(64px) $spacing-3xl $spacing-3xl;
   background-color: $ui-01;
-  border-top: 1px solid $ui-04;
+  border-top: 1px solid $ui-03;
+
+  &__version {
+    @include font-size("12");
+    color: $text-02;
+  }
+
+  &__copyright {
+    @include font-size("12");
+    color: $text-02;
+  }
 }
 
-.footer__version {
-  @include font-size("12");
-  color: $text-02;
-}
-
-.footer__copyright {
-  @include font-size("12");
-  color: $text-02;
-}
-// content - article area
 .page-header {
   align-items: flex-start;
   background-color: $ui-01;
@@ -59,15 +58,29 @@
     width: 100%;
     height: rem(1px);
     display: block;
-    background-color: $ui-04;
+    background-color: $ui-03;
     position: absolute;
     top: rem(-48px);
     left: 0;
   }
-}
 
-.page:not(:first-child) .page-header {
-  border-top: 1px solid darken($ui-01, 12%);
+  &__lable {
+    @include font-size("14");
+    @include font-weight("regular");
+    color: $text-02;
+    margin: $spacing-3xl 0 $spacing-sm;
+    white-space: nowrap;
+    text-transform: capitalize;
+  }
+
+  &__title {
+    @include letter-spacing;
+    @include font-size("32");
+    @include font-weight("medium");
+    color: $text-01;
+    margin-top: -$spacing-sm;
+    padding: 0;
+  }
 }
 
 .page-content {
@@ -76,65 +89,15 @@
   width: 100%;
 }
 
-//--------------------
-// Page styles
-//--------------------
-
-.page-header__lable {
-  @include font-size("14");
-  @include font-weight("regular");
-  color: $text-02;
-  margin: $spacing-3xl 0 $spacing-sm;
-  white-space: nowrap;
-  text-transform: capitalize;
-}
-
-.page-header__title {
-  @include letter-spacing;
-  @include font-size("32");
-  @include font-weight("medium");
-  color: $text-01;
-  margin-top: -$spacing-sm;
-  padding: 0;
-}
-
-.page__desc {
-  @include font-smoothing;
-  @include letter-spacing;
-  @include font-size("16");
-  @include line-height("body");
-  max-width: rem(800px);
-  color: $text-01;
-  word-wrap: normal;
-  font-weight: 600;
-  padding-bottom: $spacing-xl;
-
-  span {
-    color: $primary;
-  }
-}
-
-.page__usage {
-  margin-bottom: $spacing-xl;
-}
-
-.md {
-  @include font-size("14");
-  @include line-height("body");
-  color: $text-01;
-
-  ul {
-    list-style: disc;
-    padding-left: $spacing-lg;
-  }
-
-  li {
-    margin-bottom: $spacing-3xs;
+.page {
+  &:not(:first-child) .page-header {
+    border-top: 1px solid darken($ui-01, 12%);
   }
 }
 
 .component {
   margin: rem(96px) 0 rem(96px);
+
   &__name {
     @include font-size("24");
     @include font-weight("regular");
@@ -148,118 +111,72 @@
       width: rem(40px);
       height: rem(3px);
       display: block;
-      background-color: $secondary;
+      background-color: $active-primary;
       position: absolute;
       top: -0.5rem;
       left: 0;
     }
   }
-}
 
-//--------------------
-// Component example Style
-//--------------------
+  &__example {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
 
-.component-example {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  // color: $white;
-}
+  &__views {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: rem(200px);
+    position: relative;
+    padding: 2rem 2rem 2.5rem;
+    margin: 1.5rem 0 0;
+    background-color: $ui-02;
+    color: $text-01;
+    border: 1px solid $ui-03;
 
-.component-example__live {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: rem(200px);
-  position: relative;
-  padding: 2rem 2rem 2.5rem;
-  margin: 1.5rem 0 0;
-  background-color: $ui-02;
-  color: $text-01;
-  border: 1px solid $ui-04;
-}
+    > div + div {
+      margin-left: $spacing-3xl;
+    }
+  }
 
-.component-example__live > div + div {
-  margin-left: $spacing-3xl;
-}
+  &__row {
+    display: flex;
+    align-items: center;
 
-.component-example__row {
-  display: flex;
-  align-items: center;
-}
+    &:not(:first-child) {
+      margin-top: $spacing-md;
+    }
+  }
 
-.component-example__row + .component-example__row {
-  margin-top: $spacing-md;
-}
+  &__label {
+    @include font-size("12");
+    margin-right: $spacing-lg;
+    width: rem(60px);
+    color: $text-03;
+    white-space: nowrap;
+  }
 
-.component-example__size-label {
-  @include font-size("12");
-  margin-right: $spacing-lg;
-  width: rem(60px);
-  color: $text-03;
-  white-space: nowrap;
-}
+  &__group {
+    display: flex;
+    align-items: center;
 
-.component-examle__item-group {
-  display: flex;
-  align-items: center;
-}
+    > *:not(:first-child) {
+      margin-left: $spacing-sm;
+    }
 
-.accordion,
-.description,
-.drawer,
-.list,
-.progressbar,
-.transfer,
-.upload,
-.upload-preview,
-.upload-drag {
-  width: rem(550px);
-}
-
-.drawer .description {
-  width: 100%;
-}
-
-.progressbar {
-  & ~ & {
-    margin-top: $spacing-md;
+    &--column {
+      flex-direction: column;
+      > *:not(:first-child) {
+        margin-left: 0;
+        margin-top: $spacing-xs;
+      }
+    }
   }
 }
 
-.tag + .tag,
-.badge + .badge {
-  margin-left: $spacing-xs;
-}
-
-.component-examle__item-group--row {
-  flex-direction: column;
-}
-
-.component-examle__item-group > .button + .button,
-.component-examle__item-group .context-menu + .context-menu,
-.component-examle__item-group .select + .select,
-.component-examle__item-group .toggle-switch + .toggle-switch,
-.component-examle__item-group .toggle-button + .toggle-button,
-.component-examle__item-group .tooltip-studio + .tooltip-studio,
-.component-examle__item-group .table + .table {
-  margin-left: $spacing-sm;
-}
-
-.component-examle__item-group > .text-input:not(:first-child),
-.component-examle__item-group > .text-input-group:not(:first-child),
-.component-examle__item-group > .text-input-group:not(:first-child) {
-  margin-top: $spacing-xs;
-}
-
-.component-examle__item-group .text-input-group .text-input {
-  margin: 0;
-}
-
-.component-examle__item-group--row .upload + .upload,
-.component-examle__item-group--row .upload-alt + .upload-alt,
-.component-examle__item-group--row .upload-preview + .upload-preview {
-  margin-top: $spacing-xs;
+.progressbar {
+  width: rem(550px);
 }

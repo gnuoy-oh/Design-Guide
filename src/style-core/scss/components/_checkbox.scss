@@ -1,10 +1,10 @@
 // -------------------------
 // Checkbox
 // -------------------------
-
 .checkboxs {
   display: flex;
-  .checkbox:not(:last-of-type) {
+
+  .checkbox:not(:last-child) {
     margin-right: $spacing-xs;
   }
 }
@@ -62,7 +62,7 @@
       position: absolute;
       left: 0;
       top: rem(2px);
-      background-color: $ui-01;
+      background-color: $ui-02;
       border: 1px solid $text-03;
     }
 
@@ -74,8 +74,8 @@
       width: rem(9px);
       height: rem(5px);
       background: none;
-      border-left: 2px solid $text-04;
-      border-bottom: 2px solid $text-04;
+      border-left: 2px solid $ui-02;
+      border-bottom: 2px solid $ui-02;
       transform: scale(0) rotate(-45deg);
       transform-origin: bottom right;
     }
@@ -207,7 +207,7 @@
       border-color: $primary;
     }
     &::after {
-      border-color: $text-04;
+      border-color: $ui-02;
     }
   }
 }
@@ -220,7 +220,7 @@
   align-items: center;
 
   .checkbox {
-    &:not(:last-of-type) {
+    &:not(:last-child) {
       margin-right: $spacing-xs;
     }
 
@@ -228,7 +228,7 @@
       height: rem(32px);
       padding: 0 $spacing-sm;
       line-height: 1;
-      border: 1px solid $ui-04;
+      border: 1px solid $ui-03;
       border-radius: $default-border-radius;
 
       &:after,
@@ -247,7 +247,7 @@
       &:checked + .checkbox__label {
         background-color: $primary;
         border-color: $primary;
-        color: $text-04;
+        color: $ui-02;
       }
 
       &:checked:focus-visible:not(:disabled) {
