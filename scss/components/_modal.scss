@@ -1,69 +1,74 @@
 // -------------------------
 // Modal
 // -------------------------
-.modal-group {
-  display: none;
-  &--open {
-    display: block;
-  }
-}
-
-.overlay {
-  z-index: z("overlay");
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  background-color: $text-05;
-  opacity: 0.6;
-}
-
 .modal {
+  @include layer("raised");
   z-index: z("modal");
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: rem(358px);
-  background-color: $ui-01;
-  border-radius: rem(10px);
-  transform: translate(-50%, -50%);
-  &__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: rem(41.5px) rem(15px) 0 rem(15px);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: rem(320px);
+  border: 1px solid $ui-04;
+  border-radius: $default-border-radius;
+  background-color: $ui-02;
 
-    img {
-      width: rem(62px);
-      height: rem(62px);
+  &__head {
+    @include stable-padding($spacing-2xs, $spacing-sm);
+    display: flex;
+    align-items: center;
+    min-height: rem(40px);
+    border-bottom: 1px solid $ui-04;
+
+    &-close-button {
+      margin-left: auto;
+    }
+
+    &-title {
+      @include ellipsis;
+      display: flex;
+      flex: 1 0 auto;
+      align-items: center;
+      width: calc(100% - 140px);
+    }
+
+    &-title-text {
+      @include ellipsis;
+      @include line-height("body");
+      @include font-size("14");
+      color: $text-02;
+    }
+
+    &-subtitle {
+      @include ellipsis;
+      @include line-height("body");
+      @include font-size("13");
+      margin-left: $spacing-2xs;
+      color: $text-02;
     }
   }
 
-  &__text {
-    @include font-size("15");
-    margin-top: rem(31.5px);
-    color: $text-05;
-    text-align: center;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: $spacing-md;
   }
 
-  &__footer {
+  &__foot {
+    @include stable-padding($spacing-sm, $spacing-sm);
     display: flex;
-    padding: rem(15px);
-    align-items: center;
-
-    &-button {
-      @include button-base;
-      flex: 1;
-      height: rem(49px);
-      color: $ui-01;
-      border-radius: rem(6px);
-
-      &--submit {
-        margin-left: rem(9px);
-        background-color: $secondary;
-      }
+    background-color: $ui-01;
+    &-main-buttons {
+      display: flex;
+      margin-left: auto;
+    }
+    .button + .button,
+    div + div,
+    .modal__foot-main-buttons div + div {
+      margin-left: $spacing-xs;
     }
   }
 }
