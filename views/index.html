@@ -5,12 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="author" content="Oh MinYoung">
+  <meta name="description" content="오민영의 디자인 시스템으로 컴포넌트를 예시로 보여줍니다.">
+  <title>디자인 시스템</title>
   <link rel="stylesheet" href="../dist/css/style.min.css" />
 </head>
 
 <body>
   <div class="layout">
+    <div class="skip-navigation">
+      <a href="#page--color" class="skip-navigation__link" title="바로가기">Style Color으로 바로가기</a>
+      <a href="#page--button" class="skip-navigation__link" title="바로가기">Component Button으로 바로가기</a>
+    </div>
     <nav class="side-nav">
       <div class="side-nav__top-bar">
         <h1 class="side-nav__logo">
@@ -23,46 +29,46 @@
             <p class="snb__title">Style</p>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--color">Color</a>
+            <a class="snb__link" title="이동" href="#page--color">Color</a>
           </li>
           <li class="snb__item">
             <p class="snb__title">Component</p>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--button">Button</a>
+            <a class="snb__link" title="이동" href="#page--button">Button</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--checkbox">Checkbox</a>
+            <a class="snb__link" title="이동" href="#page--checkbox">Checkbox</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--loader">Loader</a>
+            <a class="snb__link" title="이동" href="#page--loader">Loader</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--modal">Modal</a>
+            <a class="snb__link" title="이동" href="#page--modal">Modal</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--notification">Notification</a>
+            <a class="snb__link" title="이동" href="#page--notification">Notification</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--pagination">Pagination</a>
+            <a class="snb__link" title="이동" href="#page--pagination">Pagination</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--progressbar">Progressbar</a>
+            <a class="snb__link" title="이동" href="#page--progressbar">Progressbar</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--radio">Radio</a>
+            <a class="snb__link" title="이동" href="#page--radio">Radio</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--steps">Steps</a>
+            <a class="snb__link" title="이동" href="#page--steps">Steps</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--tag">Tag</a>
+            <a class="snb__link" title="이동" href="#page--tag">Tag</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--text-input">Text Input</a>
+            <a class="snb__link" title="이동" href="#page--text-input">Text Input</a>
           </li>
           <li class="snb__sub-item">
-            <a class="snb__link" href="#page--textarea">Textarea</a>
+            <a class="snb__link" title="이동" href="#page--textarea">Textarea</a>
           </li>
         </ul>
       </div>
@@ -735,7 +741,7 @@
                   <div>
                     <!-- info -->
                     <div class="notification-wrap">
-                      <div class="notification notification--info" role="alert">
+                      <div class="notification notification--info">
                         <svg class="notification__icon svg-icon" aria-hidden="true">
                           <use xlink:href="#info-fill"></use>
                         </svg>
@@ -747,7 +753,7 @@
                     </div>
                     <!-- success -->
                     <div class="notification-wrap">
-                      <div class="notification notification--success" role="alert">
+                      <div class="notification notification--success">
                         <svg class="notification__icon svg-icon" aria-hidden="true">
                           <use xlink:href="#checkmark-fill"></use>
                         </svg>
@@ -759,7 +765,7 @@
                     </div>
                     <!-- warning -->
                     <div class="notification-wrap">
-                      <div class="notification notification--warning" role="alert">
+                      <div class="notification notification--warning">
                         <svg class="notification__icon svg-icon" aria-hidden="true">
                           <use xlink:href="#warning-fill"></use>
                         </svg>
@@ -771,7 +777,7 @@
                     </div>
                     <!-- error -->
                     <div class="notification-wrap">
-                      <div class="notification notification--error" role="alert">
+                      <div class="notification notification--error">
                         <svg class="notification__icon svg-icon" aria-hidden="true">
                           <use xlink:href="#issue-fill"></use>
                         </svg>
@@ -786,7 +792,7 @@
                     </div>
                     <!-- normal -->
                     <div class="notification-wrap">
-                      <div class="notification notification--normal" role="alert">
+                      <div class="notification notification--normal">
                         <svg class="notification__icon svg-icon" aria-hidden="true">
                           <use xlink:href="#subtract"></use>
                         </svg>
