@@ -1,7 +1,6 @@
 //----------------------------------------------
 // Text input
 // ---------------------------------------------
-// mixins
 @mixin text-input {
   @include font-family("sans");
   @include font-size("14");
@@ -12,7 +11,7 @@
   height: rem(32px);
   padding: 0 $spacing-sm;
   color: $text-01;
-  border: 1px solid $ui-03;
+  border: 1px solid $ui-04;
   border-radius: $default-border-radius;
   transition: all $duration-fast-01 motion(standard, productive);
   outline: none;
@@ -50,10 +49,6 @@
     border-color: $ui-03;
     opacity: 0.5;
     box-shadow: none;
-
-    ~ .text-input-group__button {
-      display: none;
-    }
   }
 
   &[readonly],

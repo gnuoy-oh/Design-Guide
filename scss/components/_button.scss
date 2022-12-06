@@ -81,6 +81,50 @@
   @include button-theme($negative, $ui-02, $hover-negative, $active-negative);
 }
 
+@mixin button--underline {
+  @include button-theme(transparent, $secondary, transparent, transparent);
+  padding: 0;
+  text-decoration: underline;
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    color: $hover-secondary;
+
+    .svg-icon {
+      fill: $hover-secondary;
+    }
+  }
+
+  &:active:not(:disabled) {
+    color: $active-secondary;
+
+    .svg-icon {
+      fill: $active-secondary;
+    }
+  }
+}
+
+@mixin button--underline-negative {
+  @include button-theme(transparent, $negative, transparent, transparent);
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    color: $hover-negative;
+
+    .svg-icon {
+      fill: $hover-negative;
+    }
+  }
+
+  &:active:not(:disabled) {
+    color: $active-negative;
+
+    .svg-icon:not(:disabled) {
+      fill: $active-negative;
+    }
+  }
+}
 // -------------------------
 // button-size
 // -------------------------
@@ -148,6 +192,14 @@
 
   &--negative {
     @include button--negative;
+  }
+
+  &--underline {
+    @include button--underline;
+  }
+
+  &--underline-negative {
+    @include button--underline-negative;
   }
 
   &--lg {

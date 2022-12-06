@@ -26,8 +26,15 @@
     & + & {
       margin-left: $spacing-lg;
     }
-    &--current .steps__icon {
-      background-color: $primary;
+    &--current {
+      .steps {
+        &__title-text {
+          color: $text-01;
+        }
+        &__icon {
+          background-color: $primary;
+        }
+      }
     }
   }
 

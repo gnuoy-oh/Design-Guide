@@ -12,7 +12,11 @@
 
   &:hover:not(:disabled) {
     background-color: darken($hover-row, 5%);
-    color: $primary;
+    color: $text-01;
+
+    .tag__link {
+      color: $text-01;
+    }
   }
 
   &:focus-visible:not(:disabled) {
@@ -58,9 +62,9 @@
     }
 
     &:hover {
-      background-color: rgba($primary, 0.15);
+      background-color: rgba($text-01, 0.15);
       .svg-icon {
-        fill: $primary;
+        fill: $text-01;
       }
     }
 
@@ -71,12 +75,12 @@
 
   &--lg {
     @include font-size("14");
-    height: rem(32px);
+    height: $default-height-md;
     padding: 0 $spacing-xs;
   }
 
   &--sm {
-    height: rem(18px);
+    height: $default-height-xs;
   }
 }
 
