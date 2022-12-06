@@ -1,13 +1,16 @@
 // Color Theme Variables
 $primary: #06c755 !default;
+$secondary: #0b1a3c !default;
 $negative: #ef594f !default;
 $ui-01: #f0f0f0 !default;
 $ui-02: #ffffff !default;
 $ui-03: #c8c8c8 !default;
+$ui-04: #dce1e8 !default;
 $text-01: #3a3c41 !default;
 $text-02: #adadad !default;
 $text-03: #777777 !default;
 $text-04: #abafba !default;
+$text-05: #212121 !default;
 $icon-01: #77889a !default;
 $support-01: #0747a6 !default;
 $support-02: #00875a !default;
@@ -17,9 +20,11 @@ $overlay-01: rgba(#242e3d, 0.5) !default;
 
 // Interactive Tokesn
 $hover-primary: #09b952 !default;
+$hover-secondary: #2f4888 !default;
 $hover-negative: #ff7e75 !default;
 $hover-ui-accent: #edf4ff !default;
 $hover-row: #f0f3f6 !default;
 $odd-row: #fafafa !default;
 $active-primary: #0bab4e !default;
+$active-secondary: #02040c !default;
 $active-negative: #e24d43 !default;

@@ -8,7 +8,7 @@
   flex-direction: column;
   position: absolute;
   min-height: rem(320px);
-  border: 1px solid $ui-03;
+  border: 1px solid $ui-04;
   border-radius: $default-border-radius;
   background-color: $ui-02;
 
@@ -35,7 +35,7 @@
       @include ellipsis;
       @include line-height("body");
       @include font-size("14");
-      color: $text-02;
+      color: $text-01;
     }
 
     &-subtitle {

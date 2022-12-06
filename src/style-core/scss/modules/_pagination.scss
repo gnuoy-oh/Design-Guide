@@ -9,19 +9,19 @@
 
   &__button,
   &__link {
-    @include button-base;
+    @include button-normalize;
     @include font-weight("regular");
     width: rem(32px);
     height: rem(32px);
     background-color: transparent;
     border-radius: $default-border-radius;
-    color: $text-01;
+    color: $text-02;
   }
 
   &__link {
     &:hover:not(:disabled) {
       background-color: $ui-01;
-      color: $text-01;
+      color: $text-02;
     }
 
     &:focus,
@@ -54,5 +54,36 @@
   &__ellipsis {
     display: block;
     padding: 0 $spacing-xs;
+    color: $text-02;
+  }
+
+  &__input {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32px);
+    height: rem(32px);
+    padding: $spacing-2xs $spacing-xs;
+    border-color: transparent;
+    color: $text-02;
+    -webkit-font-smoothing: antialiased;
+
+    &:active,
+    &:focus {
+      border-color: $ui-04;
+      box-shadow: 0 0 rem(4px) rgba($ui-04, 0.65);
+    }
+  }
+
+  &__last-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32px);
+    height: rem(32px);
+    padding: $spacing-2xs $spacing-xs;
+    color: $text-02;
+    -webkit-font-smoothing: antialiased;
   }
 }

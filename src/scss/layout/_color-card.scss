@@ -50,7 +50,7 @@
   }
 
   .secondary {
-    @include color-vars($active-primary);
+    @include color-vars($secondary);
   }
 
   .negative {
@@ -69,6 +69,10 @@
     @include color-vars($ui-03);
   }
 
+  .ui-04 {
+    @include color-vars($ui-04);
+  }
+
   .text-01 {
     @include color-vars($text-01);
   }
@@ -83,6 +87,10 @@
 
   .text-04 {
     @include color-vars($text-04);
+  }
+
+  .text-05 {
+    @include color-vars($text-05);
   }
 
   .icon-01 {

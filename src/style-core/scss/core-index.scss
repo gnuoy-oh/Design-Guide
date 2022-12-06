@@ -19,6 +19,7 @@
 @import "./base/helper-classes";
 
 // components
+@import "./components/badge";
 @import "./components/button";
 @import "./components/checkbox";
 @import "./components/loader";
@@ -27,11 +28,17 @@
 @import "./components/pagination";
 @import "./components/progressbar";
 @import "./components/radio";
+@import "./components/select";
 @import "./components/skip-navigation";
 @import "./components/steps";
+@import "./components/table";
 @import "./components/tag";
 @import "./components/text-input";
 @import "./components/textarea";
+@import "./components/toggle-switch";
+
+// module component
+@import "./modules/description";
 
 // layout
 @import "./layout/header";
