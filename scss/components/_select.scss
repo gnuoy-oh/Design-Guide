@@ -1,0 +1,249 @@
+// -------------------------
+// Select
+// -------------------------
+
+.select {
+  position: relative;
+  min-width: rem(160px);
+
+  &--open {
+    .select-selector {
+      &__button,
+      &__input {
+        border-color: $primary;
+        box-shadow: 0px 0px 6px rgba(240, 39, 105, 0.3);
+
+        &:hover:not(:disabled) {
+          border-color: $primary;
+        }
+      }
+
+      &__icon {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .select-container {
+      display: block;
+    }
+
+    &.select--disabled {
+      .select-selector__icon {
+        transform: none;
+      }
+
+      .select-container {
+        display: none;
+      }
+    }
+  }
+
+  &--close {
+    .select-container {
+      display: none;
+    }
+  }
+
+  &--disabled {
+    .select-selector {
+      &__button {
+        opacity: 0.25;
+        cursor: not-allowed;
+        box-shadow: none;
+
+        &:hover:not(:disabled),
+        &:hover:active,
+        &:hover:focus {
+          border-color: $ui-04;
+          opacity: 0.25;
+          cursor: not-allowed;
+          box-shadow: none;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:focus-visible:not(:disabled) {
+          border-color: $ui-04;
+          box-shadow: none;
+          outline: none;
+        }
+      }
+
+      &__title {
+        color: $text-05;
+      }
+
+      &__icon {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &--lg {
+    .select-selector {
+      height: $default-height-lg;
+
+      &__button {
+        .select-selector__title {
+          @include font-size("14");
+        }
+
+        .svg-icon {
+          @include svg-icon-size(24px);
+        }
+      }
+    }
+
+    .select-container {
+      &__button {
+        @include stable-padding($spacing-2xs, $spacing-sm);
+        height: $default-height-lg;
+      }
+    }
+  }
+
+  &--sm {
+    .select-selector {
+      height: $default-height-sm;
+
+      &__button {
+        padding-left: $spacing-xs;
+        padding-right: $spacing-lg;
+
+        .svg-icon {
+          @include svg-icon-size(16px);
+
+          &.select-selector__icon {
+            right: rem(4px);
+            margin-top: -$spacing-xs;
+          }
+        }
+      }
+
+      &__title {
+        @include font-size("12");
+      }
+    }
+
+    .select-container {
+      .select-selector__icon {
+        @include svg-icon-size(14px);
+      }
+
+      &__button {
+        @include stable-padding($spacing-3xs, $spacing-xs);
+        height: $default-height-sm;
+      }
+
+      &__text {
+        @include font-size("12");
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.select-selector {
+  position: relative;
+  height: $default-height-md;
+
+  &__button {
+    @include button-base;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: $spacing-2xs $spacing-xl $spacing-2xs $spacing-sm;
+    background-color: $ui-02;
+    border: 1px solid $ui-04;
+    border-radius: $default-border-radius;
+
+    &:hover {
+      border-color: $ui-03;
+    }
+
+    &:active:not(:disabled) {
+      border-color: $primary;
+      box-shadow: 0px 0px 6px rgba(240, 39, 105, 0.3);
+    }
+
+    &:focus-visible:not(:disabled) {
+      outline: 1px dashed $text-01;
+      box-shadow: none;
+    }
+  }
+
+  &__title {
+    @include ellipsis;
+    @include font-size("14");
+    @include font-weight("regular");
+    color: $text-02;
+
+    &icon {
+      width: rem(20px);
+      height: rem(20px);
+      vertical-align: middle;
+    }
+  }
+
+  &__icon {
+    @include svg-icon-size(20px);
+    position: absolute;
+    top: 50%;
+    margin-top: rem(-10px);
+    right: $spacing-xs;
+    transform: none;
+    pointer-events: none;
+  }
+}
+
+// select panel(dropdown)
+.select-container {
+  @include layer("raised");
+  display: none;
+  z-index: z("dropdown");
+  position: absolute;
+  top: calc(100% + 2px);
+  width: 100%;
+  max-height: rem(240px);
+  padding: $spacing-2xs 0;
+  background-color: $ui-02;
+  border-radius: $default-border-radius;
+  border: 1px solid $ui-04;
+  overflow: auto;
+
+  &__list {
+    background-color: $ui-02;
+  }
+
+  &__button {
+    @include button-base;
+    width: 100%;
+    background-color: $ui-02;
+    justify-content: flex-start;
+
+    &:hover {
+      .select-container__text {
+        color: $text-03;
+      }
+    }
+
+    &:active:not(:disabled) {
+      .select-container__text {
+        color: $primary;
+      }
+    }
+
+    &:focus-visible:not(:disabled) {
+      background-color: $ui-01;
+    }
+  }
+
+  &__text {
+    @include ellipsis(100%);
+    @include font-weight("regular");
+    text-align: left;
+    color: $text-02;
+  }
+}

@@ -1,0 +1,74 @@
+%description-common-style {
+  @include stable-padding($spacing-xs, $spacing-sm);
+  vertical-align: middle;
+}
+
+// -------------------------
+// description-column
+// -------------------------
+
+.description-column {
+  table {
+    background-color: $ui-02;
+    td,
+    th {
+      @extend %description-common-style;
+    }
+    th {
+      @include font-weight("medium");
+      color: $text-01;
+      background-color: $ui-01;
+      border-top: 2px solid $secondary;
+    }
+    td {
+      color: $text-03;
+      border-top: 1px solid $ui-03;
+    }
+    tr {
+      height: rem(56px);
+      &:last-child {
+        td {
+          border-bottom: 1px solid $ui-03;
+        }
+      }
+    }
+  }
+}
+
+// -------------------------
+// description-row
+// -------------------------
+.description-row {
+  table {
+    td,
+    th {
+      @extend %description-common-style;
+      border-top: 1px solid $ui-03;
+    }
+
+    th {
+      @include font-weight("medium");
+      background-color: $ui-01;
+    }
+
+    td {
+      background-color: $ui-02;
+    }
+
+    tr {
+      height: rem(56px);
+      &:first-child {
+        th,
+        td {
+          border-top: 2px solid $secondary;
+        }
+      }
+      &:last-child {
+        th,
+        td {
+          border-bottom: 1px solid $ui-03;
+        }
+      }
+    }
+  }
+}

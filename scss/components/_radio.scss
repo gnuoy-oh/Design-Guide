@@ -52,7 +52,7 @@
     align-items: center;
     padding-left: $spacing-lg;
     min-height: $spacing-md;
-    color: $text-02;
+    color: $text-01;
     white-space: nowrap;
     user-select: none;
     cursor: pointer;
@@ -132,7 +132,7 @@
       &__label {
         @include font-size("12");
         padding-left: $spacing-md;
-        min-height: rem(18px);
+        min-height: $default-height-xs;
 
         &::before {
           content: "";
@@ -201,7 +201,7 @@
       height: rem(32px);
       padding: 0 $spacing-sm;
       line-height: 1;
-      border: 1px solid $ui-03;
+      border: 1px solid $ui-04;
 
       &:after,
       &:before {
