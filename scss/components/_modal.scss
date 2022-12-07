@@ -60,7 +60,7 @@
   &__foot {
     @include stable-padding($spacing-sm, $spacing-sm);
     display: flex;
-    background-color: $ui-01;
+    background-color: $ui-05;
     &-main-buttons {
       display: flex;
       margin-left: auto;
