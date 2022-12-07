@@ -1,4 +1,4 @@
-<!-- badge -->
+<!-- Search Group -->
 <div class="page-header">
   <strong class="page-header__lable">Module Component</strong>
   <h3 class="page-header__title">Search Group</h3>
@@ -11,69 +11,31 @@
       <div class="component__views">
         <div>
           <div class="component__contents">
-            <p class="component__label">Size: lg</p>
+            <p class="component__label">Case: Default</p>
             <div class="component__group">
-              <div class="search-group">
-                <div class="text-input-wrap">
-                  <input type="text" class="text-input" />
-                  <button class="button button--primary" type="button">
+              <div class="search-group" style="width: 800px">
+                <div class="text-input-group text-input-group--lg">
+                  <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
+                  <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
+                  <button class="text-input-group__clear-button button" title="초기화">
+                    <span class="hidden">초기화</span>
+                    <svg class="svg-icon" aria-hidden="true">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </button>
+                  <button title="검색" class="text-input-group__search-button button button--icon button--primary">
                     <span class="hidden">검색</span>
                     <svg class="svg-icon" aria-hidden="true">
                       <use xlink:href="#search"></use>
                     </svg>
                   </button>
                 </div>
-                <button class="button button--primary" type="button">
+                <button class="button button--secondary button--lg" type="button">
                   <span class="button__text">상세 검색</span>
                 </button>
-                <div class="checkbox">
-                  <input type="checkbox__input" id="search-inp1">
-                  <label for="search-inp1" class="checkbox__label">AND 검색</label>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="component__contents">
-            <p class="component__label">Size: md</p>
-            <div class="component__group">
-              <div class="h-group">
-                <div class="badge">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--red">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--cyan">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--green">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--teal">
-                  <span class="badge__label">Badge</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="component__contents">
-            <p class="component__label">Size: sm</p>
-            <div class="component__group">
-              <div class="h-group">
-                <div class="badge badge--sm">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--sm badge--red">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--sm badge--cyan">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--sm badge--green">
-                  <span class="badge__label">Badge</span>
-                </div>
-                <div class="badge badge--sm badge--teal">
-                  <span class="badge__label">Badge</span>
+                <div class="checkbox checkbox--lg">
+                  <input class="checkbox__input" type="checkbox" id="search-group-inp2">
+                  <label for="search-group-inp2" class="checkbox__label">AND 검색</label>
                 </div>
               </div>
             </div>
