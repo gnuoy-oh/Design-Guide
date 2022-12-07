@@ -65,6 +65,15 @@
   @include button-theme($primary, $ui-02, $hover-primary, $active-primary);
 }
 
+@mixin button--secondary {
+  @include button-theme(
+    $secondary,
+    $ui-02,
+    $hover-secondary,
+    $active-secondary
+  );
+}
+
 @mixin button--link {
   @include button-theme(transparent, $text-03, $ui-01, $ui-01);
 
@@ -184,6 +193,10 @@
 
   &--primary {
     @include button--primary;
+  }
+
+  &--secondary {
+    @include button--secondary;
   }
 
   &--link {
