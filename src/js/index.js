@@ -30,13 +30,15 @@ requirePngAll(require.context("../images", true, /\.png$/));
 // UI Event
 // ****************************
 
-const statusElements = document.querySelectorAll(
-  ".pagination__link, .toggle-switch__switch"
-);
-const statusSuffix = "--selected";
+// Toggle Event
 
 // --selected 추가
 const toggleStatus = () => {
+  const statusElements = document.querySelectorAll(
+    ".pagination__link, .toggle-switch__switch"
+  );
+  const statusSuffix = "--selected";
+
   statusElements.forEach(i => {
     i.addEventListener("click", event => {
       event.preventDefault();
@@ -47,14 +49,10 @@ const toggleStatus = () => {
   });
 };
 
-const selectElements = document.querySelectorAll(".select");
-const selectContainerButtonElement = document.querySelectorAll(
-  ".select-container__button"
-);
-const selectSuffix = "--open";
-
-// --open 추가
+// select-container Open | Close
 const toggleSelect = () => {
+  const selectElements = document.querySelectorAll(".select");
+  const selectSuffix = "--open";
   selectElements.forEach(element => {
     element.addEventListener("click", event => {
       event.preventDefault();
@@ -65,6 +63,7 @@ const toggleSelect = () => {
   });
 };
 
+// select-container Text Input 2
 const selectOption = optionElement => {
   const selectBox = optionElement.closest(".select");
   const selectedElement = selectBox.querySelector(".select-selector__title");
@@ -73,7 +72,12 @@ const selectOption = optionElement => {
   selectBox.classList.remove(".select--open");
 };
 
+// select-container Text Input 1
 const detectSelect = () => {
+  const selectContainerButtonElement = document.querySelectorAll(
+    ".select-container__button"
+  );
+
   selectContainerButtonElement.forEach(element => {
     element.addEventListener("click", event => {
       event.preventDefault();
@@ -90,10 +94,59 @@ const detectSelect = () => {
   });
 };
 
+const closeAutocompleteElement = () => {
+  const bodyElement = document.querySelector("body");
+
+  bodyElement.addEventListener("click", event => {
+    event.preventDefault();
+
+    const eventTarget = event.target.className;
+    const autocompleteElement = document.querySelectorAll(".autocomplete");
+
+    console.log("autocompleteElement ->", autocompleteElement.NodeList);
+
+    if (eventTarget == "text-input-group__input") {
+      null;
+    } else {
+      console.log(autocompleteElement.classList.contains("autocomplete--open"));
+      if (autocompleteElement.classList.contains("autocomplete--open")) {
+        autocompleteElement.classList.remove("autocomplete--open");
+      }
+    }
+  });
+};
+
+const openAutocomplete = targetInputElement => {
+  const textInputGroup = targetInputElement.closest(".text-input-group");
+  const autocompleteElement = textInputGroup.querySelector(".autocomplete");
+
+  autocompleteElement
+    ? autocompleteElement.classList.add("autocomplete--open")
+    : null;
+};
+
+// text-input-group autocomplete Check
+const detectAutocomplete = () => {
+  const textInputGroupInputElements = document.querySelectorAll(
+    ".text-input-group__input"
+  );
+
+  textInputGroupInputElements.forEach(element => {
+    element.addEventListener("click", event => {
+      event.preventDefault();
+
+      const targetElement = event.target;
+      openAutocomplete(targetElement);
+    });
+  });
+};
+
 const init = () => {
   toggleStatus();
   toggleSelect();
   detectSelect();
+  detectAutocomplete();
+  // closeAutocompleteElement();
 };
 
 init();

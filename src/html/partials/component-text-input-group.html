@@ -30,8 +30,8 @@
                 </button>
               </div>
               <div class="text-input-group text-input-group--lg text-input-group--disabled" style="width: 240px">
-                <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
+                <label for="search-inp2" class="hidden">검색어를 입력하세요.</label>
+                <input id="search-inp2" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
                 <button class="text-input-group__clear-button button" title="초기화 disabled">
                   <span class="hidden">초기화</span>
                   <svg class="svg-icon" aria-hidden="true">
@@ -51,8 +51,8 @@
             <p class="component__label">Size: md</p>
             <div class="component__group">
               <div class="text-input-group" style="width: 200px">
-                <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
+                <label for="search-inp3" class="hidden">검색어를 입력하세요.</label>
+                <input id="search-inp3" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                 <button class="text-input-group__clear-button button" title="초기화">
                   <span class="hidden">초기화</span>
                   <svg class="svg-icon" aria-hidden="true">
@@ -67,8 +67,8 @@
                 </button>
               </div>
               <div class="text-input-group text-input-group--disabled" style="width: 200px">
-                <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
+                <label for="search-inp4" class="hidden">검색어를 입력하세요.</label>
+                <input id="search-inp4" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
                 <button class="text-input-group__clear-button button" title="초기화" disabled>
                   <span class="hidden">초기화</span>
                   <svg class="svg-icon" aria-hidden="true">
@@ -89,8 +89,8 @@
             <div class="component__group">
               <div class="h-group">
                 <div class="text-input-group text-input-group--sm" style="width: 160px">
-                  <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                  <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
+                  <label for="search-inp5" class="hidden">검색어를 입력하세요.</label>
+                  <input id="search-inp5" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                   <button class="text-input-group__clear-button button" title="초기화">
                     <span class="hidden">초기화</span>
                     <svg class="svg-icon" aria-hidden="true">
@@ -105,8 +105,8 @@
                   </button>
                 </div>
                 <div class="text-input-group text-input-group--sm text-input-group--disabled" style="width: 160px">
-                  <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                  <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
+                  <label for="search-inp6" class="hidden">검색어를 입력하세요.</label>
+                  <input id="search-inp6" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
                   <button class="text-input-group__clear-button button" title="초기화" disabled>
                     <span class="hidden">초기화</span>
                     <svg class="svg-icon" aria-hidden="true">
@@ -136,8 +136,8 @@
             <p class="component__label">Size: lg</p>
             <div class="component__group">
               <div class="text-input-group text-input-group--lg" style="width: 500px">
-                <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
+                <label for="search-inp7" class="hidden">검색어를 입력하세요.</label>
+                <input id="search-inp7" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                 <button class="text-input-group__clear-button button" title="초기화">
                   <span class="hidden">초기화</span>
                   <svg class="svg-icon" aria-hidden="true">
@@ -186,8 +186,8 @@
             <p class="component__label">Size: md</p>
             <div class="component__group">
               <div class="text-input-group" style="width: 350px">
-                <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
+                <label for="search-inp8" class="hidden">검색어를 입력하세요.</label>
+                <input id="search-inp8" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                 <button class="text-input-group__clear-button button" title="초기화">
                   <span class="hidden">초기화</span>
                   <svg class="svg-icon" aria-hidden="true">
@@ -200,6 +200,35 @@
                     <use xlink:href="#search"></use>
                   </svg>
                 </button>
+
+                <div class="autocomplete">
+                  <div class="autocomplete__top-bar">
+                    <span class="autocomplete__title">인기 검색어</span>
+                    <button class="autocomplete__delete-button button button--sm button--link" type="button">
+                      <span class="button__text">전체삭제</span>
+                    </button>
+                  </div>
+                  <ul class="autocomplete__list">
+                    <li class="autocomplete__item">
+                      <a href="#none" class="autocomplete__link">최근 검색어는 이렇습니다. </a>
+                      <button class="autocomplete__delete-button button button--sm button--link button--icon">
+                        <span class="hidden">삭제</span>
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="autocomplete__item">
+                      <a href="#none" class="autocomplete__link">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, cum! Consequatur fugit in quis laudantium, molestiae quo eveniet illo incidunt! </a>
+                      <button class="autocomplete__delete-button button button--sm button--link button--icon">
+                        <span class="hidden">삭제</span>
+                        <svg class="svg-icon" aria-hidden="true">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -208,8 +237,8 @@
             <div class="component__group">
               <div class="h-group">
                 <div class="text-input-group text-input-group--sm" style="width: 250px">
-                  <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
-                  <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
+                  <label for="search-inp9" class="hidden">검색어를 입력하세요.</label>
+                  <input id="search-inp9" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                   <button class="text-input-group__clear-button button" title="초기화">
                     <span class="hidden">초기화</span>
                     <svg class="svg-icon" aria-hidden="true">
@@ -222,6 +251,36 @@
                       <use xlink:href="#search"></use>
                     </svg>
                   </button>
+
+                  <div class="autocomplete">
+                    <div class="autocomplete__top-bar">
+                      <span class="autocomplete__title">인기 검색어</span>
+                      <button class="autocomplete__delete-button button button--sm button--link" type="button">
+                        <span class="button__text">전체삭제</span>
+                      </button>
+                    </div>
+                    <ul class="autocomplete__list">
+                      <li class="autocomplete__item">
+                        <a href="#none" class="autocomplete__link">최근 검색어는 이렇습니다. </a>
+                        <button class="autocomplete__delete-button button button--sm button--link button--icon">
+                          <span class="hidden">삭제</span>
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#close"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="autocomplete__item">
+                        <a href="#none" class="autocomplete__link">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, cum! Consequatur fugit in quis laudantium, molestiae quo eveniet illo incidunt! </a>
+                        <button class="autocomplete__delete-button button button--sm button--link button--icon">
+                          <span class="hidden">삭제</span>
+                          <svg class="svg-icon" aria-hidden="true">
+                            <use xlink:href="#close"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+
+                  </div>
                 </div>
               </div>
             </div>
