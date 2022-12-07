@@ -25,7 +25,6 @@
 @import "./components/loader";
 @import "./components/modal";
 @import "./components/notification";
-@import "./components/pagination";
 @import "./components/progressbar";
 @import "./components/radio";
 @import "./components/select";
@@ -39,6 +38,8 @@
 
 // module component
 @import "./modules/description";
+@import "./modules/pagination";
+@import "./modules/text-input-group";
 
 // layout
 @import "./layout/header";
