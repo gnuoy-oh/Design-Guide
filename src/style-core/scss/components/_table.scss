@@ -40,8 +40,8 @@ table {
     @include font-weight("medium");
     height: rem(46px);
     position: relative;
-    background-color: $ui-01;
-    border-bottom: 1px solid $ui-03;
+    background-color: $ui-05;
+    border-bottom: 1px solid $ui-04;
     .button {
       display: inline-block;
       vertical-align: middle;
