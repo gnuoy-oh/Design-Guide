@@ -17,7 +17,7 @@
     th {
       @include font-weight("medium");
       color: $text-01;
-      background-color: $ui-01;
+      background-color: $ui-05;
       border-top: 2px solid $secondary;
     }
     td {
@@ -48,7 +48,7 @@
 
     th {
       @include font-weight("medium");
-      background-color: $ui-01;
+      background-color: $ui-05;
     }
 
     td {

@@ -105,3 +105,57 @@
     }
   }
 }
+
+// 자동완성 UI
+.autocomplete {
+  z-index: z("layer");
+  position: absolute;
+  top: calc(100% - rem(1px));
+  left: 0;
+  right: 0;
+  border: 1px solid $text-01;
+  background-color: $ui-02;
+
+  &__top-bar {
+    @include stable-padding($spacing-2xs, $spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $default-height-md;
+    background-color: $ui-05;
+  }
+
+  &__title {
+    @include ellipsis();
+    @include font-size("12");
+    flex-grow: 1;
+    color: $text-01;
+  }
+
+  &__item {
+    @include stable-padding($spacing-2xs, $spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $default-height-md;
+  }
+
+  &__link {
+    @include ellipsis();
+    @include stable-padding($spacing-3xs, $spacing-2xs);
+    @include font-size("12");
+    flex-grow: 1;
+    color: $text-01;
+    text-decoration: none;
+    border-radius: $default-border-radius;
+
+    &:hover {
+      color: $text-01;
+      background-color: $ui-01;
+    }
+  }
+
+  &__delete-button {
+    flex-shrink: 0;
+  }
+}
