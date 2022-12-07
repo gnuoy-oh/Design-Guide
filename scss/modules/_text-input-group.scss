@@ -108,6 +108,7 @@
 
 // 자동완성 UI
 .autocomplete {
+  display: none;
   z-index: z("layer");
   position: absolute;
   top: calc(100% - rem(1px));
@@ -157,5 +158,9 @@
 
   &__delete-button {
     flex-shrink: 0;
+  }
+
+  &--open {
+    display: block;
   }
 }
