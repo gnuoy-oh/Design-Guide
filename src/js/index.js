@@ -35,9 +35,6 @@ const statusElements = document.querySelectorAll(
 );
 const statusSuffix = "--selected";
 
-const selectElements = document.querySelectorAll(".select");
-const selectSuffix = "--open";
-
 // --selected 추가
 const toggleStatus = () => {
   statusElements.forEach(i => {
@@ -50,32 +47,11 @@ const toggleStatus = () => {
   });
 };
 
-//  TODO: check
-const selectOption = optionElement => {
-  const selectBox = optionElement.closest(".select");
-  const selectedElement = selectBox.querySelector(".select-selector__title");
-  selectedElement.textContent = optionElement.textContent;
-  selectedElement.style.color = "#000";
-  selectBox.classList.remove(".select--open");
-};
-
-//  TODO: check
-const detectSelect = () => {
-  selectElements.forEach(element => {
-    element.addEventListener("click", event => {
-      event.preventDefault();
-      console.log("click click");
-      const targetElement = event.target;
-      const isOptionElement = targetElement.classList.contains(
-        "select-container__button"
-      );
-
-      if (isOptionElement) {
-        selectOption(targetElement);
-      }
-    });
-  });
-};
+const selectElements = document.querySelectorAll(".select");
+const selectContainerButtonElement = document.querySelectorAll(
+  ".select-container__button"
+);
+const selectSuffix = "--open";
 
 // --open 추가
 const toggleSelect = () => {
@@ -89,10 +65,35 @@ const toggleSelect = () => {
   });
 };
 
+const selectOption = optionElement => {
+  const selectBox = optionElement.closest(".select");
+  const selectedElement = selectBox.querySelector(".select-selector__title");
+  selectedElement.textContent = optionElement.textContent;
+  selectedElement.style.color = "#000";
+  selectBox.classList.remove(".select--open");
+};
+
+const detectSelect = () => {
+  selectContainerButtonElement.forEach(element => {
+    element.addEventListener("click", event => {
+      event.preventDefault();
+
+      const targetElement = event.target;
+      const isOptionElement =
+        targetElement.classList.contains("select-container__button") |
+        targetElement.classList.contains("select-container__text");
+
+      if (isOptionElement) {
+        selectOption(targetElement);
+      }
+    });
+  });
+};
+
 const init = () => {
   toggleStatus();
   toggleSelect();
-  // detectSelect();
+  detectSelect();
 };
 
 init();
