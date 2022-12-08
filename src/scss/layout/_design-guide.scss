@@ -181,6 +181,59 @@
   width: rem(550px);
 }
 
+// Component Size
+// Compoenent
+.modal {
+  position: static;
+}
+
+.search-group {
+  width: rem(960px);
+}
+
+.select {
+  &--lg {
+    width: rem(240px);
+  }
+  &--sm {
+    width: rem(120px);
+    min-width: rem(120px);
+  }
+}
+
+.text-input-group {
+  width: rem(200px);
+
+  &.text-input-group--autocomplete {
+    width: rem(350px);
+  }
+
+  &--lg {
+    width: rem(240px);
+
+    &.text-input-group--autocomplete {
+      width: rem(500px);
+    }
+  }
+  &--sm {
+    width: rem(160px);
+
+    &.text-input-group--autocomplete {
+      width: rem(250px);
+    }
+  }
+}
+
+.notification-message {
+  align-self: flex-start;
+}
+
+.progressbar {
+  &__gage {
+    width: 70%;
+  }
+}
+
 @include respond-to("breakpoint-lg") {
   .color-card-wrap {
     max-width: fit-content;
@@ -190,6 +243,7 @@
   .color-card {
     flex: 1;
   }
+
   .component {
     &__contents {
       flex-direction: column;

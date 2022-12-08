@@ -17,7 +17,8 @@
     border-radius: 4px;
   }
 
-  &::-webkit-progress-value {
+  &::-webkit-progress-value,
+  &::-moz-progress-bar {
     z-index: z("float");
     height: 100%;
     position: absolute;
@@ -53,7 +54,8 @@
     .progressbar__gage {
       background-color: $text-01;
     }
-    &::-webkit-progress-value {
+    &::-webkit-progress-value,
+    &::-moz-progress-bar {
       background-color: $text-01;
     }
   }
@@ -65,7 +67,8 @@
     .progressbar__gage {
       background-color: $negative;
     }
-    &::-webkit-progress-value {
+    &::-webkit-progress-value,
+    &::-moz-progress-bar {
       background-color: $negative;
     }
   }

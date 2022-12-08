@@ -1035,7 +1035,7 @@
               <div class="component__example">
                 <div class="component__views">
                   <div>
-                    <div class="modal" style="position: static;" role="dialog" aria-modal="true">
+                    <div class="modal" role="dialog" aria-modal="true">
                       <div class="modal__head">
                         <div class="modal__head-title">
                           <span class="modal__head-title-text">Title</span>
@@ -1221,7 +1221,7 @@
                       <p class="component__label">Size: sm</p>
                       <div class="component__group component__group--column">
                         <div class="progressbar progressbar--sm" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          <div class="progressbar__gage" title="70%">
                           </div>
                         </div>
                         <label class="hidden" for="bar-gage-01">Loading:</label>
@@ -1234,7 +1234,7 @@
                       <p class="component__label">Size: md</p>
                       <div class="component__group component__group--column">
                         <div class="progressbar">
-                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          <div class="progressbar__gage" title="70%">
                             <span class="progressbar__text">70.00%</span>
                           </div>
                         </div>
@@ -1258,7 +1258,7 @@
                       <p class="component__label">Size: sm</p>
                       <div class="component__group component__group--column">
                         <div class="progressbar progressbar--normal progressbar--sm" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          <div class="progressbar__gage" title="70%">
                           </div>
                         </div>
                         <label class="hidden" for="bar-gage-03">Loading:</label>
@@ -1271,7 +1271,7 @@
                       <p class="component__label">Size: md</p>
                       <div class="component__group component__group--column">
                         <div class="progressbar progressbar--normal" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          <div class="progressbar__gage" title="70%">
                             <span class="progressbar__text">70.00%</span>
                           </div>
                         </div>
@@ -1295,7 +1295,7 @@
                       <p class="component__label">Size: sm</p>
                       <div class="component__group component__group--column">
                         <div class="progressbar progressbar--critical progressbar--sm" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          <div class="progressbar__gage" title="70%">
                           </div>
                         </div>
                         <label class="hidden" for="bar-gage-05">Loading:</label>
@@ -1308,7 +1308,7 @@
                       <p class="component__label">Size: md</p>
                       <div class="component__group component__group--column">
                         <div class="progressbar progressbar--critical" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                          <div class="progressbar__gage" style="width: 70%;" title="70%">
+                          <div class="progressbar__gage" title="70%">
                             <span class="progressbar__text">70.00%</span>
                           </div>
                         </div>
@@ -1534,7 +1534,7 @@
                       <p class="component__label">Size: lg</p>
                       <div class="component__group">
                         <div class="h-group">
-                          <div class="select select--lg" role="select" style="width: 240px">
+                          <div class="select select--lg" role="select">
                             <div class="select-selector">
                               <button class="select-selector__button" type="button">
                                 <span class="select-selector__title">텍스트 유형</span>
@@ -1564,7 +1564,7 @@
                               </ul>
                             </div>
                           </div>
-                          <div class="select select--lg select--disabled" role="select" style="width: 240px">
+                          <div class="select select--lg select--disabled" role="select">
                             <div class="select-selector">
                               <button class="select-selector__button" type="button">
                                 <span class="select-selector__title">텍스트 유형</span>
@@ -1668,7 +1668,7 @@
                       <p class="component__label">Size: sm</p>
                       <div class="component__group">
                         <div class="h-group">
-                          <div class="select select--sm" role="select" style="width: 120px; min-width: 120px">
+                          <div class="select select--sm" role="select">
                             <div class="select-selector">
                               <button class="select-selector__button" type="button">
                                 <span class="select-selector__title">텍스트 유형</span>
@@ -1698,7 +1698,7 @@
                               </ul>
                             </div>
                           </div>
-                          <div class="select select--sm select--disabled" role="select" style="width: 120px; min-width: 120px">
+                          <div class="select select--sm select--disabled" role="select">
                             <div class="select-selector">
                               <button class="select-selector__button" type="button">
                                 <span class="select-selector__title">텍스트 유형</span>
@@ -2214,7 +2214,7 @@
                         <!-- default -->
                         <label for="inp-01" class="hidden">Label</label>
                         <input type="text" id="inp-01" class="text-input" placeholder="placeholder text" />
-                        <div class="notification-message notification-message--error" style="align-self: flex-start">
+                        <div class="notification-message notification-message--error">
                           <svg class="notification-message__icon svg-icon" aria-hidden="true">
                             <use xlink:href="#issue-fill"></use>
                           </svg>
@@ -2223,7 +2223,7 @@
                         <!-- filled -->
                         <label for="inp-02" class="hidden">Label</label>
                         <input type="text" id="inp-02" class="text-input" placeholder="placeholder text" value="input filled" />
-                        <div class="notification-message notification-message--info" style="align-self: flex-start">
+                        <div class="notification-message notification-message--info">
                           <svg class="notification-message__icon svg-icon" aria-hidden="true">
                             <use xlink:href="#info-fill"></use>
                           </svg>
@@ -2274,18 +2274,28 @@
               <div class="component__example">
                 <div class="component__views">
                   <div>
-                    <!-- default -->
-                    <label for="textarea-01" class="hidden">Label</label>
-                    <textarea id="textarea-01" class="text-area" placeholder="placeholder text"></textarea>
-                    <!-- filled -->
-                    <label for="textarea-02" class="hidden">Label</label>
-                    <textarea id="textarea-02" class="text-area" placeholder="placeholder text" style="margin-top: 8px;">textarea filled</textarea>
-                    <!-- disabled -->
-                    <label for="textarea-03" class="hidden">Label</label>
-                    <textarea id="textarea-03" class="text-area" placeholder="placeholder text" readonly style="margin-top: 8px;">textarea readonly</textarea>
-                    <!-- disabled -->
-                    <label for="textarea-04" class="hidden">Label</label>
-                    <textarea id="textarea-04" class="text-area" placeholder="placeholder text" disabled style="margin-top: 8px;"></textarea>
+                    <div class="v-group">
+                      <div class="h-group">
+                        <!-- default -->
+                        <label for="textarea-01" class="hidden">Label</label>
+                        <textarea id="textarea-01" class="text-area" placeholder="placeholder text"></textarea>
+                      </div>
+                      <div class="h-group">
+                        <!-- filled -->
+                        <label for="textarea-02" class="hidden">Label</label>
+                        <textarea id="textarea-02" class="text-area" placeholder="placeholder text">textarea filled</textarea>
+                      </div>
+                      <div class="h-group">
+                        <!-- disabled -->
+                        <label for="textarea-03" class="hidden">Label</label>
+                        <textarea id="textarea-03" class="text-area" placeholder="placeholder text" readonly>textarea readonly</textarea>
+                      </div>
+                      <div class="h-group">
+                        <!-- disabled -->
+                        <label for="textarea-04" class="hidden">Label</label>
+                        <textarea id="textarea-04" class="text-area" placeholder="placeholder text" disabled></textarea>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2583,7 +2593,7 @@
                     <div class="component__contents">
                       <p class="component__label">Size: lg</p>
                       <div class="component__group">
-                        <div class="text-input-group text-input-group--lg" style="width: 240px">
+                        <div class="text-input-group text-input-group--lg">
                           <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
                           <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                           <button class="text-input-group__clear-button button" title="초기화">
@@ -2599,7 +2609,7 @@
                             </svg>
                           </button>
                         </div>
-                        <div class="text-input-group text-input-group--lg text-input-group--disabled" style="width: 240px">
+                        <div class="text-input-group text-input-group--lg text-input-group--disabled">
                           <label for="search-inp2" class="hidden">검색어를 입력하세요.</label>
                           <input id="search-inp2" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
                           <button class="text-input-group__clear-button button" title="초기화 disabled">
@@ -2620,7 +2630,7 @@
                     <div class="component__contents">
                       <p class="component__label">Size: md</p>
                       <div class="component__group">
-                        <div class="text-input-group" style="width: 200px">
+                        <div class="text-input-group">
                           <label for="search-inp3" class="hidden">검색어를 입력하세요.</label>
                           <input id="search-inp3" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                           <button class="text-input-group__clear-button button" title="초기화">
@@ -2636,7 +2646,7 @@
                             </svg>
                           </button>
                         </div>
-                        <div class="text-input-group text-input-group--disabled" style="width: 200px">
+                        <div class="text-input-group text-input-group--disabled">
                           <label for="search-inp4" class="hidden">검색어를 입력하세요.</label>
                           <input id="search-inp4" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
                           <button class="text-input-group__clear-button button" title="초기화" disabled>
@@ -2658,7 +2668,7 @@
                       <p class="component__label">Size: sm</p>
                       <div class="component__group">
                         <div class="h-group">
-                          <div class="text-input-group text-input-group--sm" style="width: 160px">
+                          <div class="text-input-group text-input-group--sm">
                             <label for="search-inp5" class="hidden">검색어를 입력하세요.</label>
                             <input id="search-inp5" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                             <button class="text-input-group__clear-button button" title="초기화">
@@ -2674,7 +2684,7 @@
                               </svg>
                             </button>
                           </div>
-                          <div class="text-input-group text-input-group--sm text-input-group--disabled" style="width: 160px">
+                          <div class="text-input-group text-input-group--sm text-input-group--disabled">
                             <label for="search-inp6" class="hidden">검색어를 입력하세요.</label>
                             <input id="search-inp6" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." disabled />
                             <button class="text-input-group__clear-button button" title="초기화" disabled>
@@ -2705,7 +2715,7 @@
                     <div class="component__contents">
                       <p class="component__label">Size: lg</p>
                       <div class="component__group">
-                        <div class="text-input-group text-input-group--lg" style="width: 500px">
+                        <div class="text-input-group text-input-group--lg text-input-group--autocomplete">
                           <label for="search-inp7" class="hidden">검색어를 입력하세요.</label>
                           <input id="search-inp7" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                           <button class="text-input-group__clear-button button" title="초기화">
@@ -2755,7 +2765,7 @@
                     <div class="component__contents">
                       <p class="component__label">Size: md</p>
                       <div class="component__group">
-                        <div class="text-input-group" style="width: 350px">
+                        <div class="text-input-group text-input-group--autocomplete">
                           <label for="search-inp8" class="hidden">검색어를 입력하세요.</label>
                           <input id="search-inp8" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                           <button class="text-input-group__clear-button button" title="초기화">
@@ -2806,7 +2816,7 @@
                       <p class="component__label">Size: sm</p>
                       <div class="component__group">
                         <div class="h-group">
-                          <div class="text-input-group text-input-group--sm" style="width: 250px">
+                          <div class="text-input-group text-input-group--sm text-input-group--autocomplete">
                             <label for="search-inp9" class="hidden">검색어를 입력하세요.</label>
                             <input id="search-inp9" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
                             <button class="text-input-group__clear-button button" title="초기화">
@@ -2877,7 +2887,7 @@
                   <div>
                     <div class="component__contents">
                       <div class="component__group">
-                        <div class="search-group" style="width: 960px">
+                        <div class="search-group">
                           <div class="text-input-group text-input-group--lg">
                             <label for="search-inp1" class="hidden">검색어를 입력하세요.</label>
                             <input id="search-inp1" type="text" class="text-input-group__input" placeholder="검색어를 입력하세요." />
