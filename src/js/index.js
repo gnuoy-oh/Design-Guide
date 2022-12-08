@@ -94,49 +94,35 @@ const detectSelect = () => {
   });
 };
 
-const closeAutocompleteElement = () => {
-  const bodyElement = document.querySelector("body");
-
-  bodyElement.addEventListener("click", event => {
-    event.preventDefault();
-
-    const eventTarget = event.target.className;
-    const autocompleteElement = document.querySelectorAll(".autocomplete");
-
-    console.log("autocompleteElement ->", autocompleteElement.NodeList);
-
-    if (eventTarget == "text-input-group__input") {
-      null;
-    } else {
-      console.log(autocompleteElement.classList.contains("autocomplete--open"));
-      if (autocompleteElement.classList.contains("autocomplete--open")) {
-        autocompleteElement.classList.remove("autocomplete--open");
-      }
-    }
-  });
-};
-
-const openAutocomplete = targetInputElement => {
-  const textInputGroup = targetInputElement.closest(".text-input-group");
-  const autocompleteElement = textInputGroup.querySelector(".autocomplete");
-
-  autocompleteElement
-    ? autocompleteElement.classList.add("autocomplete--open")
-    : null;
-};
-
 // text-input-group autocomplete Check
 const detectAutocomplete = () => {
   const textInputGroupInputElements = document.querySelectorAll(
-    ".text-input-group__input"
+    ".text-input-group--autocomplete .text-input-group__input"
   );
 
   textInputGroupInputElements.forEach(element => {
-    element.addEventListener("click", event => {
+    element.addEventListener("focus", event => {
       event.preventDefault();
 
       const targetElement = event.target;
-      openAutocomplete(targetElement);
+      const textInputGroup = targetElement.closest(
+        ".text-input-group--autocomplete"
+      );
+      const autocompleteElement = textInputGroup.querySelector(".autocomplete");
+
+      autocompleteElement.classList.add("autocomplete--open");
+    });
+
+    element.addEventListener("blur", event => {
+      event.preventDefault();
+
+      const targetElement = event.target;
+      const textInputGroup = targetElement.closest(
+        ".text-input-group--autocomplete"
+      );
+      const autocompleteElement = textInputGroup.querySelector(".autocomplete");
+
+      autocompleteElement.classList.remove("autocomplete--open");
     });
   });
 };
@@ -146,7 +132,6 @@ const init = () => {
   toggleSelect();
   detectSelect();
   detectAutocomplete();
-  // closeAutocompleteElement();
 };
 
 init();
