@@ -1,0 +1,40 @@
+//-------------------------------------------
+//  Breakpoionts
+// ------------------------------------------
+$breakpoints: (
+  "breakpoint-xl": (
+    max-width: 1440px
+  ),
+  "breakpoint-lg": (
+    max-width: 1024px
+  ),
+  "breakpoint-md": (
+    max-width: 768px
+  ),
+  "breakpoint-sm": (
+    max-width: 480px
+  ),
+  "breakpoint-xs": (
+    max-width: 360px
+  )
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Usage
+// .selector {
+//   color: red;
+
+//   @include respond-to('small') {
+//     color: blue;
+//   }
+// }

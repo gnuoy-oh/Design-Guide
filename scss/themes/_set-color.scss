@@ -1,0 +1,65 @@
+// 1. 테마 적용 할 컬러 변수 (두 번째 인자가 디폴트 컬러 값)
+$primary: var(--primary-color, #0c8ae5);
+$secondary: var(--secondary-color, #091f63);
+$tertiary: var(--tertiary-color, #07bccb);
+$negative: var(--negative-color, #eb1000);
+$hover-primary: var(--hover-primary-color, #33aaff);
+$hover-secondary: var(--hover-secondary-color, #294292);
+$hover-tertiary: var(--hover-tertiary-color, #15c6d4);
+$hover-negative: var(--hover-negative-color, rgba(255, 16, 0, 0.8));
+$active-primary: var(--active-primary-color, #0080dc);
+$active-secondary: var(--active-secondary-color, #011451);
+$active-tertiary: var(--active-tertiary-color, #07b2c0);
+$active-negative: var(--active-negative-color, #cc1e12);
+
+// 2. 테마 이름(default..) - 테마 별 컬러 셋 (primary, secondary...)
+$config: (
+  // Default
+  default:
+    (
+      primary: $primary,
+      secondary: $secondary,
+      tertiary: $tertiary,
+      negative: $negative,
+      hover-primary: $hover-primary,
+      hover-secondary: $hover-secondary,
+      hover-tertiary: $hover-tertiary,
+      hover-negative: $hover-negative,
+      active-primary: $active-primary,
+      active-secondary: $active-secondary,
+      active-tertiary: $active-tertiary,
+      active-negative: $active-negative
+    ),
+  // 내부포털 테마
+  private:
+    (
+      primary: #0c8ae5,
+      secondary: $secondary,
+      tertiary: #07bccb,
+      negative: $negative,
+      hover-primary: $hover-primary,
+      hover-secondary: $hover-secondary,
+      hover-tertiary: $hover-tertiary,
+      hover-negative: $hover-negative,
+      active-primary: #0080dc,
+      active-secondary: $active-secondary,
+      active-tertiary: $active-tertiary,
+      active-negative: $active-negative
+    ),
+  // 외부포털 테마
+  public:
+    (
+      primary: blue,
+      secondary: yellow,
+      tertiary: purple,
+      negative: pink,
+      hover-primary: lightpink,
+      hover-secondary: lightpink,
+      hover-tertiary: lightpink,
+      hover-negative: lightpink,
+      active-primary: lightpink,
+      active-secondary: lightpink,
+      active-tertiary: lightpink,
+      active-negative: lightpink
+    )
+);

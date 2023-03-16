@@ -1,16 +1,27 @@
+//-------------------------------------------
+//  Variables
+// ------------------------------------------
+
 // file path
 $img-path: "../images" !default;
 $font-path: "../fonts" !default;
 
+// border
 $default-border-radius: 2px !default;
+
+//height
+$default-height-lg: 40px !default;
+$default-height-md: 32px !default;
+$default-height-sm: 24px !default;
+$default-height-xs: 18px !default;
 
 // loader
 $transition-base: 160ms !default;
 $loader-color: $primary !default;
 $loader-start: $primary !default;
-$loader-25: $secondary !default;
+$loader-25: $active-primary !default;
 $loader-50: $primary !default;
-$loader-75: $secondary !default;
+$loader-75: $active-primary !default;
 $loader-end: $primary !default;
 $inverse-loader-start: rgba($ui-02, 0.3) !default;
 $inverse-loader-25: rgba($ui-02, 0.8) !default;

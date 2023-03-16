@@ -1,0 +1,104 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin ellipsis($width: false) {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @if ($width) {
+    width: $width;
+  }
+}
+
+// @include multi-text-overflow(line-height 값 px, 줄 수)
+@mixin multi-ellipsis($line-height, $lines) {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: $line-height * $lines;
+  line-height: rem($line-height);
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
+// 숨김 텍스트 - 접근성을 위한 숨김 텍스트
+@mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+// 이미지 대체 텍스트 Phark Method - 이미지 안에 다이렉트로 텍스트를 넣기
+@mixin ir-pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: rem(-9999px);
+}
+
+// 이미지 대체 텍스트 WA IR - 대체 텍스트를 span으로 감싼 후, z-index: -1을 이용하여 화면에 안보이게 처리
+@mixin wa-ir {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+// Hide Table Caption
+@mixin caption-out {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
+// Img Global
+@mixin img-g {
+  display: block;
+  width: 100%;
+}
+
+// 상하와 좌우가 동일한 padding
+@mixin stable-padding($padding-up-and-down, $padding-both-sides) {
+  padding: $padding-up-and-down $padding-both-sides;
+}
+
+// svg icon size
+@mixin svg-icon-size($size) {
+  width: $size;
+  height: $size;
+}
+
+// svg icon stroke (bolder, lighter)
+@mixin svg-icon-stroke($stroke-color) {
+  stroke: $stroke-color;
+  stroke-width: 1;
+  stroke-opacity: 0.4;
+}
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

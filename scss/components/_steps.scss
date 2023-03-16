@@ -1,0 +1,65 @@
+// -------------------------
+// Steps
+// -------------------------
+.steps {
+  display: flex;
+  align-items: center;
+
+  &__item,
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    @include button-base;
+    height: auto;
+    padding: 0;
+    line-height: 1;
+    background-color: $ui-02;
+    border-radius: 0;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  &__item {
+    & + & {
+      margin-left: $spacing-lg;
+    }
+    &--current {
+      .steps {
+        &__title-text {
+          color: $text-01;
+        }
+        &__icon {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32px);
+    height: rem(32px);
+    background-color: $ui-04;
+    border-radius: 50%;
+
+    &-text {
+      @include font-weight("bold");
+      @include font-size("15");
+      color: $ui-02;
+    }
+  }
+
+  &__title {
+    margin-left: rem(10px);
+    &-text {
+      @include font-weight("medium");
+      @include font-size("15");
+      color: $text-02;
+    }
+  }
+}
