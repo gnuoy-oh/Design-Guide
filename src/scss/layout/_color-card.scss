@@ -2,118 +2,116 @@
 // color
 // -------------------
 #page_color .component {
-  margin-top: $spacing-lg;
+	margin-top: $spacing-lg;
 }
 
 .color-card-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: $spacing-lg;
-  max-width: rem(800px);
-  gap: $spacing-md;
-}
-
-@mixin color-vars($color) {
-  background-color: $color;
-  border-color: darken($color, 12%);
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin-top: $spacing-lg;
+	max-width: rem(800px);
+	gap: $spacing-md;
 }
 
 .color-card {
-  p {
-    padding: 0;
-  }
+	p {
+		padding: 0;
+	}
 
-  &__example {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: rem(120px);
-    height: rem(80px);
-    margin-bottom: $spacing-sm;
-    border-radius: 4px;
-    border-width: 1px;
-    border-style: solid;
-  }
+	&__example {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(120px);
+		height: rem(80px);
+		margin-bottom: $spacing-sm;
+		border-radius: 4px;
+		border: 1px solid $ui-04;
+	}
 
-  &__key {
-    @include font-size("14");
-  }
+	&__key {
+		@include font-size("14");
+	}
 
-  &__value {
-    @include font-size("12");
-    color: $text-02;
-  }
+	&__value {
+		@include font-size("12");
+		color: $text-02;
+	}
 
-  .primary {
-    @include color-vars($primary);
-  }
+	.primary {
+		background-color: $primary;
+	}
 
-  .secondary {
-    @include color-vars($secondary);
-  }
+	.secondary {
+		background-color: $secondary;
+	}
 
-  .negative {
-    @include color-vars($negative);
-  }
+	.tertiary {
+		background-color: $tertiary;
+	}
 
-  .ui-01 {
-    @include color-vars($ui-01);
-  }
+	.negative {
+		background-color: $negative;
+	}
 
-  .ui-02 {
-    @include color-vars($ui-02);
-  }
+	.ui-01 {
+		background-color: $ui-01;
+	}
 
-  .ui-03 {
-    @include color-vars($ui-03);
-  }
+	.ui-02 {
+		background-color: $ui-02;
+	}
 
-  .ui-04 {
-    @include color-vars($ui-04);
-  }
+	.ui-03 {
+		background-color: $ui-03;
+	}
 
-  .text-01 {
-    @include color-vars($text-01);
-  }
+	.ui-04 {
+		background-color: $ui-04;
+	}
 
-  .text-02 {
-    @include color-vars($text-02);
-  }
+	.text-01 {
+		background-color: $text-01;
+	}
 
-  .text-03 {
-    @include color-vars($text-03);
-  }
+	.text-02 {
+		background-color: $text-02;
+	}
 
-  .text-04 {
-    @include color-vars($text-04);
-  }
+	.text-03 {
+		background-color: $text-03;
+	}
 
-  .text-05 {
-    @include color-vars($text-05);
-  }
+	.text-04 {
+		background-color: $text-04;
+	}
 
-  .icon-01 {
-    @include color-vars($icon-01);
-  }
+	.icon-01 {
+		background-color: $icon-01;
+	}
 
-  .support-01 {
-    @include color-vars($support-01);
-  }
+	.support-01 {
+		background-color: $support-01;
+	}
 
-  .support-02 {
-    @include color-vars($support-02);
-  }
+	.support-02 {
+		background-color: $support-02;
+	}
 
-  .support-03 {
-    @include color-vars($support-03);
-  }
+	.support-03 {
+		background-color: $support-03;
+	}
 
-  .support-04 {
-    @include color-vars($support-04);
-  }
+	.support-04 {
+		background-color: $support-04;
+	}
 
-  .overlay-01 {
-    @include color-vars($overlay-01);
-  }
+	.overlay-01 {
+		background-color: $overlay-01;
+	}
+
+	.overlay-02 {
+		background-color: $overlay-02;
+	}
 }

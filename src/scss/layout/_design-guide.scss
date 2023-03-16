@@ -42,7 +42,7 @@
 
 .page-header {
   align-items: flex-start;
-  background-color: $ui-05;
+  background-color: $ui-01;
   border-bottom: 1px solid $primary;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@
   }
 
   &__title {
-    @include letter-spacing;
+    @include letter-spacing('fit');
     @include font-size("32");
     @include font-weight("medium");
     color: $text-01;
@@ -147,7 +147,7 @@
     align-items: center;
 
     &:not(:last-child) {
-      margin-bottom: $spacing-md;
+      margin-bottom: $spacing-2xl;
     }
   }
 

@@ -14,29 +14,49 @@
     width: rem(32px);
     height: rem(32px);
     background-color: transparent;
-    border-radius: $default-border-radius;
-    color: $text-01;
+  }
+
+  &__button {
+    position: relative;
+
+    .svg-icon {
+      fill: $text-03;
+    }
+
+    &:hover:not(:disabled) {
+      background-color: $ui-01;
+
+      .svg-icon {
+        fill: $text-01;
+
+      }
+    }
   }
 
   &__link {
+    border-radius: rem(4px);
+    color: $text-02;
+
     &:hover:not(:disabled) {
       background-color: $ui-01;
-      color: $text-01;
+      color: $text-02;
     }
 
     &:focus,
     &:focus:hover {
-      background-color: $primary;
-      color: $ui-02;
-
-      .svg-icon {
-        fill: $ui-02;
-      }
+      background-color: $ui-01;
+      color: $text-02;
     }
 
     &--selected {
+      @include font-weight("medium");
       background-color: $primary;
       color: $ui-02;
+
+      &:hover:not(:disabled) {
+        background-color: $primary;
+        color: $ui-02;
+      }
 
       .svg-icon {
         fill: $ui-02;
@@ -54,5 +74,29 @@
   &__ellipsis {
     display: block;
     padding: 0 $spacing-xs;
+    color: $text-02;
+  }
+
+  &__input {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32px);
+    height: rem(32px);
+    padding: $spacing-2xs $spacing-xs;
+    color: $text-02;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  &__last-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32px);
+    height: rem(32px);
+    padding: $spacing-2xs $spacing-xs;
+    color: $text-02;
+    -webkit-font-smoothing: antialiased;
   }
 }

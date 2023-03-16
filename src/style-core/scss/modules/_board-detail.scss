@@ -1,0 +1,122 @@
+.board-detail {
+  border-top: 2px solid $secondary;
+
+  &__title {
+    @include stable-padding($spacing-md, $spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: rem(58px);
+    background-color: $ui-01;
+    border-bottom: 1px solid $ui-04;
+
+    &-text {
+      @include ellipsis();
+      @include font-size("18");
+      @include font-weight("medium");
+      color: $text-01;
+    }
+  }
+
+  &__information {
+    @include stable-padding($spacing-md, $spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: rem(47px);
+    border-bottom: 1px solid $ui-04;
+
+    dt {
+      @include font-weight("medium");
+      @include font-size("15");
+      color: $text-01;
+    }
+
+    dd {
+      @include font-weight("medium");
+      @include font-size("15");
+      position: relative;
+      padding-left: $spacing-3xl;
+      margin-right: rem(80px);
+      color: $text-02;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: rem(1px);
+        height: rem(11px);
+        background-color: $ui-04;
+        left: rem(23px);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__post {
+    padding: $spacing-lg;
+    border-bottom: 1px solid $ui-04;
+
+    &-text {
+      @include font-family("sans");
+      @include font-size("15");
+      color: $text-01;
+    }
+  }
+
+  &__reference {
+    @include stable-padding($spacing-md, $spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: rem(72px);
+    border-bottom: 1px solid $ui-04;
+
+    dt {
+      @include font-weight("medium");
+      @include font-size("15");
+      flex-shrink: 0;
+      width: rem(143px);
+      color: $text-01;
+    }
+
+    dd {
+      flex-grow: 1;
+    }
+
+    &-reply {
+      @include font-weight("regular");
+    }
+
+    &-info-text {
+      @include font-size("15");
+      color: $text-01;
+    }
+
+    &-text {
+      @include font-family("sans");
+      @include font-size("15");
+      margin-top: $spacing-md;
+      color: $text-01;
+    }
+
+    &-subtext {
+      @include font-size("14");
+      color: $text-03;
+    }
+
+    &-icon {
+      @include svg-icon-size(24px);
+      margin-right: $spacing-2xs;
+    }
+
+    &--height-auto {
+      height: auto;
+      align-items: flex-start;
+
+      dt {
+        padding-top: $spacing-xs;
+      }
+    }
+  }
+}

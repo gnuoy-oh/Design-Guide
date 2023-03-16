@@ -1,5 +1,6 @@
 %description-common-style {
   @include stable-padding($spacing-xs, $spacing-sm);
+  color: $text-02;
   vertical-align: middle;
 }
 
@@ -9,27 +10,64 @@
 
 .description-column {
   table {
-    background-color: $ui-02;
     td,
     th {
       @extend %description-common-style;
     }
+
     th {
       @include font-weight("medium");
-      color: $text-01;
-      background-color: $ui-05;
+      background-color: $ui-01;
       border-top: 2px solid $secondary;
     }
+
     td {
-      color: $text-03;
-      border-top: 1px solid $ui-03;
+      @include font-weight("medium");
+      border-top: 1px solid $ui-04;
+      background-color: $ui-02;
     }
+
     tr {
       height: rem(56px);
+
       &:last-child {
         td {
-          border-bottom: 1px solid $ui-03;
+          border-bottom: 1px solid $ui-04;
         }
+      }
+    }
+  }
+
+
+  &--sm {
+    table {
+      td,
+      th {
+        @include stable-padding($spacing-3xs, $spacing-xs);
+        @include font-size("12");
+      }
+      tr {
+        height: rem(24px);
+      }
+    }
+  }
+
+
+  &--board {
+    table {
+      td,
+      th {
+        @include font-size("15");
+      }
+
+      th {
+        color: $text-01;
+        background-color: $ui-02;
+        border-top-color: $text-01;
+      }
+
+      td {
+        @include font-weight("regular");
       }
     }
   }
@@ -43,31 +81,47 @@
     td,
     th {
       @extend %description-common-style;
-      border-top: 1px solid $ui-03;
+      border-top: 1px solid $ui-04;
     }
 
     th {
       @include font-weight("medium");
-      background-color: $ui-05;
+      background-color: $ui-01;
     }
 
     td {
+      @include font-weight("medium");
       background-color: $ui-02;
     }
 
     tr {
       height: rem(56px);
+
       &:first-child {
         th,
         td {
           border-top: 2px solid $secondary;
         }
       }
+
       &:last-child {
         th,
         td {
-          border-bottom: 1px solid $ui-03;
+          border-bottom: 1px solid $ui-04;
         }
+      }
+    }
+  }
+
+  &--sm {
+    table {
+      td,
+      th {
+        @include stable-padding($spacing-3xs, $spacing-xs);
+        @include font-size("12");
+      }
+      tr {
+        height: rem(24px);
       }
     }
   }

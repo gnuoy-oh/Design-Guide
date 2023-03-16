@@ -17,20 +17,17 @@
   resize: vertical;
 
   &:hover {
-    background-color: rgba($ui-02, 1);
-    border-color: darken($ui-03, 15%);
+    border-color: $ui-03;
   }
 
   &:active,
   &:focus {
-    border-color: $active-primary;
-    box-shadow: 0 0 rem(4px) rgba($active-primary, 0.65);
+    border-color: $primary;
+    box-shadow: 0px 0px 6px rgba(12, 138, 229, 0.3);
   }
 
   &:focus-visible {
-    border-color: $ui-03;
-    box-shadow: none;
-    outline: 1px dashed $text-01;
+    outline: none;
   }
 
   // chrom에서 자동저장된 input의 배경컬러를 제어
