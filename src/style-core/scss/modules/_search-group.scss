@@ -2,12 +2,10 @@
   display: flex;
   align-items: center;
   justify-self: flex-start;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
   padding: $spacing-md;
   background-color: $ui-01;
-
-  > *:not(:last-child) {
-    margin-right: $spacing-sm;
-  }
 
   .text-input-group {
     flex-grow: 1;

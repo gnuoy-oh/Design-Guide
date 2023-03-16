@@ -74,7 +74,7 @@
   }
 
   &__title {
-    @include letter-spacing('fit');
+    @include letter-spacing("fit");
     @include font-size("32");
     @include font-weight("medium");
     color: $text-01;
@@ -187,10 +187,6 @@
   position: static;
 }
 
-.search-group {
-  width: rem(960px);
-}
-
 .select {
   &--lg {
     width: rem(240px);
@@ -234,6 +230,9 @@
   }
 }
 
+@include respond-to("breakpoint-xl") {
+}
+
 @include respond-to("breakpoint-lg") {
   .color-card-wrap {
     max-width: fit-content;
@@ -259,6 +258,7 @@
     }
 
     &__group {
+      width: 100%;
       flex-direction: column;
       > *:not(:last-child) {
         margin-right: 0;
@@ -266,17 +266,23 @@
       }
     }
   }
+
+  .progressbar {
+    width: 100%;
+  }
+  .text-input-group--lg.text-input-group--autocomplete {
+    width: 100%;
+  }
 }
 
 @include respond-to("breakpoint-md") {
-  .component {
-    &__group {
-      width: 100%;
-    }
+  .side-nav {
+    display: none;
+  }
 
-    .progressbar {
-      width: 100%;
-    }
+  .container {
+    margin: 0;
+    width: 100%;
   }
 
   .checkboxs,
@@ -288,6 +294,25 @@
       &:not(:last-child) {
         margin-right: 0;
         margin-bottom: $spacing-xs;
+      }
+    }
+  }
+
+  .board-detail {
+    &__reference {
+      dt {
+        width: rem(80px);
+      }
+    }
+
+    &__information {
+      height: auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      dd {
+        padding: 0;
+        margin: 0;
       }
     }
   }
