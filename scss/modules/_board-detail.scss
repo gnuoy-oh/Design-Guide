@@ -25,6 +25,7 @@
     justify-content: flex-start;
     height: rem(47px);
     border-bottom: 1px solid $ui-04;
+    white-space: nowrap;
 
     dt {
       @include font-weight("medium");
@@ -71,6 +72,7 @@
     justify-content: flex-start;
     height: rem(72px);
     border-bottom: 1px solid $ui-04;
+    word-break: break-all;
 
     dt {
       @include font-weight("medium");
