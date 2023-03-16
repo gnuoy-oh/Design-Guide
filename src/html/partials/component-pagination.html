@@ -1,81 +1,66 @@
-<!-- context menu -->
+<!-- accordion -->
 <div class="page-header">
-  <strong class="page-header__lable">Component</strong>
-  <h3 class="page-header__title">Pagination</h3>
+	<strong class="page-header__lable">Component</strong>
+	<h3 class="page-header__title">Pagination</h3>
 </div>
 <div class="page-content">
-  <div class="component">
-    <span class="component__name">Default</span>
-    <div class="component__example">
-      <div class="component__views">
-        <div>
-          <div class="component__contents">
-            <p class="component__label">Size: md</p>
-            <div class="component__group">
-              <div class="pagination">
-                <button class="pagination__button button button--link" type="button" title="첫 페이지로 이동하기">
-                  <svg class="svg-icon" aria-hidden="true">
-                    <use xlink:href="#chevron-double-left-medium"></use>
-                  </svg>
-                </button>
-                <button class="pagination__button button button--link" type="button" title="이전 페이지로 이동하기">
-                  <svg class="svg-icon" aria-hidden="true">
-                    <use xlink:href="#chevron-left-medium"></use>
-                  </svg>
-                </button>
-                <ul class="pagination__list">
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="1"> 1 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="2"> 2 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="3"> 3 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="4"> 4 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="5"> 5 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="6"> 6 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="7"> 7 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="8"> 8 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="9"> 9 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="10"> 10 </a>
-                  </li>
-                  <li class="pagination__item">
-                    <span class="pagination__ellipsis"> ... </span>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#none" class="pagination__link" title="20"> 20 </a>
-                  </li>
-                </ul>
-                <button class="pagination__button button button--link" type="button" title="다음 페이지로 이동하기">
-                  <svg class="svg-icon" aria-hidden="true">
-                    <use xlink:href="#chevron-right-medium"></use>
-                  </svg>
-                </button>
-                <button class="pagination__button button button--link" type="button" title="마지막 페이지로 이동하기">
-                  <svg class="svg-icon" aria-hidden="true">
-                    <use xlink:href="#chevron-double-right-medium"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+	<div class="component">
+		<span class="component__name">Default</span>
+		<div class="component__example">
+			<div class="component__views">
+				<div>
+					<div class="component__contents">
+						<p class="component__label">Size: md</p>
+						<div class="component__group">
+							<div class="pagination">
+								<button class="button pagination__button button--link" title="첫 페이지로 이동하기" >
+									<span class="hidden">첫 페이지로 이동하기</span>
+									<svg class="svg-icon" aria-hidden="true">
+										<use xlink:href="#chevron-double-left-medium"></use>
+									</svg>
+								</button>
+								<button class="button pagination__button button--link" title="이전 페이지로 이동하기" >
+									<span class="hidden">이전 페이지로 이동하기</span>
+									<svg class="svg-icon" aria-hidden="true">
+										<use xlink:href="#chevron-left-medium"></use>
+									</svg>
+								</button>
+								<ul class="pagination__list">
+									<li class="pagination__item">
+										<p class="pagination__link">1</p>
+									</li>
+									<li class="pagination__item">
+										<p class="pagination__link">2</p>
+									</li>
+									<li class="pagination__item">
+										<p class="pagination__link">3</p>
+									</li>
+									<li class="pagination__item">
+										<p class="pagination__link">4</p>
+									</li>
+									<li class="pagination__item">
+										<p class="pagination__link">5</p>
+									</li>
+								</ul>
+								<button class="button pagination__button button--link" title="다음 페이지로 이동하기" >
+									<span class="hidden">다음 페이지로 이동하기</span>
+									<svg class="svg-icon" aria-hidden="true">
+										<use xlink:href="#chevron-right-medium"></use>
+									</svg>
+								</button>
+								<button class="button pagination__button button--link" title="마지막 페이지로 이동하기" >
+									<span class="hidden">마지막 페이지로 이동하기</span>
+									<svg class="svg-icon" aria-hidden="true">
+										<use xlink:href="#chevron-double-right-medium"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>

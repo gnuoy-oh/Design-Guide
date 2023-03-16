@@ -1,5 +1,7 @@
 # Design-Guide
 
+## 본인 참여 수준: 100%
+
 - GitHub 주소: https://github.com/gnuoy-oh/Design-Guide.git
 
   - 브랜치: dev

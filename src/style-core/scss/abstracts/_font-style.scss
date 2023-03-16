@@ -43,10 +43,24 @@ $font-weights: (
 
 // ----
 //  Letter Spacing
-@mixin letter-spacing {
-  letter-spacing: 0;
+$letter-spacings: (
+  "standard": 0,
+  "narrow-xs": rem(-0.2px),
+  "narrow-sm": rem(-0.3px),
+  "narrow-md": rem(-0.5px),
+  "narrow-lg": rem(-1px),
+  "wide-lg": rem(1px)
+);
+
+@function letter-spacing($interval) {
+  @return map-get($letter-spacings, $interval);
 }
-// Usage: `@include letter-spacing;`
+
+@mixin letter-spacing($interval) {
+  letter-spacing: letter-spacing($interval);
+}
+
+// Usage: `@include letter-spacing('narrow-sm');`
 
 // ----
 //  Line Height
@@ -57,6 +71,8 @@ $font-weights: (
     line-height: 1.5;
   } @else if $el == "title" {
     line-height: 1.2;
+  } @else if $el == "fit" {
+    line-height: 1;
   } @else {
     @warn '@mixin line-height($el) 을 사용할 수 없습니다. 'heading', 'body' 또는 'title'를 사용해 주세요.';
   }
@@ -100,66 +116,4 @@ $font-size-map: (
 @mixin font-smoothing {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-// ----
-//  Typography
-@mixin heading-01 {
-  @include font-size("72");
-  @include font-weight("bold");
-  line-height: 1.2;
-}
-
-@mixin heading-02 {
-  @include font-size("48");
-  @include font-weight("bold");
-  line-height: 1.28;
-}
-
-@mixin heading-03 {
-  @include font-size("32");
-  @include font-weight("bold");
-  line-height: 1.36;
-}
-
-@mixin heading-04 {
-  @include font-size("24");
-  @include font-weight("regular");
-  line-height: 1.4;
-}
-
-@mixin heading-05 {
-  @include font-size("20");
-  @include font-weight("regular");
-  line-height: 1.44;
-}
-
-@mixin heading-06 {
-  @include font-size("18");
-  @include font-weight("regular");
-  line-height: 1.48;
-}
-
-@mixin heading-07 {
-  @include font-size("16");
-  @include font-weight("bold");
-  line-height: 1.5;
-}
-
-@mixin p {
-  @include font-size("14");
-  @include font-weight("regular");
-  line-height: 1.54;
-}
-
-@mixin desc {
-  @include font-size("12");
-  @include font-weight("regular");
-  line-height: 1.36;
-}
-
-@mixin label {
-  @include font-size("12");
-  @include font-weight("regular");
-  line-height: 1.5;
 }
