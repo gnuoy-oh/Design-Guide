@@ -102,36 +102,3 @@
   align-items: center;
   justify-content: center;
 }
-
-@mixin button-base {
-  @include font-family("sans");
-  @include font-weight("medium");
-  @include font-smoothing;
-  @include letter-spacing;
-  @include line-height("heading");
-  display: flex;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 100%;
-  border: 1px solid transparent;
-  text-decoration: none;
-  transition-duration: $duration-fast-02;
-  transition-timing-function: ease-in-out;
-  white-space: nowrap;
-  user-select: none;
-  cursor: pointer;
-
-  &:disabled,
-  &:disabled:hover,
-  &:disabled:focus {
-    opacity: 0.25;
-    cursor: not-allowed;
-  }
-
-  &::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-  }
-}

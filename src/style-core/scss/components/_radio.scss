@@ -234,6 +234,7 @@
 
     &--lg {
       .radio__label {
+        @include font-size("16");
         padding: 0 $spacing-md;
         height: rem(40px);
       }
@@ -241,6 +242,7 @@
 
     &--sm {
       .radio__label {
+        @include font-size("12");
         padding: 0 $spacing-xs;
         height: rem(24px);
       }

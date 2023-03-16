@@ -15,7 +15,7 @@ html {
 body {
   @include font-family("sans");
   @include font-size("14");
-  @include letter-spacing;
+  @include letter-spacing('fit');
   @include line-height("body");
   color: $text-01;
   background-color: $ui-02;

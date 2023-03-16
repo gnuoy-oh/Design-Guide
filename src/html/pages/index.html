@@ -2,89 +2,101 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Oh MinYoung">
-  <meta name="description" content="오민영의 디자인 시스템으로 컴포넌트를 예시로 보여줍니다.">
-  <title>디자인 시스템</title>
-  <link rel="stylesheet" href="../dist/css/style.min.css" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Oh MinYoung">
+	<meta name="description" content="오민영의 디자인 시스템으로 컴포넌트를 예시로 보여줍니다.">
+	<title>디자인 시스템</title>
+	<link rel="stylesheet" href="../dist/css/style.min.css"/>
 </head>
 
 <body>
-  <div class="layout">
-    <div class="skip-navigation">
-      <a href="#page--color" class="skip-navigation__link" title="바로가기">Style Color으로 바로가기</a>
-      <a href="#page--button" class="skip-navigation__link" title="바로가기">Component Button으로 바로가기</a>
-    </div>
-    <nav class="side-nav">@@include('../partials/side-nav.html')</nav>
-    <div class="container">
-      <main class="content">
-        <div class="page" id="page--color">
-          @@include('../partials/style-color.html')
-        </div>
-        <div class="page" id="page--badge">
-          @@include('../partials/component-badge.html')
-        </div>
-        <div class="page" id="page--button">
-          @@include('../partials/component-button.html')
-        </div>
-        <div class="page" id="page--checkbox">
-          @@include('../partials/component-checkbox.html')
-        </div>
-        <div class="page" id="page--loader">
-          @@include('../partials/component-loader.html')
-        </div>
-        <div class="page" id="page--modal">
-          @@include('../partials/component-modal.html')
-        </div>
-        <div class="page" id="page--notification">
-          @@include('../partials/component-notification.html')
-        </div>
-        <div class="page" id="page--progressbar">
-          @@include('../partials/component-progressbar.html')
-        </div>
-        <div class="page" id="page--radio">
-          @@include('../partials/component-radio.html')
-        </div>
-        <div class="page" id="page--select">
-          @@include('../partials/component-select.html')
-        </div>
-        <div class="page" id="page--steps">
-          @@include('../partials/component-steps.html')
-        </div>
-        <div class="page" id="page--table">
-          @@include('../partials/component-table.html')
-        </div>
-        <div class="page" id="page--tag">
-          @@include('../partials/component-tag.html')
-        </div>
-        <div class="page" id="page--text-input">
-          @@include('../partials/component-text-input.html')
-        </div>
-        <div class="page" id="page--textarea">
-          @@include('../partials/component-textarea.html')
-        </div>
-        <div class="page" id="page--toggle-switch">
-          @@include('../partials/component-toggle-switch.html')
-        </div>
-        <div class="page" id="page--description">
-          @@include('../partials/component-description.html')
-        </div>
-        <div class="page" id="page--pagination">
-          @@include('../partials/component-pagination.html')
-        </div>
-        <div class="page" id="page--text-input-group">
-          @@include('../partials/component-text-input-group.html')
-        </div>
-        <div class="page" id="page--search-group">
-          @@include('../partials/component-search-group.html')
-        </div>
-      </main>
-      <footer class="footer">@@include('../partials/footer.html')</footer>
-    </div>
-  </div>
-  <script src="../dist/js/main.bundle.js"></script>
+<div class="layout">
+	<div class="skip-navigation">
+		<a href="#page--color" class="skip-navigation__link" title="바로가기">Style Color으로 바로가기</a>
+		<a href="#page--button" class="skip-navigation__link" title="바로가기">Component Button으로 바로가기</a>
+	</div>
+	<nav class="side-nav">@@include('../partials/side-nav.html')</nav>
+	<div class="container">
+		<main class="content">
+			<div class="page" id="page--color">
+				@@include('../partials/style-color.html')
+			</div>
+			<div class="page" id="page--badge">
+				@@include('../partials/component-badge.html')
+			</div>
+			<div class="page" id="page--breadcrumb">
+				@@include('../partials/component-breadcrumb.html')
+			</div>
+			<div class="page" id="page--button">
+				@@include('../partials/component-button.html')
+			</div>
+			<div class="page" id="page--checkbox">
+				@@include('../partials/component-checkbox.html')
+			</div>
+			<div class="page" id="page--loader">
+				@@include('../partials/component-loader.html')
+			</div>
+			<div class="page" id="page--notification">
+				@@include('../partials/component-notification.html')
+			</div>
+			<div class="page" id="page--progressbar">
+				@@include('../partials/component-progressbar.html')
+			</div>
+			<div class="page" id="page--radio">
+				@@include('../partials/component-radio.html')
+			</div>
+			<div class="page" id="page--select">
+				@@include('../partials/component-select.html')
+			</div>
+			<div class="page" id="page--steps">
+				@@include('../partials/component-steps.html')
+			</div>
+			<div class="page" id="page--table">
+				@@include('../partials/component-table.html')
+			</div>
+			<div class="page" id="page--tag">
+				@@include('../partials/component-tag.html')
+			</div>
+			<div class="page" id="page--text-input">
+				@@include('../partials/component-text-input.html')
+			</div>
+			<div class="page" id="page--textarea">
+				@@include('../partials/component-textarea.html')
+			</div>
+			<div class="page" id="page--toggle-switch">
+				@@include('../partials/component-toggle-switch.html')
+			</div>
+			<div class="page" id="page--board-detail">
+				@@include('../partials/component-board-detail.html')
+			</div>
+			<div class="page" id="page--description-column">
+				@@include('../partials/component-description-column.html')
+			</div>
+			<div class="page" id="page--description-row">
+				@@include('../partials/component-description-row.html')
+			</div>
+			<div class="page" id="page--modal">
+				@@include('../partials/component-modal.html')
+			</div>
+			<div class="page" id="page--pagination">
+				@@include('../partials/component-pagination.html')
+			</div>
+			<div class="page" id="page--search-group">
+				@@include('../partials/component-search-group.html')
+			</div>
+			<div class="page" id="page--tab">
+				@@include('../partials/component-tab.html')
+			</div>
+			<div class="page" id="page--text-input-group">
+				@@include('../partials/component-text-input-group.html')
+			</div>
+		</main>
+		<footer class="footer">@@include('../partials/footer.html')</footer>
+	</div>
+</div>
+<script src="../dist/js/main.bundle.js"></script>
 </body>
 
 </html>

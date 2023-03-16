@@ -1,5 +1,7 @@
 // theme
-@import "./themes/theme";
+@import "./themes/set-color.scss";
+@import "./themes/set-theme.scss";
+@import "./themes/theme.scss";
 
 // abstracts
 @import "./abstracts/box-shadow";
@@ -12,18 +14,19 @@
 @import "./abstracts/z-index";
 
 // base
+@import "./base/helper-mixins";
+@import "./base/components-mixins";
+@import "./base/helper-classes";
 @import "./base/font-face";
 @import "./base/font-reset";
 @import "./base/css-reset";
-@import "./base/helper-mixins";
-@import "./base/helper-classes";
 
 // components
 @import "./components/badge";
+@import "./components/breadcrumb";
 @import "./components/button";
 @import "./components/checkbox";
 @import "./components/loader";
-@import "./components/modal";
 @import "./components/notification";
 @import "./components/progressbar";
 @import "./components/radio";
@@ -37,10 +40,14 @@
 @import "./components/toggle-switch";
 
 // module component
+@import "./modules/accordion";
+@import "./modules/board-detail";
 @import "./modules/description";
+@import "./modules/modal";
 @import "./modules/pagination";
-@import "./modules/text-input-group";
 @import "./modules/search-group";
+@import "./modules/tab";
+@import "./modules/text-input-group";
 
 // layout
 @import "./layout/header";

@@ -1,31 +1,21 @@
 // Color Theme Variables
-$primary: #06c755 !default;
-$secondary: #072e89 !default;
-$negative: #ef594f !default;
-$ui-01: #f0f0f0 !default;
+$ui-01: #f7f8fa !default;
 $ui-02: #ffffff !default;
-$ui-03: #c8c8c8 !default;
+$ui-03: #77889a !default;
 $ui-04: #dce1e8 !default;
-$ui-05: #f4f4f4 !default;
-$text-01: #3a3c41 !default;
+$text-01: #212121 !default;
 $text-02: #adadad !default;
 $text-03: #777777 !default;
-$text-04: #abafba !default;
-$text-05: #212121 !default;
+$text-04: #ffffff !default;
 $icon-01: #77889a !default;
 $support-01: #0747a6 !default;
 $support-02: #00875a !default;
 $support-03: #ffab00 !default;
 $support-04: #de350b !default;
-$overlay-01: rgba(#242e3d, 0.5) !default;
+$overlay-01: rgba($text-01, 0.5) !default;
+$overlay-02: rgba($ui-03, 0.6) !default;
 
 // Interactive Token
-$hover-primary: #06d85e !default;
-$hover-secondary: #1243b5 !default;
-$hover-negative: #ff7e75 !default;
 $hover-ui-accent: #edf4ff !default;
 $hover-row: #f0f3f6 !default;
 $odd-row: #fafafa !default;
-$active-primary: #0bab4e !default;
-$active-secondary: #042163 !default;
-$active-negative: #e24d43 !default;
