@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node ./clean-dist.js && webpack --config webpack.dev.js",
-    "pull": "git subtree pull -P src/style-core style-core dev --squash",
-    "push": "git subtree push -P src/style-core style-core dev"
+    "pull": "git subtree pull -P src/style-core core-origin dev --squash",
+    "push": "git subtree push -P src/style-core core-origin dev"
   },
   "repository": {
     "type": "git",
