@@ -1,0 +1,276 @@
+// -------------------------
+// Checkbox
+// -------------------------
+.checkboxs {
+  display: flex;
+
+  .checkbox:not(:last-child) {
+    margin-right: $spacing-xs;
+  }
+}
+
+.checkbox {
+  position: relative;
+
+  &__input {
+    @include hidden;
+    top: rem(4px);
+    left: rem(2px);
+
+    &:focus-visible:not(:disabled) {
+      + .checkbox__label {
+        outline: 1px dashed $text-01;
+      }
+    }
+
+    &:checked {
+      & + .checkbox__label::before {
+        background-color: $primary;
+        border-color: $primary;
+      }
+
+      & + .checkbox__label::after {
+        transform: scale(1) rotate(-45deg);
+      }
+    }
+  }
+
+  &__label {
+    @include line-height("heading");
+    @include font-weight("regular");
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding-left: $spacing-lg;
+    min-height: rem(24px);
+    color: $text-01;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      transition: all $duration-fast-01 motion(entrance, productive);
+    }
+
+    &::before {
+      content: "";
+      width: rem(16px);
+      height: rem(16px);
+      margin: $spacing-3xs;
+      position: absolute;
+      left: 0;
+      top: rem(2px);
+      background-color: $ui-02;
+      border: 1px solid $text-03;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: rem(6px);
+      top: rem(4px);
+      width: rem(9px);
+      height: rem(5px);
+      background: none;
+      border-left: 2px solid $ui-02;
+      border-bottom: 2px solid $ui-02;
+      transform: scale(0) rotate(-45deg);
+      transform-origin: bottom right;
+    }
+
+    &:hover::before {
+      border-color: $primary;
+    }
+  }
+
+  // -------------------------
+  // 크기별 스타일
+  // -------------------------
+  &--lg {
+    .checkbox {
+      &__label {
+        @include font-size("15");
+        padding-left: $spacing-lg + $spacing-2xs;
+        min-height: rem(28px);
+
+        &::before {
+          content: "";
+          width: rem(20px);
+          height: rem(20px);
+          margin: $spacing-3xs;
+          top: rem(2px);
+          border-width: 2px;
+        }
+
+        &::after {
+          left: rem(8px);
+          top: rem(4px);
+          width: rem(10px);
+          height: rem(7px);
+        }
+      }
+    }
+
+    &.checkbox--indeterminate .checkbox__input + .checkbox__label::after,
+    .checkbox__input:indeterminate + .checkbox__label::after {
+      transform: scale(1) rotate(0deg);
+      top: rem(9px);
+      left: rem(7px);
+      width: rem(10px);
+      border-left-width: 0;
+      border-bottom-width: 3px;
+    }
+  }
+
+  &--sm {
+    .checkbox {
+      &__label {
+        @include font-size("12");
+        padding-left: $spacing-md;
+        min-height: $default-height-xs;
+        &::before {
+          content: "";
+          width: rem(12px);
+          height: rem(12px);
+          margin: rem(1px);
+          top: rem(3px);
+          border-width: 1px;
+        }
+
+        &::after {
+          left: rem(4px);
+          top: rem(4px);
+          width: rem(7px);
+          height: rem(4px);
+        }
+      }
+    }
+
+    &.checkbox--indeterminate .checkbox__input + .checkbox__label::after,
+    .checkbox__input:indeterminate + .checkbox__label::after {
+      transform: scale(1) rotate(0deg);
+      top: rem(7px);
+      left: rem(4px);
+      width: rem(6px);
+      border-left-width: 0;
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+// -------------------------
+// 상태별 스타일
+// -------------------------
+
+// 부분 선택 상태
+.checkbox--indeterminate .checkbox__input + .checkbox__label::before,
+.checkbox__input:indeterminate + .checkbox__label::before {
+  border-color: $primary;
+}
+
+.checkbox--indeterminate .checkbox__input + .checkbox__label::after,
+.checkbox__input:indeterminate + .checkbox__label::after {
+  transform: scale(1) rotate(0deg);
+  top: rem(8px);
+  left: rem(6px);
+  width: rem(8px);
+  border-left-width: 0;
+  border-bottom-width: 2px;
+  border-color: $primary;
+}
+
+.checkbox--indeterminate .checkbox__input:checked + .checkbox__label::before {
+  background-color: transparent;
+}
+
+// disabled 상태
+.checkbox--disabled .checkbox__label,
+.checkbox__input:disabled + .checkbox__label {
+  opacity: 0.4;
+  cursor: not-allowed;
+
+  // TODO: 기본 상태 디자인에 :not 으로 줄일 수 있음
+  &:hover {
+    &::before,
+    &::after {
+      border-color: $text-03;
+    }
+  }
+}
+
+.checkbox--disabled .checkbox__input:checked + .checkbox__label,
+.checkbox__input:disabled:checked + .checkbox__label {
+  &:hover {
+    &::before {
+      border-color: $primary;
+    }
+    &::after {
+      border-color: $ui-02;
+    }
+  }
+}
+
+// -------------------------
+// checkbox-toggle
+// -------------------------
+.checkbox-toggle {
+  display: flex;
+  align-items: center;
+
+  .checkbox {
+    &:not(:last-child) {
+      margin-right: $spacing-xs;
+    }
+
+    &__label {
+      height: rem(32px);
+      padding: 0 $spacing-sm;
+      line-height: 1;
+      border: 1px solid $ui-04;
+      border-radius: $default-border-radius;
+
+      &:after,
+      &:before {
+        content: none;
+      }
+    }
+
+    &__input {
+      &:focus-visible:not(:disabled) {
+        + .checkbox__label {
+          border-color: $primary;
+        }
+      }
+
+      &:checked + .checkbox__label {
+        background-color: $primary;
+        border-color: $primary;
+        color: $ui-02;
+      }
+
+      &:checked:focus-visible:not(:disabled) {
+        + .checkbox__label {
+          outline: 1px solid $text-01;
+        }
+      }
+    }
+
+    &--lg {
+      .checkbox__label {
+        @include font-size("16");
+        padding: 0 $spacing-md;
+        height: rem(40px);
+      }
+    }
+
+    &--sm {
+      .checkbox__label {
+        @include font-size("12");
+        padding: 0 $spacing-xs;
+        height: rem(24px);
+      }
+    }
+  }
+}

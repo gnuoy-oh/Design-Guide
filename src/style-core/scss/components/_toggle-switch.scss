@@ -1,0 +1,76 @@
+// -------------------------
+// Toggle switch
+// -------------------------
+.toggle-switch {
+  display: flex;
+  align-items: center;
+
+  &__switch {
+    @include button-base;
+    justify-content: flex-start;
+    width: rem(45px);
+    height: rem(22px);
+    padding: $spacing-3xs;
+    background-color: $ui-03;
+    border: none;
+    border-radius: 16px;
+    opacity: 0.5;
+    transition-duration: $duration-fast-02;
+    transition-timing-function: ease-in-out;
+
+    &:focus-visible:not(:disabled) {
+      outline: 1px dashed $text-01;
+      opacity: 1;
+    }
+
+    &:disabled {
+      opacity: 0.25;
+      cursor: not-allowed;
+    }
+
+    &--selected {
+      background-color: $primary;
+      opacity: 1;
+
+      .toggle-switch__handle {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__handle {
+    display: block;
+    width: rem(18px);
+    height: $default-height-xs;
+    background-color: $ui-02;
+    border-radius: 50%;
+  }
+
+  &__label {
+    @include font-size("13");
+    margin-right: $spacing-2xs;
+    color: $text-02;
+  }
+
+  // -------------------------
+  // Size overwrite
+  // -------------------------
+
+  &--sm {
+    .toggle-switch {
+      &__switch {
+        width: rem(36px);
+        height: $default-height-xs;
+      }
+
+      &__handle {
+        width: rem(14px);
+        height: rem(14px);
+      }
+
+      &__label {
+        @include font-size("12");
+      }
+    }
+  }
+}
